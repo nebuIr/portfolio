@@ -184,7 +184,7 @@ footer a:visited {
 	background-size: cover;
 	background-position: center;
 	border-radius: 10px;
-	transition: .6s;
+	transition: .2s;
 	margin-bottom: 40px;
 	margin-left: 13px;
 	margin-right: 20px;
@@ -198,40 +198,49 @@ footer a:visited {
 .card:hover {
 	/*background-color: #18191c;*/
 	box-shadow: 0 5px 20px #1f1f1f;
-	transition: .6s;
+	transition: .2s;
   transform: translate(0px, -4px)
 }
 
 .card-img {
+    transform: translate(0px, -150px);
   width: 100%;
   height: auto;
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
+    visibility:hidden;
 	opacity: 0;
-	transition: .6s;
+	transition: .2s;
 }
 
 .card:hover .card-img {
+    transform: translate(0px, 0px);
+    visibility: visible;
 	opacity: 1;
-	transition: .6s;
+	transition: .2s;
 }
 
 .card-txt {
+    transform: translate(0px, 200px);
 	background-color: #18191c;
 	padding-top: 1px;
 	padding-left: 30px;
 	padding-right: 30px;
 	padding-bottom: 30px;
+    visibility:hidden;
 	opacity: 0;
-	transition: .6s;
+	transition: .2s;
 }
 
 .card:hover .card-txt {
+    transform: translate(0px, 0px);
+    visibility: visible;
 	opacity: 1;
-	transition: .6s;
+	transition: .2s;
 }
 
 .card-footer {
+    transform: translate(0px, 200px);
   background-color: #25282b;
 	text-align: left;
   border-top: 1px solid #2c2c2c;
@@ -241,31 +250,38 @@ footer a:visited {
 	padding-right: 30px;
 	border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
+    visibility:hidden;
 	opacity: 0;
-	transition: .6s;
+	transition: .2s;
 }
 
 .card:hover .card-footer {
+    transform: translate(0px, 0px);
 	background-color: #202225;
+    visibility: visible;
 	opacity: 1;
-	transition: .6s;
+	transition: .2s;
 }
 
 .card-links {
+    transform: translate(0px, 200px);
   background-color: #25282b;
   border-top: 1px solid #2c2c2c;
   padding-top: 1px;
   padding-bottom: 1px;
 	padding-left: 30px;
 	padding-right: 30px;
+    visibility:hidden;
 	opacity: 0;
-	transition: .6s;
+	transition: .2s;
 }
 
 .card:hover .card-links {
+    transform: translate(0px, 0px);
 	background-color: #202225;
+    visibility: visible;
 	opacity: 1;
-	transition: .6s;
+	transition: .2s;
 }
 
 .card-links a:visited, .card-links a:active, .card-links a:link {
