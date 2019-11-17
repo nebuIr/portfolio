@@ -1,9 +1,8 @@
 body {
-    background-image: url(../../assets/img/brand/logo_n_opac.png);
-    background-color: #36393f;
+    background-color: #202225;
     background-repeat: repeat;
     background-attachment: scroll, fixed;;
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 nav {
@@ -17,9 +16,10 @@ nav {
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 5px 10px 0 10px;
     overflow: hidden;
-    border-bottom: 1px solid #5c5c5c;
+    background: #2a2c30;
+    border-radius: 8px;
 }
 
 nav li {
@@ -28,24 +28,29 @@ nav li {
 
 nav li a {
     display: block;
-    color: #32aaa1;
+    color: #485e7e;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    transition: .2s;
+    transition: .1s;
 }
 
 nav li a:hover {
     color: #fff;
-    transition: .2s;
+    transition: .1s;
 }
 
 nav li a:active {
     color: #fff;
 }
 
+.nav-logo {
+    width: 50px;
+    height: 50px;
+}
+
 .main-text {
-    margin: auto 10;
+    margin: auto 10%;
     transition: .4s;
 }
 
@@ -59,16 +64,12 @@ nav li a:active {
 
 footer {
     background: #2a2c30;
-    padding-top: 10px;
-    padding-bottom: 25px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 10px 30px 25px;
     width: 75%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 300px;
     text-decoration: none;
-    border-radius: 5px;
 }
 
 footer a {
@@ -79,13 +80,30 @@ footer a:visited {
     color: #fff;
 }
 
+.border-button {
+    border: solid 2px white;
+    display: inline-block;
+    border-radius: 8px;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    margin-top: 25px;
+    margin-right: 5px;
+    transition: .1s;
+}
+
+.border-button:hover {
+    background: white;
+    color: black;
+    transition: .1s;
+}
+
 .box-x {
     position: absolute;
     top: 0;
     right: 0;
     margin-top: 10px;
     margin-right: 15px;
-    transition: .2s;
+    transition: .1s;
 }
 
 .box-x:hover {
@@ -123,11 +141,49 @@ footer a:visited {
     color: hsla(0, 0%, 100%, .6);
 }
 
-.sub-light {
+.color-grey {
     color: #CCC;
 }
 
-.title-light {
+.weight-light {
+    font-weight: 300;
+}
+
+.weight-bold {
+    font-weight: 700;
+}
+
+.weight-black {
+    font-weight: 900;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 6em;
+    margin-bottom: 30px;
+}
+
+.margin-medium {
+    margin: 10px 10px;
+}
+
+.margin-medium-sides {
+    margin: 0 10px 0 10px;
+}
+
+.margin-medium-top-bottom {
+    margin: 10px 0 10px  0;
+}
+
+.radius-medium {
+    border-radius: 8px;
+}
+
+.radius-large {
+    border-radius: 16px;
+}
+
+.color-white {
     color: #FFF;
 }
 
@@ -148,7 +204,6 @@ footer a:visited {
 .embed-container {
     position: relative;
     padding-bottom: 56.25%; /* ratio 16x9 */
-    height: 0;
     overflow: hidden;
     width: 100%;
     height: auto;
@@ -181,11 +236,30 @@ footer a:visited {
     justify-self: center;
 }*/
 
+.new-card {
+    background: #36393f;
+    display: inline-block;
+    transition: .1s;
+    margin: 20px;
+    max-width: 350px;
+    min-width: 150px;
+    min-height: 175px;
+    align-self: center;
+    justify-self: center;
+    position: relative;
+}
+
+.new-card:hover {
+    box-shadow: 0 10px 20px #1a1a1a;
+    transform: translateY(-10px);
+    transition: .1s;
+}
+
 .card {
     background-size: cover;
     background-position: center;
     border-radius: 10px;
-    transition: .2s;
+    transition: .1s;
     margin-bottom: 40px;
     margin-left: 13px;
     margin-right: 20px;
@@ -199,90 +273,68 @@ footer a:visited {
 .card:hover {
     /*background-color: #18191c;*/
     box-shadow: 0 5px 20px #1f1f1f;
-    transition: .2s;
+    transition: .1s;
     transform: translate(0px, -4px)
 }
 
 .card-img {
-    transform: translate(0px, -150px);
     width: 100%;
     height: auto;
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    visibility: hidden;
-    opacity: 0;
-    transition: .2s;
-}
-
-.card:hover .card-img {
-    transform: translate(0px, 0px);
-    visibility: visible;
-    opacity: 1;
-    transition: .2s;
+    margin-bottom: -13px;
+    transition: .1s;
 }
 
 .card-txt {
     transform: translate(0px, 200px);
     background-color: #18191c;
-    padding-top: 1px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 30px;
+    padding: 1px 30px 30px;
     visibility: hidden;
     opacity: 0;
-    transition: .2s;
+    transition: .1s;
 }
 
 .card:hover .card-txt {
     transform: translate(0px, 0px);
     visibility: visible;
     opacity: 1;
-    transition: .2s;
+    transition: .1s;
+}
+
+.card-overlay {
+    transform: translateY(366px);
+    width: 100%;
+    transition: .1s;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.new-card:hover .card-overlay {
+    background: #36393f;
+    transition: .1s;
+    position: absolute;
+    visibility: visible;
+    opacity: 1;
 }
 
 .card-footer {
-    transform: translate(0px, 200px);
-    background-color: #25282b;
     text-align: left;
     border-top: 1px solid #2c2c2c;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-    visibility: hidden;
-    opacity: 0;
-    transition: .2s;
-}
-
-.card:hover .card-footer {
-    transform: translate(0px, 0px);
-    background-color: #202225;
+    padding: 1px 30px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
     visibility: visible;
     opacity: 1;
-    transition: .2s;
+    transition: .1s;
+    color: #CCC;
 }
 
 .card-links {
-    transform: translate(0px, 200px);
     background-color: #25282b;
     border-top: 1px solid #2c2c2c;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    padding-left: 30px;
-    padding-right: 30px;
-    visibility: hidden;
-    opacity: 0;
-    transition: .2s;
-}
-
-.card:hover .card-links {
-    transform: translate(0px, 0px);
-    background-color: #202225;
+    padding: 1px 30px;
     visibility: visible;
-    opacity: 1;
-    transition: .2s;
+    transition: .1s;
 }
 
 .card-links a:visited, .card-links a:active, .card-links a:link {
@@ -301,7 +353,7 @@ footer a:visited {
 }
 
 .grid {
-    margin: 0px auto;
+    margin: 0 auto;
     width: 95%;
     justify-content: center;
     display: flex inline-block;
@@ -341,11 +393,11 @@ footer a:visited {
     background-color: #79808c;
     color: hsla(0, 0%, 100%, .8);
     border-radius: 5px;
-    transition: .2s;
+    transition: .1s;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 10px;
-    width: 35%;
+    width: 38%;
     text-align: center;
     display: inline-block;
 }
@@ -354,18 +406,18 @@ footer a:visited {
     background-color: #bac7d9;
     color: hsla(0, 0%, 0%, .75);
     box-shadow: 0 3px 10px #1a1a1a;
-    transition: .2s;
+    transition: .1s;
     transform: translate(0px, -1px)
 }
 
 .button-left {
-    margin-left: 0px;
+    margin-left: 0;
     margin-right: 10px;
 }
 
 .button-right {
     margin-left: 10px;
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 .button-disabled {
@@ -375,7 +427,7 @@ footer a:visited {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 10px;
-    width: 35%;
+    width: 38%;
     text-align: center;
     display: inline-block;
 }
@@ -386,4 +438,64 @@ footer a:visited {
 
 .fas {
     margin-left: 4px;
+}
+
+@media (max-width: 480px) {
+    nav {
+        width: 95%;
+    }
+
+    nav li {
+        width: 100%;
+    }
+
+    .nav-logo {
+        display: none;
+    }
+
+    .title {
+        font-size: 3em;
+    }
+
+    .main-text-medium {
+        width: 90% !important;
+        margin-left: 15px !important;
+    }
+
+    footer {
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+
+    .card-overlay {
+        transform: translateY(160px);
+    }
+
+    .card-footer {
+        padding: 1px 29px;
+    }
+
+    .button {
+        display: block;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .button-disabled {
+        display: block;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .button-left {
+        margin-right: 0;
+    }
+
+    .button-right {
+        margin-left: 0;
+    }
+
+    .grid {
+        width: 100%;
+    }
 }
