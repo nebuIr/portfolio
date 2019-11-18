@@ -12,6 +12,23 @@
             <p align="center" class="title color-white weight-bold">nebulr</p>
 
             <div class="grid">
+                <?php
+/*                echo "<div class='new-card radius-large'>
+                          <div class='card-overlay radius-large'>
+                              <div class='card-links'>
+                                  <a href='' target='_blank'>
+                                    <div class='button button-left'>More Info<i class='fas fa-info-circle'></i></div>
+                                  </a>
+                                  <a href='' target='_blank'>
+                                    <div class='button button-right'>Download<i class='fas fa-cloud-download-alt'></i></div>
+                                  </a>
+                              </div>
+                              <div class='card-footer'>
+                                <p></p>
+                              </div>
+                          </div>
+                          <img class='card-img radius-large' src='' alt='cover'>
+                      </div>"; */?>
                 <div class='new-card radius-large'>
                     <div class="card-overlay radius-large">
                         <div class="card-links">
@@ -31,7 +48,7 @@
                 <div class='new-card radius-large'>
                     <div class="card-overlay radius-large">
                         <div class="card-links">
-                            <a href="/projects/scs.html">
+                            <a href="">
                                 <div class="button button-left">More Info<i class="fas fa-info-circle"></i></div>
                             </a>
                             <a href="https://github.com/xnebulr/SCS-for-Steam/releases" target="_blank">
@@ -47,7 +64,7 @@
                 <div class='new-card radius-large'>
                     <div class="card-overlay radius-large">
                         <div class="card-links">
-                            <a href="/projects/st.html">
+                            <a href="">
                                 <div class="button button-left">More Info<i class="fas fa-info-circle"></i></div>
                             </a>
                             <a href="#">

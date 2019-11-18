@@ -2,51 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbbe85ad-46a2-47de-8630-01ae6e2ef551" name="Default Changelist" comment="update project images">
-      <change afterPath="$PROJECT_DIR$/assets/html/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/html/head.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/html/nav.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/projects.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brand/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/brand/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brand/logo_n.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brand/logo_n_.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brand/logo_n_opac.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brand/pp_16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/projects/atlas-banner-org.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/projects/atlas-banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/projects/atlas-cover-org.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/projects/atlas-cover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/projects/mydealz-banner-org.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/projects/mydealz-banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/projects/mydealz-cover-org.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/projects/mydealz-cover.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/projects/mydealz-cover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/projects/owva-banner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/projects/owva-cover-org.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/projects/owva-cover.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/projects/owva-cover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/projects/plex-banner-org.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/projects/plex-banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/projects/plex-cover.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/projects/plex-cover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/projects/scs-banner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/projects/scs-cover.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/projects/scs-cover.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/projects/scs-cover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/projects/st-banner-org.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/projects/st-banner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/projects/st-cover-org.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/projects/st-cover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/base.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/privacy-policy.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/privacy-policy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/projects.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/projects/atlas.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/projects/owva.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/projects/scs.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/projects/st.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/youtube.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/youtube.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/html/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/html/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,12 +26,12 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
@@ -93,17 +53,22 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../atlas.nebulr.me" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ibiza-one" />
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\nebulr.me\assets" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
       <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
       </list>
     </option>
   </component>
@@ -157,6 +122,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix project card links" />
     <MESSAGE value="- updated project images&#10;- new project card hover animation" />
@@ -164,25 +140,15 @@
     <option name="LAST_COMMIT_MESSAGE" value="code cleanup&#10;update project images&#10;new project card hover animation" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1573949797768">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1573949797768" />
-    <state x="794" y="442" key="NewPhpFileDialog" timestamp="1573959347313">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="794" y="442" key="NewPhpFileDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1573959347313" />
-    <state x="656" y="257" width="737" height="596" key="find.popup" timestamp="1573959625026">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="656" y="257" width="737" height="596" key="find.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1573959625026" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1573949185859">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1573949185859" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1573950980110">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1573950980110" />
+    <state x="740" y="274" key="FileChooserDialogImpl" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" />
+    <state x="794" y="442" key="NewPhpFileDialog" />
+    <state x="794" y="442" key="NewPhpFileDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" />
+    <state x="656" y="257" width="737" height="596" key="find.popup" />
+    <state x="656" y="257" width="737" height="596" key="find.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" />
+    <state x="616" y="240" key="run.anything.popup" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" />
   </component>
 </project>

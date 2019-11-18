@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "name": "atlas",
+    "title": "Atlas - Guide for No Man's Sky",
+    "description": "Atlas is a guide app about No Man's Sky for your Android Phone. Find everything about NMS.",
+    "cover": "/assets/img/projects/atlas-cover.jpg",
+    "url_info": "https://atlas.nebulr.me",
+    "url_dl": "https://play.google.com/store/apps/details?id=me.nebulr.atlas",
+    "status": "Under development",
+    "status_code": 0,
+    "last_updated": "02/05/2019"
+  },
+  {
+    "id": 1,
+    "name": "scs",
+    "title": "Star Citizen Skin for Steam",
+    "description": "Star Citizen themed skin for Steam.",
+    "cover": "/assets/img/projects/scs-cover.jpg",
+    "url_info": "",
+    "url_dl": "https://github.com/xnebulr/SCS-for-Steam/releases",
+    "status": "Outdated",
+    "status_code": 1,
+    "last_updated": "02/11/2016"
+  },
+  {
+    "id": 2,
+    "name": "st",
+    "title": "SmoothTex Minecraft Texture Pack",
+    "description": "Texture Pack for Minecraft.",
+    "cover": "/assets/img/projects/st-cover.jpg",
+    "url_info": "",
+    "url_dl": "",
+    "status": "Discontinued",
+    "status_code": 2,
+    "last_updated": "19/06/2014"
+  }
+]

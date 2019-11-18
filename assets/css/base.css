@@ -66,9 +66,7 @@ footer {
     background: #2a2c30;
     padding: 10px 30px 25px;
     width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 300px;
+    margin: 300px auto 30px;
     text-decoration: none;
 }
 
@@ -95,6 +93,7 @@ footer a:visited {
     background: white;
     color: black;
     transition: .1s;
+    transform: translate(0px, -2px);
 }
 
 .box-x {
@@ -222,20 +221,6 @@ footer a:visited {
     padding-bottom: 75%;
 }
 
-/*.card {
-	background-color: #202225;
-	border-radius: 5px;
-	transition: .4s;
-	margin-bottom: 40px;
-	margin-left: 13px;
-	margin-right: 20px;
-	max-width: 350px;
-	min-width: 350px;
-    display: inline-block;
-	align-self: center;
-    justify-self: center;
-}*/
-
 .new-card {
     background: #36393f;
     display: inline-block;
@@ -250,8 +235,8 @@ footer a:visited {
 }
 
 .new-card:hover {
-    box-shadow: 0 10px 20px #1a1a1a;
-    transform: translateY(-10px);
+    box-shadow: 0 25px 30px #1a1a1a;
+    transform: translate(0px, -10px);
     transition: .1s;
 }
 
@@ -301,7 +286,7 @@ footer a:visited {
 }
 
 .card-overlay {
-    transform: translateY(366px);
+    transform: translate(0px, 366px);
     width: 100%;
     transition: .1s;
     position: absolute;
@@ -407,7 +392,7 @@ footer a:visited {
     color: hsla(0, 0%, 0%, .75);
     box-shadow: 0 3px 10px #1a1a1a;
     transition: .1s;
-    transform: translate(0px, -1px)
+    transform: translate(0px, -2px)
 }
 
 .button-left {
@@ -468,7 +453,7 @@ footer a:visited {
     }
 
     .card-overlay {
-        transform: translateY(160px);
+        transform: translate(0px, 160px)
     }
 
     .card-footer {
