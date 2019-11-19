@@ -144,6 +144,11 @@ footer a:visited {
     margin: auto 25%
 }
 
+.text-icon {
+    margin-bottom: -5px;
+    filter: grayscale(100%) contrast(0%) brightness(1.25);
+}
+
 
 /* ===== BOX ===== */
 
@@ -210,7 +215,7 @@ footer a:visited {
 
 .embed-container {
     position: relative;
-    padding-bottom: 56.25%; /* ratio 16x9 */
+    padding-bottom: 56.25%;
     overflow: hidden;
     width: 100%;
     height: auto;
@@ -349,10 +354,18 @@ footer a:visited {
     text-align: left;
 }
 
+.badge-small {
+    border-radius: 6px;
+    padding: .25em .4em;
+    font-size: 80%;
+    font-weight: 400;
+    display: inline-block;
+}
+
 .badge {
     padding: .25em .4em;
     font-size: 65%;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1;
     text-align: center;
     white-space: nowrap;
@@ -360,17 +373,22 @@ footer a:visited {
     border-radius: .25rem;
 }
 
-.badge-success {
+.badge-green {
     background-color: #28a745;
 }
 
-.badge-warning {
+.badge-yellow {
     background-color: #ffc107;
     color: black;
 }
 
-.badge-danger {
+.badge-red {
     background-color: #dc3545;
+}
+
+.badge-white {
+    background-color: #fff;
+    color: black;
 }
 
 

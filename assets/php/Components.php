@@ -20,13 +20,13 @@ class components
             }
             switch (true) {
                 case $project['status_code'] === 0:
-                    $badge = 'badge-success';
+                    $badge = 'badge-green';
                     break;
                 case $project['status_code'] === 1:
-                    $badge = 'badge-warning';
+                    $badge = 'badge-yellow';
                     break;
                 case $project['status_code'] === 2:
-                    $badge = 'badge-danger';
+                    $badge = 'badge-red';
                     break;
             }
 
