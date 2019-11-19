@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbbe85ad-46a2-47de-8630-01ae6e2ef551" name="Default Changelist" comment="update project images">
+      <change afterPath="$PROJECT_DIR$/assets/php/Components.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/html/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/html/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/html/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/html/head.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/html/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/html/nav.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/projects.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/projects.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/privacy-policy.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/privacy-policy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/projects.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/projects.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/youtube.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/youtube.php" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,18 +63,19 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\nebulr.me\assets\php" />
       <recent name="C:\xampp\htdocs\nebulr.me\assets" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -140,15 +150,23 @@
     <option name="LAST_COMMIT_MESSAGE" value="code cleanup&#10;update project images&#10;new project card hover animation" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="274" key="FileChooserDialogImpl" />
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" />
-    <state x="794" y="442" key="NewPhpFileDialog" />
-    <state x="794" y="442" key="NewPhpFileDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" />
-    <state x="656" y="257" width="737" height="596" key="find.popup" />
-    <state x="656" y="257" width="737" height="596" key="find.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" />
-    <state x="616" y="240" key="run.anything.popup" />
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1574185308575" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1574185308575" />
+    <state x="775" y="333" key="NewPhpClassDialog" timestamp="1574189872683">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="775" y="333" key="NewPhpClassDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1574189872683" />
+    <state x="794" y="442" key="NewPhpFileDialog" timestamp="1574189857283">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="442" key="NewPhpFileDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1574189857283" />
+    <state x="656" y="257" width="774" height="596" key="find.popup" timestamp="1574190690400">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="257" width="774" height="596" key="find.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1574190690400" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1574185308575" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1574185308575" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1574185308575" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1574185308575" />
   </component>
 </project>

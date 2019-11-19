@@ -231,18 +231,19 @@ footer a:visited {
 /* ===== CARD ===== */
 
 .card {
-    background: #36393f;
-    display: inline-block;
+    background-size: cover;
+    background-position: center;
     transition: .1s;
     margin: 20px;
     max-width: 350px;
-    min-width: 150px;
-    min-height: 175px;
+    min-width: 350px;
+    display: inline-block;
     align-self: center;
     justify-self: center;
 }
 
 .card:hover {
+    /*background-color: #18191c;*/
     box-shadow: 0 25px 30px #1a1a1a;
     transform: translate(0px, -10px);
     transition: .1s;
@@ -256,62 +257,70 @@ footer a:visited {
 }
 
 .card-txt {
-    transform: translate(0px, 200px);
-    background-color: #18191c;
-    padding: 1px 30px 30px;
+    background-color: rgba(24, 25, 28, 0.9);
+    padding: 1px 30px 20px;
+    min-height: 350px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     visibility: hidden;
     opacity: 0;
-    transition: .1s;
+    transition: .2s;
+    text-align: left;
 }
 
 .card:hover .card-txt {
-    transform: translate(0px, 0px);
     visibility: visible;
     opacity: 1;
-    transition: .1s;
-}
-
-.card-overlay {
-    transform: translate(0px, 366px);
-    min-width: 350px;
-    transition: .1s;
-    position: absolute;
-    visibility: hidden;
-    opacity: 0;
-}
-
-.card:hover .card-overlay {
-    background: #36393f;
-    transition: .1s;
-    position: absolute;
-    visibility: visible;
-    opacity: 1;
+    transition: .2s;
 }
 
 .card-footer {
-    text-align: left;
-    border-top: 1px solid #2c2c2c;
+    background-color: rgba(37, 40, 43, 0.9);
+    text-align: center;
     padding: 1px 30px;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .2s;
+}
+
+.card-footer p {
+    margin-bottom: 20px;
+}
+
+.card:hover .card-footer {
+    background-color: rgba(32, 34, 37, 0.9);
     visibility: visible;
     opacity: 1;
-    transition: .1s;
-    color: #CCC;
+    transition: .2s;
 }
 
 .card-links {
-    background-color: #25282b;
-    border-top: 1px solid #2c2c2c;
+    background-color: rgba(37, 40, 43, 0.9);
+    border-top: 1px solid #414141;
     padding: 1px 30px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .2s;
+}
+
+.card:hover .card-links {
+    background-color: rgba(32, 34, 37, 0.9);
     visibility: visible;
-    transition: .1s;
+    opacity: 1;
+    transition: .2s;
 }
 
 .card-links a:visited, .card-links a:active, .card-links a:link {
     text-decoration: none;
     color: black;
     transition: .4s;
+}
+
+.card h1 {
+    color: #FFF;
+    text-align: left;
 }
 
 .card h2 {
@@ -350,7 +359,7 @@ footer a:visited {
     border-radius: .25rem;
 }
 
-.badge-succes {
+.badge-success {
     background-color: #28a745;
 }
 
@@ -453,39 +462,24 @@ footer a:visited {
     }
 
     .main-text-medium {
-        width: 90% !important;
-        margin-left: 15px !important;
+        margin: 0 !important;
     }
 
     .grid {
         width: 100%;
     }
 
-    .card-overlay {
-        transform: translate(0px, 160px)
+    .card {
+        min-width: 100px;
+        margin-left: 15px!important;
+        margin-right: 15px!important;
     }
 
-    .card-footer {
-        padding: 1px 29px;
+    .card-txt {
+        max-height: 150px;
     }
 
-    .button {
-        display: block;
-        justify-content: center;
-        width: 90%;
-    }
-
-    .button-disabled {
-        display: block;
-        justify-content: center;
-        width: 90%;
-    }
-
-    .button-left {
-        margin-right: 0;
-    }
-
-    .button-right {
-        margin-left: 0;
+    .card-links {
+        padding: 1px 15px;
     }
 }
