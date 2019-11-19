@@ -9,7 +9,6 @@
 </head>
 
 <body>
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/assets/html/nav.php'); ?>
 
 <main class='main-text-medium'>
     <p align='center' class='title color-white weight-bold'>nebulr</p>

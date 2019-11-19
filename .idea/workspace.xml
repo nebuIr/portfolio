@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbbe85ad-46a2-47de-8630-01ae6e2ef551" name="Default Changelist" comment="update project images">
-      <change afterPath="$PROJECT_DIR$/assets/img/projects/mydealz-cover.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/projects/owva-cover.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/projects/plex-cover.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/projects.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/projects.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
