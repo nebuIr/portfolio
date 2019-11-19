@@ -17,7 +17,7 @@
 				$projects = json_decode($projects_file, true);
 
 				foreach ($projects as $project) {
-					echo "<div class='new-card radius-large'>
+					echo "<div class='card radius-large'>
                               <div class='card-overlay radius-large'>
                                   <div class='card-links'>
                                       <a href='{$project['url_info']}' target='_blank'>

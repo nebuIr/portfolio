@@ -1,9 +1,13 @@
+/* ===== BODY ===== */
+
 body {
     background-color: #202225;
     background-repeat: repeat;
     background-attachment: scroll, fixed;;
     font-family: 'Poppins', sans-serif;
 }
+
+/* ===== NAVIGATION ===== */
 
 nav {
     padding: 10px;
@@ -49,18 +53,11 @@ nav li a:active {
     height: 50px;
 }
 
-.main-text {
-    margin: auto 10%;
-    transition: .4s;
+.active {
+    color: #fff;
 }
 
-.main-text-medium {
-    margin: auto 15%
-}
-
-.main-text-small {
-    margin: auto 25%
-}
+/* ===== FOOTER ===== */
 
 footer {
     background: #2a2c30;
@@ -78,63 +75,7 @@ footer a:visited {
     color: #fff;
 }
 
-.border-button {
-    border: solid 2px white;
-    display: inline-block;
-    border-radius: 8px;
-    padding: 5px 10px 5px 10px;
-    color: white;
-    margin-top: 25px;
-    margin-right: 5px;
-    transition: .1s;
-}
-
-.border-button:hover {
-    background: white;
-    color: black;
-    transition: .1s;
-    transform: translate(0px, -2px);
-}
-
-.box-x {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 10px;
-    margin-right: 15px;
-    transition: .1s;
-}
-
-.box-x:hover {
-    transform: rotate(180deg);
-    transition: .6s;
-}
-
-.box-text {
-    position: relative;
-    background-color: #2f3136;
-    padding: 20px;
-    margin-bottom: 40px;
-    border-radius: 3px;
-    text-align: center;
-    font-weight: bold;
-    min-width: 130px;
-}
-
-.box-success {
-    background-color: #28a745;
-    color: white;
-}
-
-.box-warning {
-    background-color: #ffc107;
-    color: black;
-}
-
-.box-danger {
-    background-color: #dc3545;
-    color: white;
-}
+/* ===== GENERAL ===== */
 
 .text-light {
     color: hsla(0, 0%, 100%, .6);
@@ -171,7 +112,7 @@ footer a:visited {
 }
 
 .margin-medium-top-bottom {
-    margin: 10px 0 10px  0;
+    margin: 10px 0 10px 0;
 }
 
 .radius-medium {
@@ -186,9 +127,70 @@ footer a:visited {
     color: #FFF;
 }
 
-.active {
-    color: #fff;
+.main-text {
+    margin: auto 10%;
+    transition: .4s;
 }
+
+.main-text-medium {
+    margin: auto 15%
+}
+
+.main-text-small {
+    margin: auto 25%
+}
+
+/* ===== BOX ===== */
+
+.box-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 15px;
+    transition: .1s;
+}
+
+.box-close:hover {
+    transform: rotate(180deg);
+    transition: .6s;
+}
+
+.box-text {
+    position: relative;
+    background-color: #2f3136;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: bold;
+    min-width: 130px;
+}
+
+.fas {
+    margin-left: 4px;
+}
+
+.box-text .fas {
+    cursor: pointer;
+}
+
+.box-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.box-warning {
+    background-color: #ffc107;
+    color: black;
+}
+
+.box-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* ===== VIDEO ===== */
 
 .video {
     border-radius: 3px;
@@ -209,7 +211,6 @@ footer a:visited {
 }
 
 .embed-container iframe {
-
     position: absolute;
     top: 0;
     left: 0;
@@ -221,7 +222,9 @@ footer a:visited {
     padding-bottom: 75%;
 }
 
-.new-card {
+/* ===== CARD ===== */
+
+.card {
     background: #36393f;
     display: inline-block;
     transition: .1s;
@@ -231,35 +234,12 @@ footer a:visited {
     min-height: 175px;
     align-self: center;
     justify-self: center;
-    position: relative;
-}
-
-.new-card:hover {
-    box-shadow: 0 25px 30px #1a1a1a;
-    transform: translate(0px, -10px);
-    transition: .1s;
-}
-
-.card {
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    transition: .1s;
-    margin-bottom: 40px;
-    margin-left: 13px;
-    margin-right: 20px;
-    max-width: 350px;
-    min-width: 350px;
-    display: inline-block;
-    align-self: center;
-    justify-self: center;
 }
 
 .card:hover {
-    /*background-color: #18191c;*/
-    box-shadow: 0 5px 20px #1f1f1f;
+    box-shadow: 0 25px 30px #1a1a1a;
+    transform: translate(0px, -10px);
     transition: .1s;
-    transform: translate(0px, -4px)
 }
 
 .card-img {
@@ -294,7 +274,7 @@ footer a:visited {
     opacity: 0;
 }
 
-.new-card:hover .card-overlay {
+.card:hover .card-overlay {
     background: #36393f;
     transition: .1s;
     position: absolute;
@@ -345,6 +325,8 @@ footer a:visited {
     text-align: center;
 }
 
+/* ===== BADGE ===== */
+
 .badge-wrapper {
     margin-bottom: 40px;
     text-align: left;
@@ -373,6 +355,8 @@ footer a:visited {
 .badge-danger {
     background-color: #dc3545;
 }
+
+/* ===== BUTTONS ===== */
 
 .button {
     background-color: #79808c;
@@ -417,13 +401,25 @@ footer a:visited {
     display: inline-block;
 }
 
-.box-text .fas {
-    cursor: pointer;
+.border-button {
+    border: solid 2px white;
+    display: inline-block;
+    border-radius: 8px;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    margin-top: 25px;
+    margin-right: 5px;
+    transition: .1s;
 }
 
-.fas {
-    margin-left: 4px;
+.border-button:hover {
+    background: white;
+    color: black;
+    transition: .1s;
+    transform: translate(0px, -2px);
 }
+
+/* ===== MOBILE ===== */
 
 @media (max-width: 480px) {
     nav {
@@ -438,6 +434,11 @@ footer a:visited {
         display: none;
     }
 
+    footer {
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+
     .title {
         font-size: 3em;
     }
@@ -447,9 +448,8 @@ footer a:visited {
         margin-left: 15px !important;
     }
 
-    footer {
-        margin-top: 50px;
-        margin-bottom: 25px;
+    .grid {
+        width: 100%;
     }
 
     .card-overlay {
@@ -478,9 +478,5 @@ footer a:visited {
 
     .button-right {
         margin-left: 0;
-    }
-
-    .grid {
-        width: 100%;
     }
 }
