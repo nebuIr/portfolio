@@ -9,7 +9,7 @@
     "url_dl": "https://play.google.com/store/apps/details?id=me.nebulr.atlas",
     "status": "Under development",
     "status_code": 0,
-    "last_updated": "02/05/2019"
+    "last_updated": "15/11/2019"
   },
   {
     "id": 1,
@@ -17,7 +17,7 @@
     "title": "Star Citizen Skin for Steam",
     "description": "A Star Citizen themed skin for Steam.",
     "cover": "/assets/img/projects/scs-cover.jpg",
-    "url_info": "",
+    "url_info": "https://github.com/xnebulr/SCS-for-Steam",
     "url_dl": "https://github.com/xnebulr/SCS-for-Steam/releases",
     "status": "Outdated",
     "status_code": 1,
@@ -29,10 +29,46 @@
     "title": "SmoothTex Minecraft Texture Pack",
     "description": "A Texture Pack for Minecraft. Available in 16x and 32x textures.",
     "cover": "/assets/img/projects/st-cover.jpg",
-    "url_info": "",
-    "url_dl": "",
+    "url_info": "https://github.com/xnebulr/SmoothTex-16x",
+    "url_dl": "https://github.com/xnebulr/SmoothTex-16x/releases",
     "status": "Discontinued",
     "status_code": 2,
     "last_updated": "19/06/2014"
+  },
+  {
+    "id": 3,
+    "name": "owva",
+    "title": "Overwatch VoiceAttack Profile",
+    "description": "A VoiceAttack profile for Overwatch, which allows you to control many actions using your voice.",
+    "cover": "/assets/img/projects/owva-cover.jpg",
+    "url_info": "https://github.com/xnebulr/Overwatch_VA",
+    "url_dl": "https://github.com/xnebulr/Overwatch_VA/releases",
+    "status": "Outdated",
+    "status_code": 1,
+    "last_updated": "01/05/2018"
+  },
+  {
+    "id": 4,
+    "name": "plex",
+    "title": "Better Plex - Stylish CSS Theme",
+    "description": "The Better Plex experience. The 'Stylish' Browser addon is needed to use this theme.",
+    "cover": "/assets/img/projects/plex-cover.jpg",
+    "url_info": "https://userstyles.org/",
+    "url_dl": "https://userstyles.org/styles/160927/better-plex",
+    "status": "Outdated",
+    "status_code": 1,
+    "last_updated": "21/04/2019"
+  },
+  {
+    "id": 5,
+    "name": "mydealz",
+    "title": "mydealz Dark Theme - Stylish CSS Theme",
+    "description": "A Dark Theme for mydealz.de. The 'Stylish' Browser addon is needed to use this theme.",
+    "cover": "/assets/img/projects/mydealz-cover.jpg",
+    "url_info": "https://userstyles.org/",
+    "url_dl": "https://userstyles.org/styles/161431/mydealz-dark-theme",
+    "status": "Under development",
+    "status_code": 0,
+    "last_updated": "10/11/2019"
   }
 ]

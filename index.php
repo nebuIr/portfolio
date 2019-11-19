@@ -5,6 +5,7 @@
 <head>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/assets/html/head.php'); ?>
     <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/assets/php/Components.php'); ?>
+    <?php $components = new Components(); ?>
 </head>
 
 <body>
@@ -15,7 +16,6 @@
 
     <div class='grid'>
         <?php
-        $components = new Components();
         $components->renderProjects();
         ?>
     </div>

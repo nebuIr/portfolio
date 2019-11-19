@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbbe85ad-46a2-47de-8630-01ae6e2ef551" name="Default Changelist" comment="update project images">
-      <change afterPath="$PROJECT_DIR$/assets/php/Components.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/projects/mydealz-cover.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/projects/owva-cover.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/projects/plex-cover.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/html/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/html/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/html/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/html/head.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/html/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/html/nav.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/favicon.ico" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/projects.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/projects.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/privacy-policy.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/privacy-policy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/projects.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/projects.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/youtube.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/youtube.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,9 +56,12 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/img/projects" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\nebulr.me\assets\img\projects" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\nebulr.me\assets\php" />
       <recent name="C:\xampp\htdocs\nebulr.me\assets" />
