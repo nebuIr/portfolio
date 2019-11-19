@@ -3,6 +3,7 @@
 <html lang='en'>
 
 <head>
+    <title>nebulr</title>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/assets/html/head.php'); ?>
     <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/assets/php/Components.php'); ?>
     <?php $components = new Components(); ?>
