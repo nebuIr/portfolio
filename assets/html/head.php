@@ -5,15 +5,15 @@ $url = 'https://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 <!-- Basic -->
 <meta charset='UTF-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+<link href='/assets/css/poppins.css' type='text/css' rel='stylesheet'/>
 <link href='/assets/css/base.css' type='text/css' rel='stylesheet'/>
 
 <!-- External -->
-<link href='https://fonts.googleapis.com/css?family=Poppins:300,400,700,900&display=swap' rel='stylesheet'>
-<script src='https://kit.fontawesome.com/8119fd0658.js' crossorigin='anonymous'></script>
+<script async src='https://kit.fontawesome.com/8119fd0658.js' crossorigin='anonymous'></script>
 
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68526906-5"></script>
-<script src="/assets/js/gtag.js"></script>
+<script async src="/assets/js/gtag.js"></script>
 
 <!-- Favicon -->
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">

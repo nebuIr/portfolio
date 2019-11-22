@@ -4,7 +4,7 @@ body {
     background-color: #202225;
     background-repeat: repeat;
     background-attachment: scroll, fixed;;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins Regular', sans-serif;
 }
 
 
@@ -101,7 +101,7 @@ footer a:visited {
 }
 
 .title {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins Regular', sans-serif;
     font-size: 6em;
     margin-top: 80px;
     margin-bottom: 30px;
