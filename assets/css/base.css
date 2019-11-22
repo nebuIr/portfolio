@@ -149,6 +149,14 @@ footer a:visited {
     filter: grayscale(100%) contrast(0%) brightness(1.25);
 }
 
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
 
 /* ===== BOX ===== */
 
