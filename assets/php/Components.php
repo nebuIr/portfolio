@@ -29,17 +29,17 @@ class components
             <div class='card-links'>";
             if ($project['url_info'] !== '') {
                 echo "<a href='{$project['url_info']}' target='_blank'>
-                <div class='button button-left'>More Info<i class='fas fa-info-circle'></i></div>
+                <div class='button button-left'>More Info <i class='fas fa-info-circle'></i></div>
                 </a>";
             } else {
-                echo "<div class='button-disabled button-left'>More Info<i class='fas fa-info-circle'></i></div>";
+                echo "<div class='button-disabled button-left'>More Info <i class='fas fa-info-circle'></i></div>";
             }
             if ($project['url_dl'] !== '') {
                 echo "<a href='{$project['url_dl']}' target='_blank'>
-                <div class='button button-right'>Download<i class='fas fa-cloud-download-alt'></i></div>
+                <div class='button button-right'>Download <i class='fas fa-cloud-download-alt'></i></div>
                 </a>";
             } else {
-                echo "<div class='button-disabled button-right'>Download<i class='fas fa-cloud-download-alt'></i></div>";
+                echo "<div class='button-disabled button-right'>Download <i class='fas fa-cloud-download-alt'></i></div>";
             }
             echo "</div>
             <div class='card-footer'>

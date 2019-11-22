@@ -9,7 +9,7 @@ $url = 'https://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 <link href='/assets/css/base.css' type='text/css' rel='stylesheet'/>
 
 <!-- External -->
-<script async src='https://kit.fontawesome.com/8119fd0658.js' crossorigin='anonymous'></script>
+<script async src='/assets/js/fontawesome.js' crossorigin='anonymous'></script>
 
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68526906-5"></script>

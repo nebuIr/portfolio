@@ -2,32 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbbe85ad-46a2-47de-8630-01ae6e2ef551" name="Default Changelist" comment="update project images">
-      <change afterPath="$PROJECT_DIR$/assets/css/poppins.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/font/Poppins-Black.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/font/Poppins-BlackItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/font/Poppins-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/font/Poppins-BoldItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/font/Poppins-ExtraBold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/font/Poppins-ExtraBoldItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/font/Poppins-ExtraLight.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/font/Poppins-ExtraLightItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/font/Poppins-Italic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/font/Poppins-Light.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/font/Poppins-LightItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/font/Poppins-Medium.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/font/Poppins-MediumItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/font/Poppins-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/font/Poppins-SemiBold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/font/Poppins-SemiBoldItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/font/Poppins-Thin.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/font/Poppins-ThinItalic.woff" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/html/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/html/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/poppins.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/poppins.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/font/Poppins-Black.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/font/poppins/Poppins-Black.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/font/Poppins-BlackItalic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/font/poppins/Poppins-BlackItalic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/font/Poppins-Bold.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/font/poppins/Poppins-Bold.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/font/Poppins-BoldItalic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/font/poppins/Poppins-BoldItalic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/font/Poppins-ExtraBold.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/font/poppins/Poppins-ExtraBold.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/font/Poppins-ExtraBoldItalic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/font/poppins/Poppins-ExtraBoldItalic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/font/Poppins-ExtraLight.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/font/poppins/Poppins-ExtraLight.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/font/Poppins-ExtraLightItalic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/font/poppins/Poppins-ExtraLightItalic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/font/Poppins-Italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/font/poppins/Poppins-Italic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/font/Poppins-Light.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/font/poppins/Poppins-Light.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/font/Poppins-LightItalic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/font/poppins/Poppins-LightItalic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/font/Poppins-Medium.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/font/poppins/Poppins-Medium.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/font/Poppins-MediumItalic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/font/poppins/Poppins-MediumItalic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/font/Poppins-Regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/font/poppins/Poppins-Regular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/font/Poppins-SemiBold.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/font/poppins/Poppins-SemiBold.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/font/Poppins-SemiBoldItalic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/font/poppins/Poppins-SemiBoldItalic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/font/Poppins-Thin.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/font/poppins/Poppins-Thin.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/font/Poppins-ThinItalic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/assets/font/poppins/Poppins-ThinItalic.woff" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/html/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/html/head.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/html/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/html/nav.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brand/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/logo/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/brand/logo.webp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/logo/logo.webp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,11 +74,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\nebulr.me\assets\font\poppins" />
       <recent name="C:\xampp\htdocs\nebulr.me\assets\css" />
       <recent name="C:\xampp\htdocs\nebulr.me\assets\js" />
       <recent name="C:\xampp\htdocs\nebulr.me\privacypolicy" />
       <recent name="C:\xampp\htdocs\nebulr.me" />
-      <recent name="C:\xampp\htdocs\nebulr.me\assets\php" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\nebulr.me\assets\img\projects" />
@@ -117,7 +112,7 @@
       <workItem from="1573946269662" duration="12478000" />
       <workItem from="1574172994356" duration="3556000" />
       <workItem from="1574197190386" duration="62000" />
-      <workItem from="1574447847836" duration="4763000" />
+      <workItem from="1574447847836" duration="6230000" />
     </task>
     <task id="LOCAL-00001" summary="fix project card links">
       <created>1560545577269</created>
@@ -187,10 +182,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="442" key="NewPhpFileDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1574189857283" />
-    <state x="656" y="257" width="774" height="596" key="find.popup" timestamp="1574452275750">
+    <state x="656" y="257" width="801" height="596" key="find.popup" timestamp="1574454124938">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="257" width="774" height="596" key="find.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1574452275750" />
+    <state x="656" y="257" width="801" height="596" key="find.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1574454124938" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1574185308575" />
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1574185308575" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1574185308575" />
