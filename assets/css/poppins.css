@@ -3,7 +3,6 @@
     font-style: normal;
     font-weight: normal;
     src: local('Poppins Regular'), url('/assets/font/poppins/Poppins-Regular.woff') format('woff');
-    font-display: fallback;
 }
 
 
@@ -12,7 +11,6 @@
     font-style: normal;
     font-weight: normal;
     src: local('Poppins Italic'), url('/assets/font/poppins/Poppins-Italic.woff') format('woff');
-    font-display: fallback;
 }
 
 
@@ -21,7 +19,6 @@
     font-style: normal;
     font-weight: normal;
     src: local('Poppins Thin'), url('/assets/font/poppins/Poppins-Thin.woff') format('woff');
-    font-display: fallback;
 }
 
 
@@ -30,7 +27,6 @@
     font-style: normal;
     font-weight: normal;
     src: local('Poppins Thin Italic'), url('/assets/font/poppins/Poppins-ThinItalic.woff') format('woff');
-    font-display: fallback;
 }
 
 
@@ -39,7 +35,6 @@
     font-style: normal;
     font-weight: normal;
     src: local('Poppins ExtraLight'), url('/assets/font/poppins/Poppins-ExtraLight.woff') format('woff');
-    font-display: fallback;
 }
 
 
@@ -48,7 +43,6 @@
     font-style: normal;
     font-weight: normal;
     src: local('Poppins ExtraLight Italic'), url('/assets/font/poppins/Poppins-ExtraLightItalic.woff') format('woff');
-    font-display: fallback;
 }
 
 
@@ -57,7 +51,6 @@
     font-style: normal;
     font-weight: normal;
     src: local('Poppins Light'), url('/assets/font/poppins/Poppins-Light.woff') format('woff');
-    font-display: fallback;
 }
 
 
@@ -66,7 +59,6 @@
     font-style: normal;
     font-weight: normal;
     src: local('Poppins Light Italic'), url('/assets/font/poppins/Poppins-LightItalic.woff') format('woff');
-    font-display: fallback;
 }
 
 
@@ -75,7 +67,6 @@
     font-style: normal;
     font-weight: normal;
     src: local('Poppins Medium'), url('/assets/font/poppins/Poppins-Medium.woff') format('woff');
-    font-display: fallback;
 }
 
 
@@ -84,7 +75,6 @@
     font-style: normal;
     font-weight: normal;
     src: local('Poppins Medium Italic'), url('/assets/font/poppins/Poppins-MediumItalic.woff') format('woff');
-    font-display: fallback;
 }
 
 
@@ -93,7 +83,6 @@
     font-style: normal;
     font-weight: normal;
     src: local('Poppins SemiBold'), url('/assets/font/poppins/Poppins-SemiBold.woff') format('woff');
-    font-display: fallback;
 }
 
 
@@ -102,7 +91,6 @@
     font-style: normal;
     font-weight: normal;
     src: local('Poppins SemiBold Italic'), url('/assets/font/poppins/Poppins-SemiBoldItalic.woff') format('woff');
-    font-display: fallback;
 }
 
 
@@ -111,7 +99,6 @@
     font-style: normal;
     font-weight: normal;
     src: local('Poppins Bold'), url('/assets/font/poppins/Poppins-Bold.woff') format('woff');
-    font-display: fallback;
 }
 
 
@@ -120,7 +107,6 @@
     font-style: normal;
     font-weight: normal;
     src: local('Poppins Bold Italic'), url('/assets/font/poppins/Poppins-BoldItalic.woff') format('woff');
-    font-display: fallback;
 }
 
 
@@ -129,7 +115,6 @@
     font-style: normal;
     font-weight: normal;
     src: local('Poppins ExtraBold'), url('/assets/font/poppins/Poppins-ExtraBold.woff') format('woff');
-    font-display: fallback;
 }
 
 
@@ -138,7 +123,6 @@
     font-style: normal;
     font-weight: normal;
     src: local('Poppins ExtraBold Italic'), url('/assets/font/poppins/Poppins-ExtraBoldItalic.woff') format('woff');
-    font-display: fallback;
 }
 
 
@@ -147,7 +131,6 @@
     font-style: normal;
     font-weight: normal;
     src: local('Poppins Black'), url('/assets/font/poppins/Poppins-Black.woff') format('woff');
-    font-display: fallback;
 }
 
 
@@ -156,5 +139,4 @@
     font-style: normal;
     font-weight: normal;
     src: local('Poppins Black Italic'), url('/assets/font/poppins/Poppins-BlackItalic.woff') format('woff');
-    font-display: fallback;
 }
