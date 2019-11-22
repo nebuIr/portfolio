@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fbbe85ad-46a2-47de-8630-01ae6e2ef551" name="Default Changelist" comment="update project images">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/html/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/html/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/php/Components.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/php/Components.php" afterDir="false" />
-    </list>
+    <list default="true" id="fbbe85ad-46a2-47de-8630-01ae6e2ef551" name="Default Changelist" comment="update project images" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +47,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/img/projects" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -89,6 +84,7 @@
       <workItem from="1560794811979" duration="1790000" />
       <workItem from="1573946269662" duration="12478000" />
       <workItem from="1574172994356" duration="3556000" />
+      <workItem from="1574197190386" duration="62000" />
     </task>
     <task id="LOCAL-00001" summary="fix project card links">
       <created>1560545577269</created>
@@ -146,8 +142,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="code cleanup&#10;update project images&#10;new project card hover animation" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1574185308575" />
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1574185308575" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1574447870996">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1574447870996" />
     <state x="775" y="333" key="NewPhpClassDialog" timestamp="1574189872683">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

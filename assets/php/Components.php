@@ -8,16 +8,6 @@ class components
         $projects = json_decode($projects_file, true);
 
         foreach ($projects as $project) {
-            if ($project['url_dl'] !== '') {
-                $button_class_dl = 'button';
-            } else {
-                $button_class_dl = 'button-disabled';
-            }
-            if ($project['url_info'] !== '') {
-                $button_class_info = 'button';
-            } else {
-                $button_class_info = 'button-disabled';
-            }
             switch (true) {
                 case $project['status_code'] === 0:
                     $badge = 'badge-green';

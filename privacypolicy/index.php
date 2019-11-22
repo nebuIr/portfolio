@@ -7,13 +7,10 @@
     </head>
 
     <body>
-        <?php include($_SERVER['DOCUMENT_ROOT'] . '/assets/html/nav.php'); ?>
 
         <div class="main-text-medium">
+            <p align='center' class='title color-white weight-bold'>Privacy Policy</p>
             <div class="text-light">
-                <h1>Privacy Policy</h1>
-
-
                 <p>Effective date: August 13, 2018</p>
 
 
