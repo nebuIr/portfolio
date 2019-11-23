@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fbbe85ad-46a2-47de-8630-01ae6e2ef551" name="Default Changelist" comment="update project images">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/php/Components.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/php/Components.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +51,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/img/projects" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../atlas.nebulr.me" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -92,7 +93,8 @@
       <workItem from="1573946269662" duration="12478000" />
       <workItem from="1574172994356" duration="3556000" />
       <workItem from="1574197190386" duration="62000" />
-      <workItem from="1574447847836" duration="7099000" />
+      <workItem from="1574447847836" duration="7223000" />
+      <workItem from="1574512846168" duration="1587000" />
     </task>
     <task id="LOCAL-00001" summary="fix project card links">
       <created>1560545577269</created>
@@ -150,10 +152,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="code cleanup&#10;update project images&#10;new project card hover animation" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1574447870996">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1574512863464">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1574447870996" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1574512863464" />
     <state x="775" y="333" key="NewPhpClassDialog" timestamp="1574189872683">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -162,10 +164,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="442" key="NewPhpFileDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1574189857283" />
-    <state x="656" y="257" width="801" height="596" key="find.popup" timestamp="1574454124938">
+    <state x="656" y="257" width="801" height="596" key="find.popup" timestamp="1574455064866">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="257" width="801" height="596" key="find.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1574454124938" />
+    <state x="656" y="257" width="801" height="596" key="find.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1574455064866" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1574185308575" />
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1574185308575" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1574185308575" />

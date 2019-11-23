@@ -20,31 +20,35 @@ class components
                     break;
             }
 
-            echo "<div class='card radius-large' style='background-image: url({$project['cover']});'>
-            <div class='card-txt'>
-                <h1>{$project['title']}</h1>
-                <div class='badge-wrapper'><h2><span class='badge $badge'>{$project['status']}</span></h2></div>
-                <p>{$project['description']}</p>
-            </div>
+            echo "
+            <div class='card radius-large' style='background-image: url({$project['cover']});'>
+                <div class='card-txt'>
+                    <h1>{$project['title']}</h1>
+                    <div class='badge-wrapper'><h2><span class='badge $badge'>{$project['status']}</span></h2></div>
+                    <p>{$project['description']}</p>
+                </div>
             <div class='card-links'>";
             if ($project['url_info'] !== '') {
-                echo "<a href='{$project['url_info']}' target='_blank'>
-                <div class='button button-left'>More Info <i class='fas fa-info-circle'></i></div>
+                echo "
+                <a href='{$project['url_info']}' target='_blank'>
+                    <div class='button button-left'>More Info <i class='fas fa-info-circle'></i></div>
                 </a>";
             } else {
                 echo "<div class='button-disabled button-left'>More Info <i class='fas fa-info-circle'></i></div>";
             }
             if ($project['url_dl'] !== '') {
-                echo "<a href='{$project['url_dl']}' target='_blank'>
-                <div class='button button-right'>Download <i class='fas fa-cloud-download-alt'></i></div>
+                echo "
+                <a href='{$project['url_dl']}' target='_blank'>
+                    <div class='button button-right'>Download <i class='fas fa-cloud-download-alt'></i></div>
                 </a>";
             } else {
                 echo "<div class='button-disabled button-right'>Download <i class='fas fa-cloud-download-alt'></i></div>";
             }
-            echo "</div>
-            <div class='card-footer'>
-                <p>Last updated: {$project['last_updated']}</p>
+            echo "
             </div>
+                <div class='card-footer'>
+                    <p>Last updated: {$project['last_updated']}</p>
+                </div>
             </div>";
         }
     }
