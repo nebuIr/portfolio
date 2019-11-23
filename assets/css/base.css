@@ -101,7 +101,7 @@ footer a:visited {
 }
 
 .title {
-    font-family: 'Poppins Regular', sans-serif;
+    font-family: 'Poppins ExtraBold', sans-serif;
     font-size: 6em;
     margin-top: 80px;
     margin-bottom: 30px;
@@ -333,6 +333,7 @@ a:visited {
 }
 
 .card h1 {
+    font-family: 'Poppins Light', sans-serif;
     color: #FFF;
     text-align: left;
 }
