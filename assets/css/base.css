@@ -333,7 +333,7 @@ a:visited {
 }
 
 .card h1 {
-    font-family: 'Poppins Light', sans-serif;
+    font-family: 'Poppins Bold', sans-serif;
     color: #FFF;
     text-align: left;
 }
@@ -372,6 +372,7 @@ a:visited {
 }
 
 .badge {
+    font-family: 'Poppins Light', sans-serif;
     padding: .25em .4em;
     font-size: 65%;
     font-weight: 600;
