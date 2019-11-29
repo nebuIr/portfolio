@@ -1,9 +1,7 @@
 /* ===== BODY ===== */
 
 body {
-    background-color: #202225;
-    background-repeat: repeat;
-    background-attachment: scroll, fixed;;
+    background: linear-gradient(135deg, #2b323e, #202225);
     font-family: 'Poppins Regular', sans-serif;
 }
 
@@ -105,6 +103,7 @@ footer a:visited {
     font-size: 6em;
     margin-top: 80px;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .margin-medium {
@@ -147,6 +146,13 @@ footer a:visited {
 .text-icon {
     margin-bottom: -5px;
     filter: grayscale(100%) contrast(0%) brightness(1.25);
+}
+
+.title-icon {
+    width: 150px;
+    height: 150px;
+    margin-bottom: -40px;
+    filter: grayscale(100%) contrast(0%) brightness(10);
 }
 
 a:link {
@@ -258,7 +264,7 @@ a:visited {
 }
 
 .card:hover {
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.15), 0 25px 30px #1a1a1a;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.15), 0 25px 30px #2d35449e;
     transform: translate(0px, -10px);
     transition: .1s;
 }
