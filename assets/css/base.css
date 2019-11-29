@@ -61,6 +61,7 @@ nav li a:active {
 
 footer {
     background: #2a2c30;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.075);
     padding: 10px 30px 25px;
     width: 75%;
     margin: 300px auto 30px;
