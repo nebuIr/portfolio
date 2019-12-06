@@ -28,21 +28,21 @@ class components
                     <p>{$project['description']}</p>
                 </div>
             <div class='card-links'>";
-            if ($project['url_info'] !== '') {
+            if ($project['urls']['url_1'] !== '') {
                 echo "
-                <a href='{$project['url_info']}' target='_blank'>
-                    <div class='button button-left'>More Info <i class='fas fa-info-circle'></i></div>
+                <a href='{$project['urls']['url_1']}' target='_blank'>
+                    <div class='button button-left'>{$project['btn_text']['btn_text_1']} <i class='fas fa-info-circle'></i></div>
                 </a>";
             } else {
-                echo "<div class='button-disabled button-left'>More Info <i class='fas fa-info-circle'></i></div>";
+                echo "<div class='button-disabled button-left'>{$project['btn_text']['btn_text_1']} <i class='fas fa-info-circle'></i></div>";
             }
-            if ($project['url_dl'] !== '') {
+            if ($project['urls']['url_2'] !== '') {
                 echo "
-                <a href='{$project['url_dl']}' target='_blank'>
-                    <div class='button button-right'>Download <i class='fas fa-cloud-download-alt'></i></div>
+                <a href='{$project['urls']['url_2']}' target='_blank'>
+                    <div class='button button-right'>{$project['btn_text']['btn_text_2']} <i class='fas fa-cloud-download-alt'></i></div>
                 </a>";
             } else {
-                echo "<div class='button-disabled button-right'>Download <i class='fas fa-cloud-download-alt'></i></div>";
+                echo "<div class='button-disabled button-right'>{$project['btn_text']['btn_text_2']} <i class='fas fa-cloud-download-alt'></i></div>";
             }
             echo "
             </div>

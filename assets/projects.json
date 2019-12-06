@@ -5,8 +5,14 @@
     "title": "Atlas - Guide for No Man's Sky",
     "description": "Atlas is a guide app about No Man's Sky for your Android Phone. Find everything about NMS.",
     "cover": "/assets/img/projects/atlas-cover.webp",
-    "url_info": "https://atlas.nebulr.me",
-    "url_dl": "https://play.google.com/store/apps/details?id=me.nebulr.atlas",
+    "urls": {
+      "url_1": "https://atlas.nebulr.me",
+      "url_2": "https://play.google.com/store/apps/details?id=me.nebulr.atlas"
+    },
+    "btn_text": {
+      "btn_text_1": "More Info",
+      "btn_text_2": "Play Store"
+    },
     "status": "Under development",
     "status_code": 0,
     "last_updated": "15/11/2019"
@@ -17,8 +23,14 @@
     "title": "Star Citizen Skin for Steam",
     "description": "A Star Citizen themed skin for Steam.",
     "cover": "/assets/img/projects/scs-cover.webp",
-    "url_info": "https://github.com/xnebulr/SCS-for-Steam",
-    "url_dl": "https://github.com/xnebulr/SCS-for-Steam/releases",
+    "urls": {
+      "url_1": "https://github.com/xnebulr/SCS-for-Steam",
+      "url_2": "https://github.com/xnebulr/SCS-for-Steam/releases"
+    },
+    "btn_text": {
+      "btn_text_1": "GitHub",
+      "btn_text_2": "Download"
+    },
     "status": "Outdated",
     "status_code": 1,
     "last_updated": "02/11/2016"
@@ -29,8 +41,14 @@
     "title": "SmoothTex Minecraft Texture Pack",
     "description": "A Texture Pack for Minecraft. Available in 16x and 32x textures.",
     "cover": "/assets/img/projects/st-cover.webp",
-    "url_info": "https://github.com/xnebulr/SmoothTex-16x",
-    "url_dl": "https://github.com/xnebulr/SmoothTex-16x/releases",
+    "urls": {
+      "url_1": "https://github.com/xnebulr/SmoothTex-16x",
+      "url_2": "https://github.com/xnebulr/SmoothTex-16x/releases"
+    },
+    "btn_text": {
+      "btn_text_1": "GitHub",
+      "btn_text_2": "Download"
+    },
     "status": "Discontinued",
     "status_code": 2,
     "last_updated": "19/06/2014"
@@ -41,32 +59,68 @@
     "title": "Overwatch VoiceAttack Profile",
     "description": "A VoiceAttack profile for Overwatch, which allows you to control many actions using your voice.",
     "cover": "/assets/img/projects/owva-cover.webp",
-    "url_info": "https://github.com/xnebulr/Overwatch_VA",
-    "url_dl": "https://github.com/xnebulr/Overwatch_VA/releases",
+    "urls": {
+      "url_1": "https://github.com/xnebulr/Overwatch_VA",
+      "url_2": "https://github.com/xnebulr/Overwatch_VA/releases"
+    },
+    "btn_text": {
+      "btn_text_1": "GitHub",
+      "btn_text_2": "Download"
+    },
     "status": "Outdated",
     "status_code": 1,
     "last_updated": "01/05/2018"
   },
   {
     "id": 4,
+    "name": "imastarcitizen",
+    "title": "I'm A Star Citizen Website",
+    "description": "A website for the 'I'm A Star Citizen' trading cards.",
+    "cover": "/assets/img/projects/imastarcitizen-cover.webp",
+    "urls": {
+      "url_1": "https://imastarcitizen.nebulr.org/",
+      "url_2": "https://github.com/xnebulr/imastarcitizen.net"
+    },
+    "btn_text": {
+      "btn_text_1": "Website",
+      "btn_text_2": "GitHub"
+    },
+    "status": "Discontinued",
+    "status_code": 2,
+    "last_updated": "23/11/2016"
+  },
+  {
+    "id": 5,
     "name": "plex",
     "title": "Better Plex - Stylish CSS Theme",
     "description": "The Better Plex experience. The 'Stylish' Browser addon is needed to use this theme.",
     "cover": "/assets/img/projects/plex-cover.webp",
-    "url_info": "https://userstyles.org/",
-    "url_dl": "https://userstyles.org/styles/160927/better-plex",
+    "urls": {
+      "url_1": "https://userstyles.org/",
+      "url_2": "https://userstyles.org/styles/160927/better-plex"
+    },
+    "btn_text": {
+      "btn_text_1": "Stylish",
+      "btn_text_2": "Download"
+    },
     "status": "Outdated",
     "status_code": 1,
     "last_updated": "21/04/2019"
   },
   {
-    "id": 5,
+    "id": 6,
     "name": "mydealz",
     "title": "mydealz Dark Theme - Stylish CSS Theme",
     "description": "A Dark Theme for mydealz.de. The 'Stylish' Browser addon is needed to use this theme.",
     "cover": "/assets/img/projects/mydealz-cover.webp",
-    "url_info": "https://userstyles.org/",
-    "url_dl": "https://userstyles.org/styles/161431/mydealz-dark-theme",
+    "urls": {
+      "url_1": "https://userstyles.org/",
+      "url_2": "https://userstyles.org/styles/161431/mydealz-dark-theme"
+    },
+    "btn_text": {
+      "btn_text_1": "Stylish",
+      "btn_text_2": "Download"
+    },
     "status": "Under development",
     "status_code": 0,
     "last_updated": "10/11/2019"
