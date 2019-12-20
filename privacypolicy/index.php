@@ -3,6 +3,7 @@
 <html lang="en">
 
 <head>
+    <title>Privacy Policy - nebulr</title>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/assets/html/head.php'); ?>
 </head>
 
