@@ -12,7 +12,7 @@
 <body>
 
 <div class='main-text-medium'>
-    <p class='title color-white weight-bold no-highlight'><img class='title-icon center-mobile' src='assets/img/logo/logo.svg' alt='logo'>nebulr</p>
+    <p class='title color-white weight-bold no-highlight'><img class='title-icon-src center-mobile' src='assets/img/logo/logo.png' alt='logo'>nebulr</p>
 
     <div class='grid'>
         <?php $components->renderProjects('all'); ?>
