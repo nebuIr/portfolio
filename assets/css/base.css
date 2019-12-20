@@ -126,8 +126,7 @@ body {
 .title {
     font-family: 'Poppins ExtraBold', sans-serif;
     font-size: 6em;
-    margin-top: 80px;
-    margin-bottom: 30px;
+    margin-top: 100px;
     text-align: center;
 }
 
@@ -539,6 +538,8 @@ a:visited {
     }
 
     .title {
+        margin-top: 50px;
+        margin-bottom: 15px;
         font-size: 4.5em;
     }
 
