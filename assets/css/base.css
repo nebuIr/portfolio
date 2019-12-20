@@ -524,6 +524,10 @@ a:visited {
         margin: 0 !important;
     }
 
+    .main-text-small {
+        margin: auto 5%;
+    }
+
     .grid {
         width: 100%;
     }
