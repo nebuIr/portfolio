@@ -10,7 +10,7 @@
 <body>
 
 <div class="main-text-small">
-    <p align='center' class='title color-white weight-bold'>Privacy Policy</p>
+    <p class='title color-white weight-bold'>Privacy Policy</p>
     <div class="text-light">
         <p>Effective date: November 22, 2019</p>
 

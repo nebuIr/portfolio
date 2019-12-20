@@ -1,11 +1,12 @@
 <?php
 
 
-class components
+class Components
 {
-    function renderProjects($filter) {
+    public function renderProjects($filter) {
         $projects_file = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/assets/projects.json');
         $projects = json_decode($projects_file, true);
+        $badge = '';
 
         foreach ($projects as $project) {
             if ($filter === $project['status_code'] || $filter === 'all') {

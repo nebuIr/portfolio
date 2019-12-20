@@ -397,7 +397,6 @@ a:visited {
     margin: 0 auto;
     width: 95%;
     justify-content: center;
-    display: flex inline-block;
     text-align: center;
 }
 
