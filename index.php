@@ -15,9 +15,7 @@
     <p class='title color-white weight-bold no-highlight'><img class='title-icon center-mobile' src='assets/img/logo/logo.svg' alt='logo'>nebulr</p>
 
     <div class='grid'>
-        <?php
-        $components->renderProjects('all');
-        ?>
+        <?php $components->renderProjects('all'); ?>
     </div>
 </div>
 

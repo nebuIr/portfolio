@@ -13,6 +13,6 @@
     </div></a><br>
     <p class='footer-title color-white weight-bold'>About</p>
     <a href='/privacypolicy' target='_blank'><div class='border-button'>
-            <i class='fas fa-user-shield'></i> Privacy Policy
-        </div></a>
+        <i class='fas fa-user-shield'></i> Privacy Policy
+    </div></a>
 </footer>
