@@ -16,7 +16,7 @@
 
     <div class='grid'>
         <?php
-        $components->renderProjects();
+        $components->renderProjects('all');
         ?>
     </div>
 </main>
