@@ -1,5 +1,8 @@
 <!DOCTYPE>
 
+<?php include($_SERVER['DOCUMENT_ROOT'] . '/assets/locale/locale.php'); ?>
+<html lang='<?php echo $locale['LOCALE_CODE'] ?>'>
+
 <head>
     <title>nebulr</title>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/assets/html/head.php'); ?>

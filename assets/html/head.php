@@ -5,8 +5,6 @@
 <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
 <link href='/assets/css/poppins.css' type='text/css' rel='stylesheet'/>
 <link href='/assets/css/base.css' type='text/css' rel='stylesheet'/>
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/assets/locale/locale.php'); ?>
-<html lang='<?php echo $locale['LOCALE_CODE'] ?>'>
 
 <!-- External -->
 <script async src='/assets/js/fontawesome.js' crossorigin='anonymous'></script>
