@@ -107,6 +107,10 @@ body {
     color: hsla(0, 0%, 100%, .6);
 }
 
+.justify {
+    text-align: justify;
+}
+
 .color-grey {
     color: #CCC;
 }

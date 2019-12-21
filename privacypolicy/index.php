@@ -11,7 +11,7 @@
 
 <div class="main-text-small">
     <p class='title color-white weight-bold'>Privacy Policy</p>
-    <div class="text-light">
+    <div class="text-light justify">
         <p>Effective date: November 22, 2019</p>
 
 
