@@ -551,7 +551,8 @@ a:visited {
     background: white;
     color: black;
     transition: .1s;
-    transform: translate(0px, -2px);
+    transform: translate(0px, -1px);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.26);
 }
 
 
