@@ -1,6 +1,6 @@
 <!DOCTYPE>
 
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/assets/locale/locale.php'); ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . '/assets/php/locale.php'); ?>
 <html lang='<?php echo $locale['LOCALE_CODE'] ?>'>
 
 <head>

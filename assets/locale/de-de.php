@@ -34,3 +34,5 @@ $locale['CONTACT_PREFIX'] = 'Kontaktiere mich per';
 $locale['CONTACT_SUFFIX'] = 'für Aufträge oder Fragen';
 $locale['CONTACT_EMAIL'] = 'contact@nebulr.me';
 $locale['EMAIL'] = 'E-Mail';
+
+$locale['LAST_UPDATED'] = 'Letzte Aktualisierung';
