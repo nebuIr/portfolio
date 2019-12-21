@@ -21,8 +21,9 @@ nav ul {
     margin: 0;
     padding: 5px 10px 0 10px;
     overflow: hidden;
-    background: #2a2c30;
+    background: #303744;
     border-radius: 8px;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.075);
 }
 
 nav li {
@@ -31,7 +32,7 @@ nav li {
 
 nav li a {
     display: block;
-    color: #aaa;
+    color: #aaa !important;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -39,12 +40,12 @@ nav li a {
 }
 
 nav li a:hover {
-    color: #fff;
+    color: #fff !important;
     transition: .1s;
 }
 
 nav li a:active {
-    color: #fff;
+    color: #fff !important;
 }
 
 .nav-logo {
@@ -66,6 +67,7 @@ footer {
     width: 75%;
     margin: 300px auto 30px;
     text-decoration: none;
+    overflow: hidden;
 }
 
 footer a {
@@ -132,6 +134,7 @@ body {
     font-size: 6em;
     margin-top: 100px;
     text-align: center;
+    hyphens: manual;
 }
 
 .sub-title {
@@ -140,6 +143,7 @@ body {
     margin-top: 40px;
     margin-bottom: 15px;
     text-align: center;
+    hyphens: manual;
 }
 
 .margin-medium {
@@ -211,6 +215,35 @@ a:visited {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.flag {
+    color: black !important;
+    margin: 0 auto;
+    position: relative;
+}
+
+.flag-de {
+    background: linear-gradient(rgb(13, 13, 13) 0px, rgb(13, 13, 13) 33%, rgb(242, 13, 13) 33%, rgb(242, 13, 13) 67%, rgb(242, 196, 13) 67%, rgb(242, 196, 13) 100%);
+}
+
+.flag-en {
+    background: url('/assets/img/locale/en.svg') no-repeat center;
+    background-size: cover;
+}
+
+.hide {
+    opacity: 0;
+    transition: .1s;
+}
+
+.border-button:hover .show-on-hover {
+    opacity: 1;
+    transition: .1s;
+}
+
+.align-right {
+    float: right;
 }
 
 
@@ -511,6 +544,7 @@ a:visited {
     margin-top: 25px;
     margin-right: 5px;
     transition: .1s;
+    hyphens: manual;
 }
 
 .border-button:hover {

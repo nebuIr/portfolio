@@ -1,6 +1,4 @@
-<!doctype>
-
-<html lang="en">
+<!DOCTYPE>
 
 <head>
     <title>Privacy Policy - nebulr</title>
@@ -10,10 +8,12 @@
 <body>
 
 <div class="main-text-small">
-    <p class='title color-white weight-bold'>Privacy Policy</p>
+    <a id="back-button" href="/"><div class='border-button no-highlight'>
+            <i class='fas fa-chevron-circle-left'></i> <?php echo $locale['GO_BACK'] ?>
+        </div></a>
+    <p class='title color-white weight-bold no-highlight'><?php echo $locale['PRIVACY_POLICY'] ?></p>
     <div class="text-light justify">
         <p>Effective date: November 22, 2019</p>
-
 
         <p>nebulr ("us", "we", or "our") operates the https://nebulr.me website (hereinafter referred to as the
             "Service").</p>
@@ -146,7 +146,6 @@
             effective and update the "effective date" at the top of this Privacy Policy.</p>
         <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy
             are effective when they are posted on this page.</p>
-
 
         <h2>Contact Us</h2>
         <p>If you have any questions about this Privacy Policy, please contact us:</p>
