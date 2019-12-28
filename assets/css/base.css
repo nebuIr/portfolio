@@ -146,12 +146,80 @@ body {
     hyphens: manual;
 }
 
+.margin-top-reset {
+    margin-top: 0;
+}
+
+.margin-bottom-reset {
+    margin-bottom: 0;
+}
+
+.margin-left-reset {
+    margin-left: 0;
+}
+
+.margin-right-reset {
+    margin-right: 0;
+}
+
+.margin-xl {
+    margin: 100px 100px;
+}
+
+.margin-xl-top-bottom {
+    margin: 100px 0 100px 0;
+}
+
+.margin-xl-top {
+    margin-top: 100px;
+}
+
+.margin-xl-bottom {
+    margin-bottom: 100px;
+}
+
+.margin-xl-bottom-mobile {
+    margin-bottom: 100px;
+}
+
+.margin-xl-sides {
+    margin: 0 100px 0 100px;
+}
+
+.margin-large {
+    margin: 50px 50px;
+}
+
+.margin-large-top {
+    margin-top: 50px;
+}
+
+.margin-large-bottom {
+    margin-bottom: 50px;
+}
+
+.margin-large-top-bottom {
+    margin: 50px 0 50px 0;
+}
+
+.margin-large-sides {
+    margin: 0 50px 0 50px;
+}
+
 .margin-medium {
     margin: 10px 10px;
 }
 
 .margin-medium-sides {
     margin: 0 10px 0 10px;
+}
+
+.margin-medium-top {
+    margin-top: 10px;
+}
+
+.margin-medium-bottom {
+    margin-bottom: 10px;
 }
 
 .margin-medium-top-bottom {
@@ -244,6 +312,10 @@ a:visited {
 
 .align-right {
     float: right;
+}
+
+.align-center {
+    text-align: center;
 }
 
 
@@ -592,6 +664,11 @@ a:visited {
         margin-top: 50px;
         margin-bottom: 15px;
         font-size: 4.5em;
+    }
+
+    .margin-xl-bottom-mobile {
+        margin-top: -30px;
+        margin-bottom: 30px;
     }
 
     .main-text-medium {
