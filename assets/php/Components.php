@@ -24,7 +24,8 @@ class Components
                 }
 
                 echo "
-                <div class='card radius-large' style='background-image: url({$project['cover']});'>
+                <div class='card radius-large'>
+                    <img class='card-img' src='{$project['cover']}' alt='cover'>
                     <div class='card-txt'>
                         <h1>{$project['title']}</h1>
                         <div class='badge-wrapper'><h2><span class='badge $badge'>{$project['status']}</span></h2></div>
