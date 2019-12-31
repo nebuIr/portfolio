@@ -4,9 +4,6 @@ use \Dotenv\Dotenv;
 
 class STAR
 {
-    /**
-     * @var mysqli
-     */
     private $conn;
 
     public function __construct()
@@ -27,7 +24,7 @@ class STAR
         }
     }
 
-    public function exists($code)
+    public function exists($code): bool
     {
         $stmt = $this->conn->prepare('SELECT * FROM codes WHERE code=?');
         $stmt->bind_param('s', $code);
@@ -36,7 +33,7 @@ class STAR
         return $result->num_rows > 0;
     }
 
-    public function isValid($code)
+    public function isValid($code): bool
     {
         if (preg_match('/STAR\-[A-Z0-9]{4}\-[A-Z0-9]{4}$/', $code)) {
             return true;
@@ -45,7 +42,7 @@ class STAR
         return false;
     }
 
-    public function addCode($code)
+    public function addCode($code): void
     {
         $timestamp = date('Y-m-d H:i:s');
 
@@ -54,11 +51,11 @@ class STAR
         $stmt->execute();
     }
 
-    public function updateCode($code)
+    public function updateCode($code): void
     {
         $timestamp = date('Y-m-d H:i:s');
 
-        $stmt = $this->conn->prepare('UPDATE codes SET last_update=? WHERE code=?');
+        $stmt = $this->conn->prepare('UPDATE codes SET active=1, last_update=? WHERE code=?');
         $stmt->bind_param('ss', $timestamp, $code);
         $stmt->execute();
     }

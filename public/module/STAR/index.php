@@ -50,7 +50,7 @@
     <p class='color-white align-center font-size-medium weight-black margin-semi-large-top'><?php echo $localeSCRR['RANDOMIZER_GET'] ?></p>
 
     <div class='align-center margin-xl-bottom'>
-        <a class='a-no-style' href='https://robertsspaceindustries.com/enlist?referral=<?php echo $randomCode ?>'>
+        <a class='a-no-style' href='https://robertsspaceindustries.com/enlist?referral=<?php echo $randomCode ?>' target='_blank'>
             <div class='title color-white weight-bold random-code margin-top-reset'>
                 <span><?php echo $randomCode ?></span>
                 <img class='random-code-background no-highlight' src='assets/img/<?php echo $referral->getRandomBackground() ?>' alt='background' draggable='false'>
