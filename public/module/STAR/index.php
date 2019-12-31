@@ -5,10 +5,10 @@
 <html lang='<?php echo $locale['LOCALE_CODE'] ?>'>
 
 <head>
-    <title><?php echo $localeSCRR['RANDOMIZER_TITLE'] ?> - nebulr</title>
-    <meta name='description' content='<?php echo $localeSCRR['RANDOMIZER_DESCRIPTION'] ?>'>
-    <meta name='og:title' property='og:title' content='<?php echo $localeSCRR['RANDOMIZER_TITLE'] ?> - nebulr'>
-    <meta name='og:description' property='og:description' content='<?php echo $localeSCRR['RANDOMIZER_DESCRIPTION'] ?>'>
+    <title><?php echo $localeSTAR['RANDOMIZER_TITLE'] ?> - nebulr</title>
+    <meta name='description' content='<?php echo $localeSTAR['RANDOMIZER_DESCRIPTION'] ?>'>
+    <meta name='og:title' property='og:title' content='<?php echo $localeSTAR['RANDOMIZER_TITLE'] ?> - nebulr'>
+    <meta name='og:description' property='og:description' content='<?php echo $localeSTAR['RANDOMIZER_DESCRIPTION'] ?>'>
 
     <link href='assets/css/base.css' type='text/css' rel='stylesheet'/>
     <script src='assets/js/base.js'></script>
@@ -24,20 +24,20 @@
         $referralExists = $referral->exists($code);
         $referralIsValid = $referral->isValid($code);
         if ($code === '') {
-            echo '<div class=\'color-white code-message\'>' . $localeSCRR['ENTER_REFERRAL_CODE'] . '</div>';
+            echo '<div class=\'color-white code-message\'>' . $localeSTAR['ENTER_REFERRAL_CODE'] . '</div>';
 
             return;
         }
         if ($referralIsValid) {
             if ($referralExists) {
                 $referral->updateCode($code);
-                echo '<div class=\'color-white code-message\'>' . $localeSCRR['THE_REFERRAL_CODE'] . ' "' . $code . '" ' . $localeSCRR['REFERRAL_CODE_UPDATED'] . '</div>';
+                echo '<div class=\'color-white code-message\'>' . $localeSTAR['THE_REFERRAL_CODE'] . ' "' . $code . '" ' . $localeSTAR['REFERRAL_CODE_UPDATED'] . '</div>';
             } else {
                 $referral->addCode($code);
-                echo '<div class=\'color-white code-message\'>' . $localeSCRR['THE_REFERRAL_CODE'] . ' "' . $code . '" ' . $localeSCRR['REFERRAL_CODE_ADDED'] . '</div>';
+                echo '<div class=\'color-white code-message\'>' . $localeSTAR['THE_REFERRAL_CODE'] . ' "' . $code . '" ' . $localeSTAR['REFERRAL_CODE_ADDED'] . '</div>';
             }
         } else {
-            echo '<div class=\'color-white code-message\'>' . $localeSCRR['THE_REFERRAL_CODE'] . ' "' . $code . '" ' . $localeSCRR['REFERRAL_CODE_INVALID'] . '</div>';
+            echo '<div class=\'color-white code-message\'>' . $localeSTAR['THE_REFERRAL_CODE'] . ' "' . $code . '" ' . $localeSTAR['REFERRAL_CODE_INVALID'] . '</div>';
         }
         return;
     }
@@ -51,7 +51,7 @@
             <i class='fas fa-chevron-circle-left'></i> <?php echo $locale['GO_BACK'] ?>
         </div></a>
 
-    <p class='color-white align-center font-size-medium weight-black margin-semi-large-top'><?php echo $localeSCRR['RANDOMIZER_GET'] ?></p>
+    <p class='color-white align-center font-size-medium weight-black margin-semi-large-top'><?php echo $localeSTAR['RANDOMIZER_GET'] ?></p>
 
     <div class='align-center margin-xl-bottom'>
         <a class='a-no-style' href='https://robertsspaceindustries.com/enlist?referral=<?php echo $randomCode ?>' target='_blank' rel='nofollow'>
@@ -63,19 +63,19 @@
 
         <br>
         <div id='copyToClipboard' onclick='copyToClipboard()' title='<?php echo $randomCode ?>' class='border-button-transparent no-highlight margin-medium-sides'>
-                <i class='far fa-clipboard'></i> <span id='copyToClipboard-txt'><?php echo $localeSCRR['CLIPBOARD'] ?></span>
+                <i class='far fa-clipboard'></i> <span id='copyToClipboard-txt'><?php echo $localeSTAR['CLIPBOARD'] ?></span>
             </div>
-        <p class='text-light margin-semi-medium-top'><?php echo $localeSCRR['REFERRAL_CODE_REWARD'] ?></p>
+        <p class='text-light margin-semi-medium-top'><?php echo $localeSTAR['REFERRAL_CODE_REWARD'] ?></p>
     </div>
 
     <div class='align-center-force code-form'>
-        <p class='color-white align-left'><?php echo $localeSCRR['RANDOMIZER_SET'] ?></p>
+        <p class='color-white align-left'><?php echo $localeSTAR['RANDOMIZER_SET'] ?></p>
 
         <form action='' method='post' target='result'>
             <label><input class='input-field align-center' type='text' name='code' spellcheck='false'></label>
             <button class='border-button-transparent margin-large-sides submit-button' type='submit'><?php echo $locale['SUBMIT'] ?></button>
         </form>
-        <p class='text-light align-left margin-bottom-reset'><?php echo $localeSCRR['REFERRAL_CODE_ACTIVE'] ?></p>
+        <p class='text-light align-left margin-bottom-reset'><?php echo $localeSTAR['REFERRAL_CODE_ACTIVE'] ?></p>
         <iframe name='result' class='code-iframe'></iframe>
     </div>
 </div>

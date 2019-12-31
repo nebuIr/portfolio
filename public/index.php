@@ -5,6 +5,10 @@
 
 <head>
     <title>nebulr</title>
+    <meta name='description' content='<?php echo $locale['DESCRIPTION'] ?>'>
+    <meta name='og:title' property='og:title' content='<?php echo $locale['TITLE'] ?>'>
+    <meta name='og:description' property='og:description' content='<?php echo $locale['DESCRIPTION'] ?>'>
+
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/assets/html/head.php'); ?>
     <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/../assets/php/Components.php'); ?>
     <?php $components = new Components(); ?>
