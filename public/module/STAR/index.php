@@ -6,6 +6,10 @@
 
 <head>
     <title><?php echo $localeSCRR['RANDOMIZER_TITLE'] ?> - nebulr</title>
+    <meta name='description' content='<?php echo $localeSCRR['RANDOMIZER_DESCRIPTION'] ?>'>
+    <meta name='og:title' property='og:title' content='<?php echo $localeSCRR['RANDOMIZER_TITLE'] ?> - nebulr'>
+    <meta name='og:description' property='og:description' content='<?php echo $localeSCRR['RANDOMIZER_DESCRIPTION'] ?>'>
+
     <link href='assets/css/base.css' type='text/css' rel='stylesheet'/>
     <script src='assets/js/base.js'></script>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/assets/html/head.php'); ?>
@@ -50,7 +54,7 @@
     <p class='color-white align-center font-size-medium weight-black margin-semi-large-top'><?php echo $localeSCRR['RANDOMIZER_GET'] ?></p>
 
     <div class='align-center margin-xl-bottom'>
-        <a class='a-no-style' href='https://robertsspaceindustries.com/enlist?referral=<?php echo $randomCode ?>' target='_blank'>
+        <a class='a-no-style' href='https://robertsspaceindustries.com/enlist?referral=<?php echo $randomCode ?>' target='_blank' rel='nofollow'>
             <div class='title color-white weight-bold random-code margin-top-reset'>
                 <span><?php echo $randomCode ?></span>
                 <img class='random-code-background no-highlight' src='assets/img/<?php echo $referral->getRandomBackground() ?>' alt='background' draggable='false'>
@@ -68,7 +72,7 @@
         <p class='color-white align-left'><?php echo $localeSCRR['RANDOMIZER_SET'] ?></p>
 
         <form action='' method='post' target='result'>
-            <label><input class='input-field align-center' type='text' name='code'></label>
+            <label><input class='input-field align-center' type='text' name='code' spellcheck='false'></label>
             <button class='border-button-transparent margin-large-sides submit-button' type='submit'><?php echo $locale['SUBMIT'] ?></button>
         </form>
         <p class='text-light align-left margin-bottom-reset'><?php echo $localeSCRR['REFERRAL_CODE_ACTIVE'] ?></p>

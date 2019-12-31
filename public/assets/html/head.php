@@ -5,6 +5,7 @@
 <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
 <link href='/../assets/css/poppins.css' type='text/css' rel='stylesheet'/>
 <link href='/../assets/css/base.css' type='text/css' rel='stylesheet'/>
+<link rel='canonical' href='<?php echo 'https://' . $_SERVER['SERVER_NAME']; ?>'>
 
 <!-- External -->
 <script async src='/../assets/js/fontawesome.js' crossorigin='anonymous'></script>
