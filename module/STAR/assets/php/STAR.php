@@ -29,8 +29,6 @@ class STAR
 
     public function exists($code)
     {
-        $code = strtoupper($code);
-
         $stmt = $this->conn->prepare('SELECT * FROM codes WHERE code=?');
         $stmt->bind_param('s', $code);
         $stmt->execute();
@@ -40,8 +38,6 @@ class STAR
 
     public function isValid($code)
     {
-        $code = strtoupper($code);
-
         if (preg_match('/STAR\-[A-Z0-9]{4}\-[A-Z0-9]{4}$/', $code)) {
             return true;
         }
@@ -51,11 +47,19 @@ class STAR
 
     public function addCode($code)
     {
-        $code = strtoupper($code);
         $timestamp = date('Y-m-d H:i:s');
 
         $stmt = $this->conn->prepare('INSERT INTO codes (code, last_update) VALUES (?, ?)');
         $stmt->bind_param('ss', $code, $timestamp);
+        $stmt->execute();
+    }
+
+    public function updateCode($code)
+    {
+        $timestamp = date('Y-m-d H:i:s');
+
+        $stmt = $this->conn->prepare('UPDATE codes SET last_update=? WHERE code=?');
+        $stmt->bind_param('ss', $timestamp, $code);
         $stmt->execute();
     }
 

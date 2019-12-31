@@ -16,22 +16,24 @@
     $randomCode = $referral->getRandomCode();
 
     if (isset($_POST['code'])) {
-        $referralExists = $referral->exists($_POST['code']);
-        $referralIsValid = $referral->isValid($_POST['code']);
-        if ($_POST['code'] === '') {
+        $code = strtoupper($_POST['code']);
+        $referralExists = $referral->exists($code);
+        $referralIsValid = $referral->isValid($code);
+        if ($code === '') {
             echo '<div class=\'color-white code-message\'>' . $localeSCRR['ENTER_REFERRAL_CODE'] . '</div>';
 
             return;
         }
         if ($referralIsValid) {
             if ($referralExists) {
-                echo '<div class=\'color-white code-message\'>' . $localeSCRR['THE_REFERRAL_CODE'] . ' "' . strtoupper($_POST['code']) . '" ' . $localeSCRR['REFERRAL_CODE_UPDATED'] . '</div>';
+                $referral->updateCode($code);
+                echo '<div class=\'color-white code-message\'>' . $localeSCRR['THE_REFERRAL_CODE'] . ' "' . $code . '" ' . $localeSCRR['REFERRAL_CODE_UPDATED'] . '</div>';
             } else {
-                $referral->addCode($_POST['code']);
-                echo '<div class=\'color-white code-message\'>' . $localeSCRR['THE_REFERRAL_CODE'] . ' "' . strtoupper($_POST['code']) . '" ' . $localeSCRR['REFERRAL_CODE_ADDED'] . '</div>';
+                $referral->addCode($code);
+                echo '<div class=\'color-white code-message\'>' . $localeSCRR['THE_REFERRAL_CODE'] . ' "' . $code . '" ' . $localeSCRR['REFERRAL_CODE_ADDED'] . '</div>';
             }
         } else {
-            echo '<div class=\'color-white code-message\'>' . $localeSCRR['THE_REFERRAL_CODE'] . ' "' . strtoupper($_POST['code']) . '" ' . $localeSCRR['REFERRAL_CODE_INVALID'] . '</div>';
+            echo '<div class=\'color-white code-message\'>' . $localeSCRR['THE_REFERRAL_CODE'] . ' "' . $code . '" ' . $localeSCRR['REFERRAL_CODE_INVALID'] . '</div>';
         }
         return;
     }
