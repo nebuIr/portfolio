@@ -1,6 +1,6 @@
 <!DOCTYPE>
 
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/assets/php/locale.php'); ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . '/../assets/php/locale.php'); ?>
 <html lang='<?php echo $locale['LOCALE_CODE'] ?>'>
 
 <head>
@@ -10,12 +10,12 @@
 
 <body>
 
-<div class="main-text-small">
-    <a id="back-button" href="/"><div class='border-button no-highlight'>
+<div class='main-text-small'>
+    <a id='back-button' href='/'><div class='border-button no-highlight'>
             <i class='fas fa-chevron-circle-left'></i> <?php echo $locale['GO_BACK'] ?>
         </div></a>
     <p class='title color-white weight-bold no-highlight'><?php echo $locale['PRIVACY_POLICY'] ?></p>
-    <div class="text-light justify">
+    <div class='text-light justify'>
         <p>Effective date: November 22, 2019</p>
 
         <p>nebulr ("us", "we", or "our") operates the https://nebulr.me website (hereinafter referred to as the
@@ -23,7 +23,7 @@
 
         <p>This page informs you of our policies regarding the collection, use, and disclosure of personal data when you
             use our Service and the choices you have associated with that data. Our Privacy Policy for nebulr is created
-            with the help of the <a href="https://www.privacypolicies.com/free-privacy-policy-generator/">PrivacyPolicies.com
+            with the help of the <a href='https://www.privacypolicies.com/free-privacy-policy-generator/'>PrivacyPolicies.com
                 Privacy Policy Generator</a>.</p>
 
         <p>We use your data to provide and improve the Service. By using the Service, you agree to the collection and
@@ -64,7 +64,7 @@
             tags, and scripts to collect and track information and to improve and analyze our Service.</p>
         <p>You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if
             you do not accept cookies, you may not be able to use some portions of our Service. You can learn more how
-            to manage cookies in the <a href="https://privacypolicies.com/blog/how-to-delete-cookies/">Browser Cookies
+            to manage cookies in the <a href='https://privacypolicies.com/blog/how-to-delete-cookies/'>Browser Cookies
                 Guide</a>.</p>
         <p>Examples of Cookies we use:</p>
         <ul>

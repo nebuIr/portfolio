@@ -1,12 +1,12 @@
 <!DOCTYPE>
 
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/assets/php/locale.php'); ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . '/../assets/php/locale.php'); ?>
 <html lang='<?php echo $locale['LOCALE_CODE'] ?>'>
 
 <head>
     <title>nebulr</title>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/assets/html/head.php'); ?>
-    <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/assets/php/Components.php'); ?>
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/../assets/php/Components.php'); ?>
     <?php $components = new Components(); ?>
 </head>
 

@@ -186,8 +186,28 @@ body {
     margin: 0 100px 0 100px;
 }
 
+.margin-semi-large {
+    margin: 75px 75px;
+}
+
+.margin-semi-large-top {
+    margin-top: 75px;
+}
+
+.margin-semi-large-bottom {
+    margin-bottom: 75px;
+}
+
+.margin-semi-large-top-bottom {
+    margin: 75px 0 75px 0;
+}
+
+.margin-semi-large-sides {
+    margin: 0 75px 0 75px;
+}
+
 .margin-large {
-    margin: 50px 50px;
+    margin: 75px 75px;
 }
 
 .margin-large-top {
@@ -204,6 +224,26 @@ body {
 
 .margin-large-sides {
     margin: 0 50px 0 50px;
+}
+
+.margin-semi-medium {
+    margin: 25px 25px;
+}
+
+.margin-semi-medium-sides {
+    margin: 0 25px 0 25px;
+}
+
+.margin-semi-medium-top {
+    margin-top: 25px;
+}
+
+.margin-semi-medium-bottom {
+    margin-bottom: 25px;
+}
+
+.margin-semi-medium-top-bottom {
+    margin: 25px 0 25px 0;
 }
 
 .margin-medium {
@@ -285,6 +325,14 @@ a:visited {
     user-select: none;
 }
 
+.no-display {
+    display: none;
+}
+
+.a-no-style {
+    text-decoration: none;
+}
+
 .flag {
     color: black !important;
     margin: 0 auto;
@@ -310,12 +358,29 @@ a:visited {
     transition: .1s;
 }
 
+.align-left {
+    text-align: left;
+}
+
 .align-right {
     float: right;
 }
 
 .align-center {
     text-align: center;
+}
+
+.align-center-force {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.font-size-medium {
+    font-size: 2em !important;
+}
+
+.font-size-large {
+    font-size: 4em !important;
 }
 
 
@@ -574,6 +639,32 @@ a:visited {
 }
 
 
+/* ===== INPUT ===== */
+
+.input-field {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #999;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+    font-family: 'Poppins Regular', sans-serif;
+    font-size: 2em;
+    outline: none;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    text-transform: uppercase;
+}
+
+.input-field:focus {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.26);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.submit-button {
+    font-weight: 700;
+    font-size: 2em;
+}
+
+
 /* ===== BUTTONS ===== */
 
 .button {
@@ -587,6 +678,7 @@ a:visited {
     width: 38%;
     text-align: center;
     display: inline-block;
+    outline: none;
 }
 
 .button:hover {
@@ -620,6 +712,7 @@ a:visited {
 }
 
 .border-button {
+    font-family: 'Poppins Regular', sans-serif;
     border: solid 2px white;
     display: inline-block;
     border-radius: 8px;
@@ -629,6 +722,8 @@ a:visited {
     margin-right: 5px;
     transition: .1s;
     hyphens: manual;
+    cursor: pointer;
+    outline: none;
 }
 
 .border-button:hover {
@@ -637,6 +732,27 @@ a:visited {
     transition: .1s;
     transform: translate(0, -1px);
     box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.26);
+}
+
+.border-button-transparent {
+    font-family: 'Poppins Regular', sans-serif;
+    border: solid 2px white;
+    display: inline-block;
+    border-radius: 8px;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    margin-top: 25px;
+    margin-right: 5px;
+    transition: .1s;
+    hyphens: manual;
+    cursor: pointer;
+    outline: none;
+}
+
+.border-button-transparent:hover {
+    background: rgba(255, 255, 255, 0.11);
+    transition: .1s;
+    transform: translate(0, -1px);
 }
 
 
@@ -672,7 +788,7 @@ a:visited {
     }
 
     .main-text-medium {
-        margin: 0 !important;
+        margin: auto 5%;
     }
 
     .main-text-small {
@@ -707,5 +823,13 @@ a:visited {
         margin-right: auto;
         margin-bottom: 0;
         width: 50%;
+    }
+
+    .input-field {
+        width: 95%;
+    }
+
+    .submit-button {
+        margin: 25px 0 auto;
     }
 }

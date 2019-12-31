@@ -36,3 +36,5 @@ $locale['CONTACT_EMAIL'] = 'contact@nebulr.me';
 $locale['EMAIL'] = 'E-Mail';
 
 $locale['LAST_UPDATED'] = 'Last updated';
+
+$locale['SUBMIT'] = 'Submit';

@@ -4,8 +4,8 @@
 class Components
 {
     public function renderProjects($filter) {
-        include $_SERVER['DOCUMENT_ROOT'] . '/assets/php/locale.php';
-        $projects_file = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/assets/projects.json');
+        include $_SERVER['DOCUMENT_ROOT'] . '/../assets/php/locale.php';
+        $projects_file = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/../assets/projects.json');
         $projects = json_decode($projects_file, true);
         $badge = '';
 
