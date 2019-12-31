@@ -68,7 +68,7 @@
         <p class='color-white align-left'><?php echo $localeSCRR['RANDOMIZER_SET'] ?></p>
 
         <form action='' method='post' target='result'>
-            <label><input class='input-field' type='text' name='code'></label>
+            <label><input class='input-field align-center' type='text' name='code'></label>
             <button class='border-button-transparent margin-large-sides submit-button' type='submit'><?php echo $locale['SUBMIT'] ?></button>
         </form>
         <p class='text-light align-left margin-bottom-reset'><?php echo $localeSCRR['REFERRAL_CODE_ACTIVE'] ?></p>

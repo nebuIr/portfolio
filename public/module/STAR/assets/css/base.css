@@ -14,7 +14,7 @@
 
 .random-code:hover {
     background: rgba(255, 255, 255, 0.11);
-    transform: translate(0, -5px);
+    transform: translate(0, -4px);
     box-shadow: 0 0 0 10px white, 0 15px 25px #00000042;
     transition: .2s;
 }
@@ -56,6 +56,13 @@
 
 .code-form {
     max-width: 604px;
+}
+
+.code-form-bg {
+    max-width: 604px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 15px 30px;
 }
 
 .border-button {
