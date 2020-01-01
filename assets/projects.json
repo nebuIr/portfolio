@@ -1,6 +1,24 @@
 [
   {
     "id": 0,
+    "name": "star",
+    "title": "Star Citizen Referral Code Randomizer",
+    "description": "Get a randomized referral code for Star Citizen and submit your own referral code.",
+    "cover": "/assets/img/projects/star-cover.webp",
+    "urls": {
+      "url_1": "https://nebulr.me/module/STAR",
+      "url_2": "https://github.com/xnebulr/nebulr.me/tree/master/public/module/STAR"
+    },
+    "btn_text": {
+      "btn_text_1": "Website",
+      "btn_text_2": "Github"
+    },
+    "status": "Under development",
+    "status_code": 0,
+    "last_updated": "01/01/2020"
+  },
+  {
+    "id": 1,
     "name": "atlas",
     "title": "Atlas - Guide for No Man's Sky",
     "description": "Atlas is a guide app about No Man's Sky for your Android Phone. Find everything about NMS.",
@@ -18,7 +36,7 @@
     "last_updated": "15/11/2019"
   },
   {
-    "id": 1,
+    "id": 2,
     "name": "scs",
     "title": "Star Citizen Skin for Steam",
     "description": "A Star Citizen themed skin for Steam.",
@@ -36,7 +54,7 @@
     "last_updated": "02/11/2016"
   },
   {
-    "id": 2,
+    "id": 3,
     "name": "st",
     "title": "SmoothTex Minecraft Texture Pack",
     "description": "A Texture Pack for Minecraft. Available in 16x and 32x textures.",
@@ -54,7 +72,7 @@
     "last_updated": "19/06/2014"
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "owva",
     "title": "Overwatch VoiceAttack Profile",
     "description": "A VoiceAttack profile for Overwatch, which allows you to control many actions using your voice.",
@@ -72,7 +90,7 @@
     "last_updated": "01/05/2018"
   },
   {
-    "id": 4,
+    "id": 5,
     "name": "imastarcitizen",
     "title": "I'm A Star Citizen Website",
     "description": "A website for the 'I'm A Star Citizen' trading cards.",
@@ -90,7 +108,7 @@
     "last_updated": "23/11/2016"
   },
   {
-    "id": 5,
+    "id": 6,
     "name": "plex",
     "title": "Better Plex - Stylish CSS Theme",
     "description": "The Better Plex experience. The 'Stylish' Browser addon is needed to use this theme.",
@@ -108,7 +126,7 @@
     "last_updated": "21/04/2019"
   },
   {
-    "id": 6,
+    "id": 7,
     "name": "mydealz",
     "title": "mydealz Dark Theme - Stylish CSS Theme",
     "description": "A Dark Theme for mydealz.de. The 'Stylish' Browser addon is needed to use this theme.",
