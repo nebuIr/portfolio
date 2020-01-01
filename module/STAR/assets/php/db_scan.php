@@ -47,7 +47,7 @@ class db_scan
         $stmt->bind_param('s', $code);
         $stmt->execute();
 
-        echo 'Code ' . $code . " set inactive\n";
+        echo 'Code ' . $code . " set to inactive\n";
     }
 }
 
