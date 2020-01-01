@@ -800,7 +800,7 @@ a:visited {
     }
 
     .main-text-medium {
-        margin: 0 !important;
+        margin: 0;
     }
 
     .main-text-small {

@@ -31,7 +31,7 @@
     <div class='align-center margin-xl-bottom'>
         <a class='a-no-style' href='https://robertsspaceindustries.com/enlist?referral=<?php echo $randomCode ?>' target='_blank' rel='nofollow'>
             <div class='title color-white weight-bold random-code margin-top-reset'>
-                <span><?php echo $randomCode ?></span>
+                <span><?php echo $randomCode ?></span>&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i>
                 <img class='random-code-background no-highlight' src='assets/img/<?php echo $referral->getRandomBackground() ?>' alt='background' draggable='false'>
             </div>
         </a>

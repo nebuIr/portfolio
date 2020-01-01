@@ -18,5 +18,5 @@ $localeSTAR['REFERRAL_CODE_ADDED'] = 'was added!';
 $localeSTAR['REFERRAL_CODE_INVALID'] = 'is not valid, please check your formatting.';
 $localeSTAR['ENTER_REFERRAL_CODE'] = 'Please enter a referral code.';
 $localeSTAR['REFERRAL_CODE_ACTIVE'] = 'Once submitted, the referral code will remain active for 6 months.<br>Resubmitting the referral code will reset it\'s timer.';
-$localeSTAR['REFERRAL_CODE_REWARD'] = 'By using a referral code you\'ll get 5,000UEC for free!<br>That\'s an equivalent of $5.';
+$localeSTAR['REFERRAL_CODE_REWARD'] = 'By using a referral code you\'ll get 5,000UEC in-game money for free!<br>That\'s an equivalent of 5USD.';
 $localeSTAR['CLIPBOARD'] = 'Copy to Clipboard';
