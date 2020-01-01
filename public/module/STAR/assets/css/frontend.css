@@ -8,36 +8,54 @@
     position: relative;
     overflow: hidden;
     letter-spacing: .125em;
+    -webkit-box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.30);
     box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.30);
+    -webkit-transition: .2s;
+    -o-transition: .2s;
     transition: .2s;
 }
 
 .random-code:hover {
     background: rgba(255, 255, 255, 0.11);
+    -webkit-transform: translate(0, -4px);
+    -ms-transform: translate(0, -4px);
     transform: translate(0, -4px);
+    -webkit-box-shadow: 0 0 0 10px white, 0 15px 25px #00000042;
     box-shadow: 0 0 0 10px white, 0 15px 25px #00000042;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
     transition: .2s;
 }
 
 .random-code-background {
     opacity: 0.5;
     position: absolute;
-    left:-10000%; right: -10000%;
-    top: -10000%; bottom: -10000%;
+    left: -10000%;
+    right: -10000%;
+    top: -10000%;
+    bottom: -10000%;
     margin: auto auto;
     min-width: 1000%;
     min-height: 1000%;
-    -webkit-transform:scale(0.105);
+    -webkit-transform: scale(0.105);
+    -ms-transform: scale(0.105);
     transform: scale(0.105);
+    -webkit-filter: blur(50px) saturate(50%);
     filter: blur(50px) saturate(50%);
     z-index: -1;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
     transition: .2s;
 }
 
 .random-code:hover .random-code-background {
+    -webkit-filter: blur(150px) saturate(120%);
     filter: blur(150px) saturate(120%);
-    -webkit-transform:scale(0.15);
+    -webkit-transform: scale(0.15);
+    -ms-transform: scale(0.15);
     transform: scale(0.15);
+    -webkit-transition: .4s;
+    -o-transition: .4s;
     transition: .4s;
 }
 
@@ -66,6 +84,7 @@
     background: #00000000;
 }
 
+
 /* ===== MOBILE ===== */
 
 @media (max-width: 480px) {
@@ -75,13 +94,21 @@
 
     .random-code:hover {
         background: rgba(255, 255, 255, 0.11);
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
         transform: translate(0, 0);
+        -webkit-box-shadow: 0 0 0 6px white;
         box-shadow: 0 0 0 6px white;
+        -webkit-transition: .2s;
+        -o-transition: .2s;
         transition: .2s;
     }
 
     .random-code:hover .random-code-background {
+        -webkit-filter: blur(50px) saturate(120%);
         filter: blur(50px) saturate(120%);
+        -webkit-transition: .4s;
+        -o-transition: .4s;
         transition: .4s;
     }
 

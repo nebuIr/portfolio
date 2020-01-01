@@ -3,10 +3,11 @@
 
 class Components
 {
-    public function renderProjects($filter) {
+    public function renderProjects($filter): void
+    {
         include $_SERVER['DOCUMENT_ROOT'] . '/../assets/php/locale.php';
         $projects_file = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/../assets/projects.json');
-        $projects = json_decode($projects_file, true);
+        $projects = json_decode($projects_file, true, 512, JSON_THROW_ON_ERROR);
         $badge = '';
 
         foreach ($projects as $project) {

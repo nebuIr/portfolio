@@ -9,12 +9,8 @@ if (isSet($_GET['hl'])) {
     $_SESSION['hl'] = $locale;
 
     setcookie('hl', $locale, time() + (3600 * 24 * 30));
-} else if (isSet($_SESSION['hl'])) {
-    $locale = $_SESSION['hl'];
-} else if (isSet($_COOKIE['hl'])) {
-    $locale = $_COOKIE['hl'];
 } else {
-    $locale = 'en';
+    $locale = $_SESSION['hl'] ?? $_COOKIE['hl'] ?? 'en';
 }
 
 switch ($locale) {
