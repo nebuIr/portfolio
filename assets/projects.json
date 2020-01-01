@@ -6,7 +6,7 @@
     "description": "Get a randomized referral code for Star Citizen and submit your own referral code.",
     "cover": "/assets/img/projects/star-cover.webp",
     "urls": {
-      "url_1": "https://nebulr.me/module/STAR",
+      "url_1": "/module/STAR",
       "url_2": "https://github.com/xnebulr/nebulr.me/tree/master/public/module/STAR"
     },
     "btn_text": {

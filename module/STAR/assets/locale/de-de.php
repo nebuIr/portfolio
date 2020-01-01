@@ -18,5 +18,6 @@ $localeSTAR['REFERRAL_CODE_ADDED'] = 'wurde hinzugefügt!';
 $localeSTAR['REFERRAL_CODE_INVALID'] = 'ist nicht gültig. Bitte überprüfe, ob die Formatierung korrekt ist.';
 $localeSTAR['ENTER_REFERRAL_CODE'] = 'Bitte gib einen Empfehlungscode ein.';
 $localeSTAR['REFERRAL_CODE_ACTIVE'] = 'Einmal eingegeben, bleibt der Code für 6 Monate aktiv.<br>Die erneute Eingabe des Codes setzt dessen Timer zurück.';
-$localeSTAR['REFERRAL_CODE_REWARD'] = 'Durch die Verwendung eines Empfehlungscodes erhältst du 5.000UEC In-Game-Währung gratis!<br>Das entspricht einem Wert von 5USD.';
+$localeSTAR['REFERRAL_CODE_REWARD'] = 'Durch die Verwendung eines Empfehlungscodes erhältst du 5.000UEC In-Game-Währung gratis!<br>Das entspricht einem Wert von 5USD.<br>Erfahre mehr über das Referral-Programm';
+$localeSTAR['HERE'] = 'hier';
 $localeSTAR['CLIPBOARD'] = 'In die Zwischenablage kopieren';

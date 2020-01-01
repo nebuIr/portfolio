@@ -40,7 +40,7 @@
         <div id='copyToClipboard' onclick='copyToClipboard()' title='<?php echo $randomCode ?>' class='border-button-transparent no-highlight margin-medium-sides'>
                 <i class='far fa-clipboard'></i> <span id='copyToClipboard-txt'><?php echo $localeSTAR['CLIPBOARD'] ?></span>
             </div>
-        <p class='text-light margin-semi-medium-top'><?php echo $localeSTAR['REFERRAL_CODE_REWARD'] ?></p>
+        <p class='text-light margin-semi-medium-top'><?php echo $localeSTAR['REFERRAL_CODE_REWARD'] ?> <a href="https://robertsspaceindustries.com/referral-program" target="_blank" rel="nofollow"><?php echo $localeSTAR['HERE'] ?> <i class="fas fa-external-link-alt"></i></a>.</p>
     </div>
 
     <div class='align-center-force code-form'>
@@ -53,7 +53,6 @@
 
         <p id='code-message' class='color-white align-center hide'></p>
         <p id='code-disclaimer' class='text-light align-left margin-bottom-reset'><?php echo $localeSTAR['REFERRAL_CODE_ACTIVE'] ?></p>
-        <iframe name='result' class='code-iframe'></iframe>
     </div>
 </div>
 
