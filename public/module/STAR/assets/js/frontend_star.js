@@ -27,7 +27,7 @@ function submit_code(check)
             if (this.readyState === 4 && this.status === 200) {
                 let response = parseInt(this.responseText);
 
-                let messageCodeTimeLeft = 'The referral code "' + code + '" is valid until ' + getDate(response * 1000) + ' ' + getTime(response * 1000) + '.';
+                let messageCodeTimeLeft = 'The referral code "' + code + '" is active until ' + getDate(response * 1000) + ' ' + getTime(response * 1000) + '.';
 
                 switch (response) {
                     case 0:
