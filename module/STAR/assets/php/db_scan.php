@@ -2,7 +2,7 @@
 
 use \Dotenv\Dotenv;
 
-class STARScan
+class db_scan
 {
     private $conn;
 
@@ -49,4 +49,9 @@ class STARScan
 
         echo 'Code ' . $code . " set inactive\n";
     }
+}
+
+if (PHP_SAPI === 'cli') {
+    $obj = new db_scan();
+    $obj->scanCodes();
 }

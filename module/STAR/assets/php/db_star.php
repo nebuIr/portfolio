@@ -2,7 +2,7 @@
 
 use \Dotenv\Dotenv;
 
-class STAR
+class db_star
 {
     private $conn;
 
@@ -35,7 +35,7 @@ class STAR
 
     public function isValid($code): bool
     {
-        if (preg_match('/STAR\-[A-Z0-9]{4}\-[A-Z0-9]{4}$/', $code)) {
+        if (preg_match('/^STAR\-[A-Z0-9]{4}\-[A-Z0-9]{4}$/', $code)) {
             return true;
         }
 

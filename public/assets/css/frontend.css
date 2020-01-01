@@ -117,6 +117,14 @@ body {
     color: #CCC;
 }
 
+.color-green {
+    color: #00ff00ba;
+}
+
+.color-red {
+    color: #ff3b00db;
+}
+
 .weight-light {
     font-weight: 300;
 }
@@ -351,6 +359,10 @@ a:visited {
 .hide {
     opacity: 0;
     transition: .1s;
+}
+
+.show {
+    opacity: 1 !important;
 }
 
 .border-button:hover .show-on-hover {
@@ -788,7 +800,7 @@ a:visited {
     }
 
     .main-text-medium {
-        margin: auto 5%;
+        margin: 0 !important;
     }
 
     .main-text-small {

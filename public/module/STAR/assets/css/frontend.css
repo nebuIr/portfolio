@@ -47,13 +47,6 @@
     border: none;
 }
 
-.code-message {
-    width: 100%;
-    height: 100%;
-    background: #2b323e;
-    text-align: center;
-}
-
 .code-form {
     max-width: 604px;
 }
@@ -90,6 +83,10 @@
     .random-code:hover .random-code-background {
         filter: blur(50px) saturate(120%);
         transition: .4s;
+    }
+
+    .main-text-medium {
+        margin: auto 5% !important;
     }
 
     .margin-xl-top {
