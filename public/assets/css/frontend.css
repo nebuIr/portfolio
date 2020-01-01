@@ -417,8 +417,11 @@ a:visited {
 }
 
 .align-center-force {
-    text-align: center;
     margin: 0 auto;
+}
+
+.font-size-small {
+    font-size: .8em !important;
 }
 
 .font-size-medium {
@@ -427,6 +430,21 @@ a:visited {
 
 .font-size-large {
     font-size: 4em !important;
+}
+
+.text-underline {
+    text-decoration: none;
+    box-shadow: inset 0 -1px 0 white;
+    transition: .1s;
+}
+
+.text-underline:hover {
+    box-shadow: inset 0 -2px 0 white;
+    transition: .1s;
+}
+
+.cursor-pointer {
+    cursor: pointer;
 }
 
 

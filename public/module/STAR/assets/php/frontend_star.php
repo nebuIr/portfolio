@@ -9,7 +9,25 @@ if (isset($_REQUEST['code'])) {
     if ($code !== '') {
         $referralExists = $referral->exists($code);
         $referralIsValid = $referral->isValid($code);
-        if ($referralIsValid) {
+        if (isset($_REQUEST['check'])) {
+            if ($referralIsValid) {
+                if ($referralExists) {
+                    $six_months = 15552000;
+                    $timestamp = $referral->getTimestamp($code);
+                    $validUntilTimestamp = $timestamp + $six_months;
+                    $active = $referral->isActive($code);
+                    if ($active) {
+                        $response = $validUntilTimestamp;
+                    } else {
+                        $response = 5;
+                    }
+                } else {
+                    $response = 4;
+                }
+            } else {
+                $response = 2;
+            }
+        } else if ($referralIsValid) {
             if ($referralExists) {
                 $referral->updateCode($code);
                 $response = 1;

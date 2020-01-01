@@ -30,6 +30,7 @@ class db_star
         $stmt->bind_param('s', $code);
         $stmt->execute();
         $result = $stmt->get_result();
+
         return $result->num_rows > 0;
     }
 
@@ -58,6 +59,28 @@ class db_star
         $stmt = $this->conn->prepare('UPDATE codes SET active=1, last_update=? WHERE code=?');
         $stmt->bind_param('ss', $timestamp, $code);
         $stmt->execute();
+    }
+
+    public function isActive($code): int
+    {
+        $stmt = $this->conn->prepare('SELECT * FROM codes WHERE code=?');
+        $stmt->bind_param('s', $code);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $row = $result->fetch_assoc();
+
+        return (int) $row['active'];
+    }
+
+    public function getTimestamp($code): int
+    {
+        $stmt = $this->conn->prepare('SELECT * FROM codes WHERE code=?');
+        $stmt->bind_param('s', $code);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $row = $result->fetch_assoc();
+
+        return (int) strtotime($row['last_update']);
     }
 
     public function getRandomCode()
