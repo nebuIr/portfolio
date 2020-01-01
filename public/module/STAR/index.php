@@ -46,7 +46,7 @@
     <div class='align-center-force code-form'>
         <p class='color-white align-left'><?php echo $localeSTAR['RANDOMIZER_SET'] ?></p>
 
-        <form>
+        <form class='align-center'>
             <label><input id='code-input' class='input-field align-center' type='text' name='code' spellcheck='false'></label>
             <div class='border-button-transparent margin-large-sides submit-button' onclick='submit_code(false)'><?php echo $locale['SUBMIT'] ?></div>
         </form>
