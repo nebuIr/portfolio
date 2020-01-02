@@ -9,6 +9,7 @@
     <meta name='description' content='<?php echo $localeSTAR['RANDOMIZER_DESCRIPTION'] ?>'>
     <meta name='og:title' property='og:title' content='<?php echo $localeSTAR['RANDOMIZER_TITLE'] ?> - nebulr'>
     <meta name='og:description' property='og:description' content='<?php echo $localeSTAR['RANDOMIZER_DESCRIPTION'] ?>'>
+    <link rel='canonical' href='<?php echo 'https://' . $_SERVER['SERVER_NAME'] . '/module/STAR/'; ?>'>
 
     <link href='assets/css/frontend.css' type='text/css' rel='stylesheet'/>
     <script src='assets/js/jquery-3.4.1.min.js'></script>

@@ -14,7 +14,7 @@
             <i class='fab fa-youtube'></i> YouTube
         </div></a><br>
     <p class='footer-title color-white weight-bold'><?php echo $locale['ABOUT'] ?></p>
-    <a href='<?php echo $locale['LOCALE_SWITCH'] ?>' rel='canonical'><div class='border-button no-highlight align-right flag <?php echo $locale['LOCALE_SWITCH_CLASS'] ?>'>
+    <a href='<?php echo $locale['LOCALE_SWITCH'] ?>'><div class='border-button no-highlight align-right flag <?php echo $locale['LOCALE_SWITCH_CLASS'] ?>'>
             <i class='fas fa-language fa-lg hide show-on-hover'></i>
         </div></a>
     <a href='/../privacypolicy'><div class='border-button no-highlight'>
