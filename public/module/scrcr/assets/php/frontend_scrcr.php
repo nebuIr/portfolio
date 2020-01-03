@@ -1,7 +1,7 @@
 <?php
 
-include_once($_SERVER['DOCUMENT_ROOT'] . '/../module/STAR/assets/php/db_star.php');
-$referral = new db_star();
+include_once($_SERVER['DOCUMENT_ROOT'] . '/../module/scrcr/assets/php/db_scrcr.php');
+$referral = new db_scrcr();
 
 if (isset($_REQUEST['code'])) {
     $code = $_REQUEST['code'];
@@ -44,7 +44,7 @@ if (isset($_REQUEST['code'])) {
 }
 
 function getCode() {
-    $referral = new db_star();
+    $referral = new db_scrcr();
 
     if (isset($_REQUEST['referral'])) {
         return checkCode(strtoupper($_REQUEST['referral']));
@@ -54,7 +54,7 @@ function getCode() {
 }
 
 function checkCode($code) {
-    $referral = new db_star();
+    $referral = new db_scrcr();
 
     $randomCode = $referral->getRandomCode();
 
@@ -78,7 +78,7 @@ function checkCode($code) {
 }
 
 function getRandomBackground() {
-    $referral = new db_star();
+    $referral = new db_scrcr();
 
     return $referral->getRandomBackground();
 }

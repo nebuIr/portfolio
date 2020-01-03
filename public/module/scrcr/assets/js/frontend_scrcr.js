@@ -8,7 +8,7 @@ function submit_code(check)
     let messageCodeInvalid = 'The referral code "' + code + '" is not valid, please check your formatting.';
     let messageCodeNotExist = 'The referral code "' + code + '" was not added to the database.';
     let messageCodeInactive = 'The referral code "' + code + '" is inactive.<br>Resubmit to activate the referral code again.';
-    let messageCodeShare = '<br>You can copy <a class=\'text-underline\' href=\'http://nebulr.localhost/module/STAR/?referral=' + code + '\' target=\'_blank\' rel=\'nofollow\'>this link</a> to share this referral code.';
+    let messageCodeShare = '<br>You can copy <a class=\'text-underline\' href=\'http://nebulr.localhost/module/scrcr/?referral=' + code + '\' target=\'_blank\' rel=\'nofollow\'>this link</a> to share this referral code.';
     let messageClassesGreen = 'badge badge-outline-green font-poppins-regular align-center';
     let messageClassesYellow = 'badge badge-outline-yellow font-poppins-regular align-center';
     let messageClassesRed = 'badge badge-outline-red font-poppins-regular align-center';
@@ -18,10 +18,10 @@ function submit_code(check)
 
         return;
     } else {
-        let url = 'assets/php/frontend_star.php?code=' + code;
+        let url = 'assets/php/frontend_scrcr.php?code=' + code;
 
         if (check) {
-            url = 'assets/php/frontend_star.php?code=' + code + '&check=true';
+            url = 'assets/php/frontend_scrcr.php?code=' + code + '&check=true';
         }
 
         let xmlhttp = new XMLHttpRequest();

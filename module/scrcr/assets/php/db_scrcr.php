@@ -2,7 +2,7 @@
 
 use \Dotenv\Dotenv;
 
-class db_star
+class db_scrcr
 {
     private $conn;
 
@@ -98,7 +98,7 @@ class db_star
     }
 
     public function getRandomBackground() {
-        $path    = $_SERVER['DOCUMENT_ROOT'] . '/module/STAR/assets/img';
+        $path    = $_SERVER['DOCUMENT_ROOT'] . '/module/scrcr/assets/img';
         $file_array = preg_grep('/^([^.])/', scandir($path));
         $random_file = array_rand($file_array);
 
