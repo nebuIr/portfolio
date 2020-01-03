@@ -12,6 +12,7 @@ $localeSTAR['RANDOMIZER_TITLE'] = 'Star Citizen Referral Code Randomizer';
 $localeSTAR['RANDOMIZER_DESCRIPTION'] = 'Get a randomized referral code for Star Citizen and submit your own referral code!';
 $localeSTAR['RANDOMIZER_GET'] = 'Your randomized referral code for Star Citizen is:';
 $localeSTAR['RANDOMIZER_SET'] = 'Once you have your own referral code, submit it here:';
+$localeSTAR['SHARED_REFERRAL'] = 'A referral code for Star Citizen was shared with you:';
 $localeSTAR['THE_REFERRAL_CODE'] = 'The referral code';
 $localeSTAR['REFERRAL_CODE_UPDATED'] = 'was updated!';
 $localeSTAR['REFERRAL_CODE_ADDED'] = 'was added!';

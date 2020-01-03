@@ -15,9 +15,8 @@
     <script src='assets/js/jquery-3.4.1.min.js'></script>
     <script src='assets/js/frontend_star.js'></script>
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/assets/html/head.php'); ?>
-    <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/../module/STAR/assets/php/db_star.php'); ?>
-    <?php $referral = new db_star(); ?>
-    <?php $randomCode = $referral->getRandomCode(); ?>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . '/module/STAR/assets/php/frontend_star.php'); ?>
+    <?php $code = getCode() ?>
 </head>
 
 <body>
@@ -27,18 +26,18 @@
             <i class='fas fa-chevron-circle-left'></i> <?php echo $locale['GO_BACK'] ?>
         </div></a>
 
-    <p class='color-white align-center font-size-medium weight-black margin-semi-large-top'><?php echo $localeSTAR['RANDOMIZER_GET'] ?></p>
+    <p class='color-white align-center font-size-medium weight-black margin-semi-large-top'><?php if ($code[1] === 0){echo $localeSTAR['SHARED_REFERRAL'];} else {echo $localeSTAR['RANDOMIZER_GET'];} ?></p>
 
     <div class='align-center margin-semi-large-bottom'>
-        <a class='a-no-style' href='https://robertsspaceindustries.com/enlist?referral=<?php echo $randomCode ?>' target='_blank' rel='nofollow'>
+        <a class='a-no-style' href='https://robertsspaceindustries.com/enlist?referral=<?php echo $code[0] ?>' target='_blank' rel='nofollow'>
             <div class='title color-white weight-bold random-code margin-top-reset'>
-                <span><?php echo $randomCode ?></span>&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i>
-                <img class='random-code-background no-highlight' src='assets/img/<?php echo $referral->getRandomBackground() ?>' alt='background' draggable='false'>
+                <span><?php echo $code[0] ?></span>&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i>
+                <img class='random-code-background no-highlight' src='assets/img/<?php echo getRandomBackground() ?>' alt='background' draggable='false'>
             </div>
         </a>
 
         <br>
-        <div id='copyToClipboard' onclick='copyToClipboard()' title='<?php echo $randomCode ?>' class='border-button-transparent no-highlight margin-medium-sides'>
+        <div id='copyToClipboard' onclick='copyToClipboard()' title='<?php echo $code[0] ?>' class='border-button-transparent no-highlight margin-medium-sides'>
                 <i class='far fa-clipboard'></i> <span id='copyToClipboard-txt'><?php echo $localeSTAR['CLIPBOARD'] ?></span>
             </div>
         <p class='text-light margin-semi-medium-top'><?php echo $localeSTAR['REFERRAL_CODE_REWARD'] ?> <a class='text-underline' href="https://robertsspaceindustries.com/referral-program" target="_blank" rel="nofollow"><?php echo $localeSTAR['HERE'] ?> <i class="fas fa-external-link-alt"></i></a>.</p>
@@ -49,7 +48,7 @@
 
         <form class='align-center'>
             <label><input id='code-input' class='input-field align-center' type='text' name='code' spellcheck='false'></label>
-            <div class='border-button-transparent margin-large-sides submit-button' onclick='submit_code(false)'><?php echo $locale['SUBMIT'] ?></div>
+            <div class='border-button-transparent margin-large-sides submit-button no-highlight' onclick='submit_code(false)'><?php echo $locale['SUBMIT'] ?></div>
         </form>
         <span id='code-check' class='align-left color-white font-size-small text-underline cursor-pointer' onclick='submit_code(true)'>Check for referral code in database</span>
 

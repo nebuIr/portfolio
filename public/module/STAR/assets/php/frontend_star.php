@@ -42,3 +42,43 @@ if (isset($_REQUEST['code'])) {
 
     echo $response;
 }
+
+function getCode() {
+    $referral = new db_star();
+
+    if (isset($_REQUEST['referral'])) {
+        return checkCode(strtoupper($_REQUEST['referral']));
+    }
+
+    return [$referral->getRandomCode(), 1];
+}
+
+function checkCode($code) {
+    $referral = new db_star();
+
+    $randomCode = $referral->getRandomCode();
+
+    $valid = $referral->isValid($code);
+    $exists = $referral->exists($code);
+    $active = $referral->isActive($code);
+
+    if ($valid) {
+        if ($exists) {
+            if ($active) {
+                return [$code, 0];
+            }
+
+            return [$randomCode, 2];
+        }
+
+        return [$randomCode, 3];
+    }
+
+    return [$randomCode, 1];
+}
+
+function getRandomBackground() {
+    $referral = new db_star();
+
+    return $referral->getRandomBackground();
+}

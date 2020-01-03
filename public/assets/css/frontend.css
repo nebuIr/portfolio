@@ -157,6 +157,11 @@ body {
     font-weight: 900;
 }
 
+.font-poppins-regular {
+    font-family: "Poppins Regular", sans-serif !important;
+    font-weight: normal !important;
+}
+
 .title {
     font-family: 'Poppins ExtraBold', sans-serif;
     font-size: 6em;
@@ -747,6 +752,33 @@ a:visited {
 .badge-white {
     background-color: #fff;
     color: black;
+}
+
+.badge-outline-green {
+    background-color: #28a74545;
+    box-shadow: 0 0 0 3px #28a745;
+    color: white;
+    font-size: .9em;
+    line-height: 1.5em;
+    padding: 10px;
+}
+
+.badge-outline-yellow {
+    background-color: #ffc10745;
+    box-shadow: 0 0 0 3px #ffc107;
+    color: white;
+    font-size: .9em;
+    line-height: 1.5em;
+    padding: 10px;
+}
+
+.badge-outline-red {
+    background-color: #dc354545;
+    box-shadow: 0 0 0 3px #dc3545;
+    color: white;
+    font-size: .9em;
+    line-height: 1.5em;
+    padding: 10px;
 }
 
 

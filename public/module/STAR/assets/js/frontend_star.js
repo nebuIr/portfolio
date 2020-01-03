@@ -8,11 +8,13 @@ function submit_code(check)
     let messageCodeInvalid = 'The referral code "' + code + '" is not valid, please check your formatting.';
     let messageCodeNotExist = 'The referral code "' + code + '" was not added to the database.';
     let messageCodeInactive = 'The referral code "' + code + '" is inactive.<br>Resubmit to activate the referral code again.';
-    let messageClassesGreen = 'color-green align-center';
-    let messageClassesRed = 'color-red align-center';
+    let messageCodeShare = '<br>You can copy <a class=\'text-underline\' href=\'http://nebulr.localhost/module/STAR/?referral=' + code + '\' target=\'_blank\' rel=\'nofollow\'>this link</a> to share this referral code.';
+    let messageClassesGreen = 'badge badge-outline-green font-poppins-regular align-center';
+    let messageClassesYellow = 'badge badge-outline-yellow font-poppins-regular align-center';
+    let messageClassesRed = 'badge badge-outline-red font-poppins-regular align-center';
 
     if (code.length === 0) {
-        renderMessage(messageCodeEnter, messageClassesRed);
+        renderMessage(messageCodeEnter, messageClassesYellow);
 
         return;
     } else {
@@ -31,16 +33,16 @@ function submit_code(check)
 
                 switch (response) {
                     case 0:
-                        renderMessage(messageCodeAdded, messageClassesGreen);
+                        renderMessage(messageCodeAdded + messageCodeShare, messageClassesGreen);
                         break;
                     case 1:
-                        renderMessage(messageCodeUpdated, messageClassesGreen);
+                        renderMessage(messageCodeUpdated + messageCodeShare, messageClassesGreen);
                         break;
                     case 2:
                         renderMessage(messageCodeInvalid, messageClassesRed);
                         break;
                     case 3:
-                        renderMessage(messageCodeEnter, messageClassesRed);
+                        renderMessage(messageCodeEnter, messageClassesYellow);
                         break;
                     case 4:
                         renderMessage(messageCodeNotExist, messageClassesRed);
@@ -49,7 +51,7 @@ function submit_code(check)
                         renderMessage(messageCodeInactive, messageClassesRed);
                         break;
                     default:
-                        renderMessage(messageCodeTimeLeft, messageClassesGreen);
+                        renderMessage(messageCodeTimeLeft + messageCodeShare, messageClassesGreen);
                         break;
                 }
             }
@@ -94,3 +96,13 @@ function copyToClipboard() {
         copyText.innerHTML = 'Copy to Clipboard';
     }, 3000);
 }
+
+$(document).ready(function() {
+    $(window).keydown(function(event){
+        if(event.keyCode === 13) {
+            event.preventDefault();
+            submit_code(false);
+            return false;
+        }
+    });
+});
