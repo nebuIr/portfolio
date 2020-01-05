@@ -47,7 +47,7 @@ class db_scan
         $stmt->bind_param('s', $code);
         $stmt->execute();
 
-        $qr_file_path = __DIR__ . '/../../../../public/module/scrcr/cache/';
+        $qr_file_path = __DIR__ . '/../../../../public/module/scrcr/cache/qr/';
         $qr_file_ext = '.jpg';
         $this->deleteFile($qr_file_path . $code . $qr_file_ext);
 
