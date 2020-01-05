@@ -115,7 +115,7 @@ class db_scrcr
     public function generateQRCode($code): void
     {
         $analytics = '&source=qr';
-        $data = 'http://nebulr.localhost/module/scrcr/?referral=' . $code . $analytics;
+        $data = 'https://nebulr.me/module/scrcr/?referral=' . $code . $analytics;
         $cache_path = $_SERVER['DOCUMENT_ROOT'] . '/module/scrcr/cache/qr/' . $code . '.svg';
         $options = new QROptions([
             'version'    => 5,
