@@ -35,9 +35,11 @@ function submit_code(check)
                 switch (response) {
                     case 0:
                         renderMessage(messageCodeAdded + messageCodeShare, messageClassesGreen);
+                        renderQR(messageQRCode);
                         break;
                     case 1:
                         renderMessage(messageCodeUpdated + messageCodeShare, messageClassesGreen);
+                        renderQR(messageQRCode);
                         break;
                     case 2:
                         renderMessage(messageCodeInvalid, messageClassesRed);
@@ -53,6 +55,7 @@ function submit_code(check)
                         break;
                     default:
                         renderMessage(messageCodeTimeLeft + messageCodeShare, messageClassesGreen);
+                        renderQR(messageQRCode);
                         break;
                 }
             }
@@ -65,10 +68,19 @@ function submit_code(check)
 }
 
 function renderMessage(message, classes) {
+    let messageElementContainer = document.getElementById('code-message-container');
+    let messageElementQR = document.getElementById('code-message-qr');
     let messageElement = document.getElementById('code-message');
 
     messageElement.innerHTML = message;
-    messageElement.className = classes;
+    messageElementQR.innerHTML = '';
+    messageElementContainer.className = classes;
+}
+
+function renderQR(message) {
+    let messageElement = document.getElementById('code-message-qr');
+
+    messageElement.innerHTML = message;
 }
 
 function getDate(timestamp) {
