@@ -116,10 +116,10 @@ class db_scrcr
     {
         $analytics = '&source=qr';
         $data = 'https://nebulr.me/module/scrcr/?referral=' . $code . $analytics;
-        $cache_path = $_SERVER['DOCUMENT_ROOT'] . '/module/scrcr/cache/qr/' . $code . '.svg';
+        $cache_path = $_SERVER['DOCUMENT_ROOT'] . '/module/scrcr/cache/qr/' . $code . '.jpg';
         $options = new QROptions([
             'version'    => 5,
-            'outputType' => QRCode::OUTPUT_MARKUP_SVG,
+            'outputType' => QRCode::OUTPUT_IMAGE_JPG,
             'eccLevel'   => QRCode::ECC_L,
         ]);
 

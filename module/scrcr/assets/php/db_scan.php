@@ -48,7 +48,7 @@ class db_scan
         $stmt->execute();
 
         $qr_file_path = __DIR__ . '/../../../../public/module/scrcr/cache/';
-        $qr_file_ext = '.svg';
+        $qr_file_ext = '.jpg';
         $this->deleteFile($qr_file_path . $code . $qr_file_ext);
 
         echo 'Code ' . $code . " set to inactive\n";

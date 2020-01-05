@@ -12,7 +12,7 @@ function submit_code(check)
     let messageClassesGreen = 'badge badge-outline-green font-poppins-regular align-center margin-medium-top overflow-hidden';
     let messageClassesYellow = 'badge badge-outline-yellow font-poppins-regular align-center margin-medium-top overflow-hidden';
     let messageClassesRed = 'badge badge-outline-red font-poppins-regular align-center margin-medium-top overflow-hidden';
-    let messageQRCode = '<img class=\'qr-code\' src=\'cache/qr/' + code + '.svg\' alt=\'qr-code\'>';
+    let messageQRCode = '<img class=\'qr-code\' src=\'cache/qr/' + code + '.jpg\' alt=\'qr-code\'>';
 
     if (code.length === 0) {
         renderMessage(messageCodeEnter, messageClassesYellow);
