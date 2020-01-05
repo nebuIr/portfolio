@@ -414,7 +414,7 @@ a:visited {
 }
 
 .align-right {
-    float: right;
+    text-align: right;
 }
 
 .align-center {
@@ -423,6 +423,14 @@ a:visited {
 
 .align-center-force {
     margin: 0 auto;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
 }
 
 .font-size-small {
@@ -450,6 +458,10 @@ a:visited {
 
 .cursor-pointer {
     cursor: pointer;
+}
+
+.overflow-hidden {
+    overflow: hidden;
 }
 
 

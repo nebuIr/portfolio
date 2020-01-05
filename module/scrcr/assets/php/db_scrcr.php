@@ -1,6 +1,8 @@
 <?php
 
 use \Dotenv\Dotenv;
+use \chillerlan\QRCode\QRCode;
+use \chillerlan\QRCode\QROptions;
 
 class db_scrcr
 {
@@ -50,6 +52,8 @@ class db_scrcr
         $stmt = $this->conn->prepare('INSERT INTO codes (code, last_update) VALUES (?, ?)');
         $stmt->bind_param('ss', $code, $timestamp);
         $stmt->execute();
+
+        $this->generateQRCode($code);
     }
 
     public function updateCode($code): void
@@ -59,6 +63,8 @@ class db_scrcr
         $stmt = $this->conn->prepare('UPDATE codes SET active=1, last_update=? WHERE code=?');
         $stmt->bind_param('ss', $timestamp, $code);
         $stmt->execute();
+
+        $this->generateQRCode($code);
     }
 
     public function isActive($code): int
@@ -83,7 +89,7 @@ class db_scrcr
         return (int) strtotime($row['last_update']);
     }
 
-    public function getRandomCode()
+    public function getRandomCode(): string
     {
         $stmt = $this->conn->prepare('SELECT * FROM codes WHERE active=1 ORDER BY RAND() LIMIT 1');
         $stmt->execute();
@@ -97,11 +103,28 @@ class db_scrcr
         return $row['code'];
     }
 
-    public function getRandomBackground() {
+    public function getRandomBackground(): string
+    {
         $path    = $_SERVER['DOCUMENT_ROOT'] . '/module/scrcr/assets/img';
         $file_array = preg_grep('/^([^.])/', scandir($path));
         $random_file = array_rand($file_array);
 
         return $file_array[$random_file];
+    }
+
+    public function generateQRCode($code): void
+    {
+        $analytics = '&source=qr';
+        $data = 'http://nebulr.localhost/module/scrcr/?referral=' . $code . $analytics;
+        $cache_path = $_SERVER['DOCUMENT_ROOT'] . '/module/scrcr/cache/qr/' . $code . '.svg';
+        $options = new QROptions([
+            'version'    => 5,
+            'outputType' => QRCode::OUTPUT_MARKUP_SVG,
+            'eccLevel'   => QRCode::ECC_L,
+        ]);
+
+        $qrcode = new QRCode($options);
+
+        $qrcode->render($data, $cache_path);
     }
 }

@@ -47,7 +47,16 @@ class db_scan
         $stmt->bind_param('s', $code);
         $stmt->execute();
 
+        $qr_file_path = __DIR__ . '/../../../../public/module/scrcr/cache/';
+        $qr_file_ext = '.svg';
+        $this->deleteFile($qr_file_path . $code . $qr_file_ext);
+
         echo 'Code ' . $code . " set to inactive\n";
+    }
+
+    public function deleteFile($path): void
+    {
+        unlink($path);
     }
 }
 

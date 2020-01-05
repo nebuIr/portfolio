@@ -3,7 +3,8 @@
         "vlucas/phpdotenv": "^4.1",
         "php-di/php-di": "^6.0",
         "ext-json": "*",
-        "ext-mysqli": "*"
+        "ext-mysqli": "*",
+        "chillerlan/php-qrcode": "^3.2"
     }
     ,
     "require-dev": {

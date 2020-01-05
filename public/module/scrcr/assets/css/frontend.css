@@ -84,6 +84,12 @@
     background: #00000000;
 }
 
+.qr-code {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
 
 /* ===== MOBILE ===== */
 

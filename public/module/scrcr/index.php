@@ -52,7 +52,10 @@
         </form>
         <span id='code-check' class='align-left color-white font-size-small text-underline cursor-pointer' onclick='submit_code(true)'>Check for referral code in database</span>
 
-        <p id='code-message' class='color-white align-center hide'></p>
+        <div id='code-message-container' class='hide'>
+            <div id='code-message'></div>
+            <div id='code-message-qr'></div>
+        </div>
         <p id='code-disclaimer' class='text-light align-left margin-semi-medium-bottom'><?php echo $locale_scrcr['REFERRAL_CODE_ACTIVE'] ?></p>
     </div>
 </div>
