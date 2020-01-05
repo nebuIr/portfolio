@@ -8,7 +8,7 @@ function submit_code(check)
     let messageCodeInvalid = 'The referral code "' + code + '" is not valid, please check your formatting.';
     let messageCodeNotExist = 'The referral code "' + code + '" was not added to the database.';
     let messageCodeInactive = 'The referral code "' + code + '" is inactive.<br>Resubmit to activate the referral code again.';
-    let messageCodeShare = '<br>You can copy <a class=\'text-underline\' href=\'http://nebulr.localhost/module/scrcr/?referral=' + code + '\' target=\'_blank\' rel=\'nofollow\'>this link</a> or the QR-Code below to share this referral code.';
+    let messageCodeShare = '<br>You can copy <a class=\'text-underline\' href=\'https://nebulr.me/module/scrcr/?referral=' + code + '\' target=\'_blank\' rel=\'nofollow\'>this link</a> or the QR-Code below to share this referral code.';
     let messageClassesGreen = 'badge badge-outline-green font-poppins-regular align-center margin-medium-top overflow-hidden';
     let messageClassesYellow = 'badge badge-outline-yellow font-poppins-regular align-center margin-medium-top overflow-hidden';
     let messageClassesRed = 'badge badge-outline-red font-poppins-regular align-center margin-medium-top overflow-hidden';
@@ -35,11 +35,9 @@ function submit_code(check)
                 switch (response) {
                     case 0:
                         renderMessage(messageCodeAdded + messageCodeShare, messageClassesGreen);
-                        renderQR(messageQRCode);
                         break;
                     case 1:
                         renderMessage(messageCodeUpdated + messageCodeShare, messageClassesGreen);
-                        renderQR(messageQRCode);
                         break;
                     case 2:
                         renderMessage(messageCodeInvalid, messageClassesRed);
@@ -55,7 +53,6 @@ function submit_code(check)
                         break;
                     default:
                         renderMessage(messageCodeTimeLeft + messageCodeShare, messageClassesGreen);
-                        renderQR(messageQRCode);
                         break;
                 }
             }
@@ -68,19 +65,10 @@ function submit_code(check)
 }
 
 function renderMessage(message, classes) {
-    let messageContainer = document.getElementById('code-message-container');
     let messageElement = document.getElementById('code-message');
-    let messageElementQR = document.getElementById('code-message-qr');
 
-    messageContainer.className = classes;
-    messageElementQR.innerHTML = '';
     messageElement.innerHTML = message;
-}
-
-function renderQR(message) {
-    let messageElementQR = document.getElementById('code-message-qr');
-
-    messageElementQR.innerHTML = message;
+    messageElement.className = classes;
 }
 
 function getDate(timestamp) {
