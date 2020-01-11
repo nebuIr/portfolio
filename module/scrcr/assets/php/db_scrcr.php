@@ -177,15 +177,15 @@ class db_scrcr
         switch ($type) {
             case 0:
                 $subject = 'Your Star Citizen referral code was successfully added | SCRCR';
-                $message = 'This mail was sent to confirm that your referral code "' . $code . '" was successfully added to the Star Citizen Referral Code Randomizer.';
+                $message = 'This email was sent to confirm that your referral code "' . $code . '" was successfully added to the Star Citizen Referral Code Randomizer.';
                 break;
             case 1:
                 $subject = 'Your Star Citizen referral code was successfully updated | SCRCR';
-                $message = 'This mail was sent to inform you that your referral code "' . $code . '" was successfully updated.';
+                $message = 'This email was sent to inform you that your referral code "' . $code . '" was successfully updated.';
                 break;
             case 2:
                 $subject = 'Notification about your Star Citizen referral code | SCRCR';
-                $message = 'This mail was sent to inform you that your referral code "' . $code . '" submitted to the Star Citizen Referral Code Randomizer will become inactive in 7 days.' . "\n\n" . 'If you want your referral code to remain active, you can resubmit it here: https://nebulr.me/module/scrcr/';
+                $message = 'This email was sent to inform you that your referral code "' . $code . '" submitted to the Star Citizen Referral Code Randomizer will become inactive in 7 days.' . "\n\n" . 'If you want your referral code to remain active, you can resubmit it here: https://nebulr.me/module/scrcr/';
                 break;
         }
         $headers = 'From: ' . $this->from_email;

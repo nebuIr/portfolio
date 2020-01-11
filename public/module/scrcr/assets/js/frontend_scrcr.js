@@ -94,19 +94,21 @@ function getTime(timestamp) {
 
 function emailCheckbox() {
     let checkbox = document.getElementById('email-checkbox');
-    let input = document.getElementById('email-label');
+    let emailLabel = document.getElementById('email-label');
+    let emailInput = document.getElementById('email-input');
     let submitButton = document.getElementById('code-submit');
     let container = document.getElementById('code-form-container');
 
     if (checkbox.checked === true){
-        input.className = '';
+        emailLabel.className = '';
         submitButton.className = 'border-button-transparent margin-large-sides submit-button no-highlight align-center-force margin-medium-bottom';
         container.className = 'align-center-force code-form-large';
         addElement('email-label', 'br', 'form-br', '');
     } else {
-        input.className = 'no-display';
+        emailLabel.className = 'no-display';
         submitButton.className = 'border-button-transparent margin-large-sides submit-button no-highlight align-center margin-medium-bottom';
         container.className = 'align-center-force code-form';
+        emailInput.value = '';
         removeElement('form-br');
     }
 }
