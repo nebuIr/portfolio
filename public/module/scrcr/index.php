@@ -25,6 +25,9 @@
     <a id='back-button' href='/'><div class='border-button no-highlight'>
             <i class='fas fa-chevron-circle-left'></i> <?php echo $locale['GO_BACK'] ?>
         </div></a>
+    <a href='privacypolicy'><div class='border-button no-highlight float-right'>
+            <i class='fas fa-user-shield'></i> <?php echo $locale['PRIVACY_POLICY'] ?>
+        </div></a>
 
     <p class='color-white align-center font-size-medium weight-black margin-semi-large-top'><?php if ($code[1] === 0){echo $locale_scrcr['SHARED_REFERRAL'];} else {echo $locale_scrcr['RANDOMIZER_GET'];} ?></p>
 
@@ -43,14 +46,16 @@
         <p class='text-light margin-semi-medium-top'><?php echo $locale_scrcr['REFERRAL_CODE_REWARD'] ?> <a class='text-underline' href="https://robertsspaceindustries.com/referral-program" target="_blank" rel="nofollow"><?php echo $locale_scrcr['HERE'] ?> <i class="fas fa-external-link-alt"></i></a>.</p>
     </div>
 
-    <div class='align-center-force code-form'>
+    <div id='code-form-container' class='align-center-force code-form'>
         <p class='color-white align-left'><?php echo $locale_scrcr['RANDOMIZER_SET'] ?></p>
 
         <form class='align-center'>
-            <label><input id='code-input' class='input-field align-center' type='text' name='code' placeholder='STAR-XXXX-XXXX' spellcheck='false'></label>
-            <div class='border-button-transparent margin-large-sides submit-button no-highlight' onclick='submit_code(false)'><?php echo $locale['SUBMIT'] ?></div>
+            <label><input id='code-input' class='input-field uppercase align-center margin-medium-bottom' type='text' name='code' placeholder='STAR-XXXX-XXXX' spellcheck='false'></label>
+            <label id='email-label' class='no-display'><input id='email-input' class='input-field uppercase align-center margin-semi-medium-top margin-medium-sides' type='email' name='email' placeholder='email' spellcheck='false'></label>
+            <div id='code-submit' class='border-button-transparent margin-large-sides submit-button no-highlight align-center margin-medium-bottom' onclick='submit_code(false)'><?php echo $locale['SUBMIT'] ?></div>
+            <br><label><input id='email-checkbox' type='checkbox' onclick='emailCheckbox()'><span class='color-grey'><?php echo $locale_scrcr['REFERRAL_EMAIL'] ?></span></label>
         </form>
-        <span id='code-check' class='align-left color-white font-size-small text-underline cursor-pointer' onclick='submit_code(true)'>Check for referral code in database</span>
+        <span id='code-check' class='color-white font-size-small text-underline cursor-pointer' onclick='submit_code(true)'><?php echo $locale_scrcr['REFERRAL_CHECK'] ?></span>
 
         <div id='code-message-container' class='hide'>
             <div id='code-message'></div>

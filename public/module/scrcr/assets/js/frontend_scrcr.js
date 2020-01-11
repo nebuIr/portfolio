@@ -1,6 +1,7 @@
 function submit_code(check)
 {
     let code = document.getElementById('code-input').value.toUpperCase();
+    let email = document.getElementById('email-input').value;
 
     let messageCodeEnter = 'Please enter a referral code.';
     let messageCodeUpdated = 'The referral code "' + code +'" was updated!';
@@ -9,9 +10,9 @@ function submit_code(check)
     let messageCodeNotExist = 'The referral code "' + code + '" was not added to the database.';
     let messageCodeInactive = 'The referral code "' + code + '" is inactive.<br>Resubmit to activate the referral code again.';
     let messageCodeShare = '<br>You can copy <a class=\'text-underline\' href=\'https://nebulr.me/module/scrcr/?referral=' + code + '\' target=\'_blank\' rel=\'nofollow\'>this link</a> or the QR-Code below to share this referral code.';
-    let messageClassesGreen = 'badge badge-outline-green font-poppins-regular align-center margin-medium-top overflow-hidden';
-    let messageClassesYellow = 'badge badge-outline-yellow font-poppins-regular align-center margin-medium-top overflow-hidden';
-    let messageClassesRed = 'badge badge-outline-red font-poppins-regular align-center margin-medium-top overflow-hidden';
+    let messageClassesGreen = 'code-message badge badge-outline-green font-poppins-regular align-center-force margin-semi-medium-top overflow-hidden';
+    let messageClassesYellow = 'code-message badge badge-outline-yellow font-poppins-regular align-center-force margin-semi-medium-top overflow-hidden';
+    let messageClassesRed = 'code-message badge badge-outline-red font-poppins-regular align-center-force margin-semi-medium-top overflow-hidden';
     let messageQRCode = '<img class=\'qr-code\' src=\'cache/qr/' + code + '.jpg\' alt=\'qr-code\'>';
 
     if (code.length === 0) {
@@ -19,10 +20,10 @@ function submit_code(check)
 
         return;
     } else {
-        let url = 'assets/php/frontend_scrcr.php?code=' + code;
+        let url = 'assets/php/frontend_scrcr.php?code=' + code + '&email=' + email;
 
         if (check) {
-            url = 'assets/php/frontend_scrcr.php?code=' + code + '&check=true';
+            url = 'assets/php/frontend_scrcr.php?code=' + code + '&email=' + email + '&check=true';
         }
 
         let xmlhttp = new XMLHttpRequest();
@@ -89,6 +90,39 @@ function getDate(timestamp) {
 
 function getTime(timestamp) {
     return new Date(timestamp).toLocaleTimeString('en-US');
+}
+
+function emailCheckbox() {
+    let checkbox = document.getElementById('email-checkbox');
+    let input = document.getElementById('email-label');
+    let submitButton = document.getElementById('code-submit');
+    let container = document.getElementById('code-form-container');
+
+    if (checkbox.checked === true){
+        input.className = '';
+        submitButton.className = 'border-button-transparent margin-large-sides submit-button no-highlight align-center-force margin-medium-bottom';
+        container.className = 'align-center-force code-form-large';
+        addElement('email-label', 'br', 'form-br', '');
+    } else {
+        input.className = 'no-display';
+        submitButton.className = 'border-button-transparent margin-large-sides submit-button no-highlight align-center margin-medium-bottom';
+        container.className = 'align-center-force code-form';
+        removeElement('form-br');
+    }
+}
+
+function addElement(parentId, elementTag, elementId, html) {
+    let parent = document.getElementById(parentId);
+    let newElement = document.createElement(elementTag);
+    newElement.setAttribute('id', elementId);
+    newElement.innerHTML = html;
+
+    parent.parentNode.insertBefore(newElement, parent.nextSibling);
+}
+
+function removeElement(elementId) {
+    let element = document.getElementById(elementId);
+    element.parentNode.removeChild(element);
 }
 
 function copyToClipboard() {

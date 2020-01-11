@@ -38,4 +38,4 @@ $locale['EMAIL'] = 'E-Mail';
 
 $locale['LAST_UPDATED'] = 'Letzte Aktualisierung';
 
-$locale['SUBMIT'] = 'Submit';
+$locale['SUBMIT'] = 'Senden';

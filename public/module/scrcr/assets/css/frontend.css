@@ -69,6 +69,14 @@
     max-width: 604px;
 }
 
+.code-form-large {
+    max-width: 837px;
+}
+
+.code-message {
+    max-width: 604px !important;
+}
+
 .code-form-bg {
     max-width: 604px;
     background: rgba(255, 255, 255, 0.05);

@@ -1,5 +1,6 @@
 <?php
 
+include_once('./db_scrcr.php');
 use \Dotenv\Dotenv;
 
 class db_scan
@@ -27,6 +28,7 @@ class db_scan
     public function scanCodes(): void
     {
         $six_months = 15552000;
+        $seven_days = 604800;
         $current_timestamp = time();
 
         $stmt = $this->conn->prepare('SELECT * FROM codes');
@@ -36,6 +38,16 @@ class db_scan
             while ($row = $result->fetch_assoc()) {
                 if ($row['active'] && (strtotime($row['last_update']) + $six_months <= $current_timestamp)) {
                     $this->setInactive($row['code']);
+                }
+                if ($row['active'] && (strtotime($row['last_update']) + $six_months - $seven_days <= $current_timestamp)) {
+                    $referral = new db_scrcr();
+
+                    if (!$referral->getMail($row['code']) || $referral->mailSent($row['code'])){
+                        return;
+                    }
+
+                    $referral->sendMail($row['code'], 2);
+                    $this->setMailSent($row['code'], $row['email']);
                 }
             }
         }
@@ -52,6 +64,15 @@ class db_scan
         $this->deleteFile($qr_file_path . $code . $qr_file_ext);
 
         echo 'Code ' . $code . " set to inactive\n";
+    }
+
+    public function setMailSent($code, $email): void
+    {
+        $stmt = $this->conn->prepare('UPDATE codes SET email_sent=1 WHERE code=?');
+        $stmt->bind_param('s', $code);
+        $stmt->execute();
+
+        echo 'E-Mail notification for ' . $code . ' sent to ' . $email . "\n";
     }
 
     public function deleteFile($path): void

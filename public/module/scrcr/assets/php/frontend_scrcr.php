@@ -6,6 +6,8 @@ $referral = new db_scrcr();
 if (isset($_REQUEST['code'])) {
     $code = $_REQUEST['code'];
 
+    $email = $_REQUEST['email'] ?? null;
+
     if ($code !== '') {
         $referralExists = $referral->exists($code);
         $referralIsValid = $referral->isValid($code);
@@ -30,9 +32,11 @@ if (isset($_REQUEST['code'])) {
         } else if ($referralIsValid) {
             if ($referralExists) {
                 $referral->updateCode($code);
+                $referral->sendMail($code, 1);
                 $response = 1;
             } else {
-                $referral->addCode($code);
+                $referral->addCode($code, $email);
+                $referral->sendMail($code, 0);
                 $response = 0;
             }
         } else {
