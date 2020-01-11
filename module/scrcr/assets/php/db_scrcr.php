@@ -190,7 +190,7 @@ class db_scrcr
         }
         $headers = 'From: ' . $this->from_email;
         $opt_out_url = 'https://nebulr.me/module/scrcr/opt-out/?code=' . $code . '&token=' . $token;
-        $opt_out_message = "\n\n\n" . 'To unsubscribe and delete your email address, please visit this link: ' . $opt_out_url . "\n" . 'IMPORTANT: Once you click on the link, your email address will be removed. This cannot be undone!';
+        $opt_out_message = "\n\n\n" . 'To unsubscribe and delete your email address, please visit this link: ' . $opt_out_url . "\n" . 'IMPORTANT: Once you click on the link, your email address will be removed. This cannot be undone! Your referral code will remain active.';
 
         mail($to_email, $subject, $message . $opt_out_message, $headers);
     }
