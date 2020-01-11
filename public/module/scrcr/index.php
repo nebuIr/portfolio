@@ -47,7 +47,7 @@
         <p class='color-white align-left'><?php echo $locale_scrcr['RANDOMIZER_SET'] ?></p>
 
         <form class='align-center'>
-            <label><input id='code-input' class='input-field align-center' type='text' name='code' spellcheck='false'></label>
+            <label><input id='code-input' class='input-field align-center' type='text' name='code' placeholder='STAR-XXXX-XXXX' spellcheck='false'></label>
             <div class='border-button-transparent margin-large-sides submit-button no-highlight' onclick='submit_code(false)'><?php echo $locale['SUBMIT'] ?></div>
         </form>
         <span id='code-check' class='align-left color-white font-size-small text-underline cursor-pointer' onclick='submit_code(true)'>Check for referral code in database</span>
