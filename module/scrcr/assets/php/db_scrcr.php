@@ -188,7 +188,7 @@ class db_scrcr
                 $message = 'This email was sent to inform you that your referral code "' . $code . '" submitted to the Star Citizen Referral Code Randomizer will become inactive in 7 days.' . "\n\n" . 'If you want your referral code to remain active, you can resubmit it here: https://nebulr.me/module/scrcr/';
                 break;
         }
-        $headers = 'From: ' . $this->from_email;
+        $headers = 'From: "SCRCR" <' . $this->from_email . '>';
         $opt_out_url = 'https://nebulr.me/module/scrcr/opt-out/?code=' . $code . '&token=' . $token;
         $opt_out_message = "\n\n\n" . 'To unsubscribe and delete your email address, please visit this link: ' . $opt_out_url . "\n" . 'IMPORTANT: Once you click on the link, your email address will be removed. This cannot be undone! Your referral code will remain active.';
 
