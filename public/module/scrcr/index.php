@@ -29,7 +29,7 @@
             <i class='fas fa-user-shield'></i> <?php echo $locale['PRIVACY_POLICY'] ?>
         </div></a>
 
-    <p class='color-white align-center font-size-medium weight-black margin-semi-large-top'><?php if ($code[1] === 0){echo $locale_scrcr['SHARED_REFERRAL'];} else {echo $locale_scrcr['RANDOMIZER_GET'];} ?></p>
+    <h1 class='color-white align-center font-size-medium weight-black margin-semi-large-top'><?php if ($code[1] === 0){echo $locale_scrcr['SHARED_REFERRAL'];} else {echo $locale_scrcr['RANDOMIZER_GET'];} ?></h1>
 
     <div class='align-center margin-semi-large-bottom'>
         <a class='a-no-style' href='https://robertsspaceindustries.com/enlist?referral=<?php echo $code[0] ?>' target='_blank' rel='nofollow'>
