@@ -5,7 +5,7 @@ class Components
 {
     public function renderProjects($filter): void
     {
-        include_once __DIR__ . '/locale.php';
+        include __DIR__ . '/locale.php';
         $projects_file = file_get_contents(__DIR__ . '/../projects.json');
         $projects = json_decode($projects_file, true, 512, JSON_THROW_ON_ERROR);
         $badge = '';
