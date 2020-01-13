@@ -101,12 +101,12 @@ function emailCheckbox() {
 
     if (checkbox.checked === true){
         emailLabel.className = '';
-        submitButton.className = 'border-button-transparent margin-large-sides submit-button no-highlight align-center-force margin-medium-bottom';
+        submitButton.className = 'border-button margin-large-sides submit-button no-highlight align-center-force margin-medium-bottom';
         container.className = 'align-center-force code-form-large';
         addElement('email-label', 'br', 'form-br', '');
     } else {
         emailLabel.className = 'no-display';
-        submitButton.className = 'border-button-transparent margin-large-sides submit-button no-highlight align-center margin-medium-bottom';
+        submitButton.className = 'border-button margin-large-sides submit-button no-highlight align-center margin-medium-bottom';
         container.className = 'align-center-force code-form';
         emailInput.value = '';
         removeElement('form-br');
