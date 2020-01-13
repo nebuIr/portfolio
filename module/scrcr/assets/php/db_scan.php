@@ -1,6 +1,6 @@
 <?php
 
-include_once('./db_scrcr.php');
+include_once './db_scrcr.php';
 use \Dotenv\Dotenv;
 
 class db_scan

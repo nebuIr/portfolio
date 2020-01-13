@@ -1,7 +1,7 @@
 <!DOCTYPE>
 
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/../assets/php/locale.php'); ?>
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/../module/scrcr/assets/php/locale.php'); ?>
+<?php include_once __DIR__ . '/../../../assets/php/locale.php'; ?>
+<?php include_once __DIR__ . '/../../../module/scrcr/assets/php/locale.php'; ?>
 <html lang='<?php echo $locale['LOCALE_CODE'] ?>'>
 
 <head>
@@ -14,8 +14,8 @@
     <link href='assets/css/frontend.css' type='text/css' rel='stylesheet'/>
     <script src='assets/js/jquery-3.4.1.min.js'></script>
     <script src='assets/js/frontend_scrcr.js'></script>
-    <?php include($_SERVER['DOCUMENT_ROOT'] . '/assets/html/head.php'); ?>
-    <?php include($_SERVER['DOCUMENT_ROOT'] . '/module/scrcr/assets/php/frontend_scrcr.php'); ?>
+    <?php include_once __DIR__ . '/../../assets/html/head.php'; ?>
+    <?php include_once __DIR__ . '/assets/php/frontend_scrcr.php'; ?>
     <?php $code = getCode() ?>
 </head>
 

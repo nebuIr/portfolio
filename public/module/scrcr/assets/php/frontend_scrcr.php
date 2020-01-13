@@ -1,6 +1,6 @@
 <?php
 
-include_once($_SERVER['DOCUMENT_ROOT'] . '/../module/scrcr/assets/php/db_scrcr.php');
+include_once __DIR__ . '/../../../../../module/scrcr/assets/php/db_scrcr.php';
 $referral = new db_scrcr();
 
 if (isset($_REQUEST['code'])) {

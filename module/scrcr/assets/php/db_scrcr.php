@@ -133,7 +133,7 @@ class db_scrcr
 
     public function getRandomBackground(): string
     {
-        $path    = $_SERVER['DOCUMENT_ROOT'] . '/module/scrcr/assets/img';
+        $path = __DIR__ . '/../../../../public/module/scrcr/assets/img';
         $file_array = preg_grep('/^([^.])/', scandir($path));
         $random_file = array_rand($file_array);
 
@@ -163,7 +163,7 @@ class db_scrcr
     {
         $analytics = '&source=qr';
         $data = 'https://nebulr.me/module/scrcr/?referral=' . $code . $analytics;
-        $cache_path = $_SERVER['DOCUMENT_ROOT'] . '/module/scrcr/cache/qr/' . $code . '.jpg';
+        $cache_path = __DIR__ . '/../../../../public/module/scrcr/cache/qr/' . $code . '.jpg';
         $options = new QROptions([
             'version'    => 5,
             'outputType' => QRCode::OUTPUT_IMAGE_JPG,

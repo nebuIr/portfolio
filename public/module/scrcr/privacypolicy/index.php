@@ -1,13 +1,13 @@
 <!DOCTYPE>
 
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/../assets/php/locale.php'); ?>
+<?php include_once __DIR__ . '/../../../../assets/php/locale.php'; ?>
 <html lang='<?php echo $locale['LOCALE_CODE'] ?>'>
 
 <head>
     <title>Privacy Policy - nebulr</title>
     <link rel='canonical' href='<?php echo 'https://' . $_SERVER['SERVER_NAME'] . '/module/scrcr/'; ?>'>
 
-    <?php include($_SERVER['DOCUMENT_ROOT'] . '/assets/html/head.php'); ?>
+    <?php include_once __DIR__ . '/../../../assets/html/head.php'; ?>
 </head>
 
 <body>

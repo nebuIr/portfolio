@@ -24,4 +24,4 @@ switch ($locale) {
         $locale_file = 'en-us.php';
 }
 
-include $_SERVER['DOCUMENT_ROOT'] . '/../assets/locale/' . $locale_file;
+include_once __DIR__ . '/../locale/' . $locale_file;

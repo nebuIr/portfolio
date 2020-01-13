@@ -1,3 +1,3 @@
 <?php
 
-include $_SERVER['DOCUMENT_ROOT'] . '/../module/scrcr/assets/locale/' . $locale_file;
+include_once __DIR__ . '/../locale/' . $locale_file;

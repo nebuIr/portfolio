@@ -1,6 +1,6 @@
 <!DOCTYPE>
 
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/../assets/php/locale.php'); ?>
+<?php include_once __DIR__ . '/../assets/php/locale.php'; ?>
 <html lang='<?php echo $locale['LOCALE_CODE'] ?>'>
 
 <head>
@@ -10,8 +10,8 @@
     <meta name='og:description' property='og:description' content='<?php echo $locale['DESCRIPTION'] ?>'>
     <link rel='canonical' href='<?php echo 'https://' . $_SERVER['SERVER_NAME']; ?>'>
 
-    <?php include($_SERVER['DOCUMENT_ROOT'] . '/assets/html/head.php'); ?>
-    <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/../assets/php/Components.php'); ?>
+    <?php include_once __DIR__ . '/assets/html/head.php'; ?>
+    <?php include_once __DIR__ . '/../assets/php/Components.php'; ?>
     <?php $components = new Components(); ?>
 </head>
 
@@ -37,7 +37,7 @@
     </div>
 </div>
 
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/assets/html/footer.php'); ?>
+<?php include_once __DIR__ . '/assets/html/footer.php'; ?>
 
 </body>
 
