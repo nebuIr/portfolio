@@ -10,7 +10,8 @@ $locale_scrcr = [];
 
 $locale_scrcr['RANDOMIZER_TITLE'] = 'Star Citizen Referral Code Randomizer';
 $locale_scrcr['RANDOMIZER_DESCRIPTION'] = 'Get a randomized referral code for Star Citizen and submit your own referral code!';
-$locale_scrcr['RANDOMIZER_GET'] = 'Your randomized referral code for Star Citizen is:';
+$locale_scrcr['RANDOMIZER_GET_1'] = 'Out of ';
+$locale_scrcr['RANDOMIZER_GET_2'] = ' codes, your randomized referral code for Star Citizen is:';
 $locale_scrcr['RANDOMIZER_SET'] = 'Once you have your own referral code, submit it here:';
 $locale_scrcr['SHARED_REFERRAL'] = 'A referral code for Star Citizen was shared with you:';
 $locale_scrcr['THE_REFERRAL_CODE'] = 'The referral code';

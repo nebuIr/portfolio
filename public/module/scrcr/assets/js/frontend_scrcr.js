@@ -154,4 +154,20 @@ $(document).ready(function() {
             return false;
         }
     });
+
+    if($('#code-count').length !== 0) {
+        let url = 'assets/php/frontend_scrcr.php?getcodecount=true';
+        let xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState === 4 && this.status === 200) {
+                let response = this.responseText;
+                $('#code-count').html(response);
+            }
+        };
+
+        let interval = setInterval(function() {
+            xmlhttp.open('GET', url, true);
+            xmlhttp.send();
+        }, 20000);
+    }
 });

@@ -6,6 +6,7 @@ use \Dotenv\Dotenv;
 class db_scan
 {
     private $conn;
+    private $db_table;
 
     public function __construct()
     {
@@ -18,6 +19,7 @@ class db_scan
         $db_name = getenv('DB_NAME');
         $db_user = getenv('DB_USER');
         $db_pass = getenv('DB_PASS');
+        $this->db_table = getenv('DB_TABLE');
 
         $this->conn = new mysqli($db_host, $db_user, $db_pass, $db_name);
         if (!$this->conn) {
@@ -31,7 +33,7 @@ class db_scan
         $seven_days = 604800;
         $current_timestamp = time();
 
-        $stmt = $this->conn->prepare('SELECT * FROM codes');
+        $stmt = $this->conn->prepare("SELECT * FROM $this->db_table");
         $stmt->execute();
         $result = $stmt->get_result();
         if ($result->num_rows > 0) {
@@ -55,7 +57,7 @@ class db_scan
 
     public function setInactive($code): void
     {
-        $stmt = $this->conn->prepare('UPDATE codes SET active=0 WHERE code=?');
+        $stmt = $this->conn->prepare("UPDATE $this->db_table SET active=0 WHERE code=?");
         $stmt->bind_param('s', $code);
         $stmt->execute();
 
@@ -68,7 +70,7 @@ class db_scan
 
     public function setMailSent($code, $email): void
     {
-        $stmt = $this->conn->prepare('UPDATE codes SET email_sent=1 WHERE code=?');
+        $stmt = $this->conn->prepare("UPDATE $this->db_table SET email_sent=1 WHERE code=?");
         $stmt->bind_param('s', $code);
         $stmt->execute();
 

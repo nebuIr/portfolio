@@ -47,6 +47,16 @@ if (isset($_REQUEST['code'])) {
     echo $response;
 }
 
+if (isset($_REQUEST['getcodecount'])) {
+    echo getCodeCount();
+}
+
+function getCodeCount() {
+    $referral = new db_scrcr();
+
+    return $referral->getCodeCount();
+}
+
 function getCode() {
     $referral = new db_scrcr();
 

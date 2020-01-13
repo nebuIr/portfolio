@@ -8,6 +8,7 @@ class db_scrcr
 {
     private $conn;
     private $from_email;
+    private $db_table;
 
     public function __construct()
     {
@@ -20,6 +21,7 @@ class db_scrcr
         $db_name = getenv('DB_NAME');
         $db_user = getenv('DB_USER');
         $db_pass = getenv('DB_PASS');
+        $this->db_table = getenv('DB_TABLE');
 
         $this->from_email = getenv('FROM_EMAIL');
 
@@ -31,7 +33,7 @@ class db_scrcr
 
     public function exists($code): bool
     {
-        $stmt = $this->conn->prepare('SELECT * FROM codes WHERE code=?');
+        $stmt = $this->conn->prepare("SELECT * FROM $this->db_table WHERE code=?");
         $stmt->bind_param('s', $code);
         $stmt->execute();
         $result = $stmt->get_result();
@@ -53,7 +55,7 @@ class db_scrcr
         $timestamp = date('Y-m-d H:i:s');
         $token = md5(uniqid(mt_rand(), true));
 
-        $stmt = $this->conn->prepare('INSERT INTO codes (code, email, token, last_update) VALUES (?, ?, ?, ?)');
+        $stmt = $this->conn->prepare("INSERT INTO $this->db_table (code, email, token, last_update) VALUES (?, ?, ?, ?)");
         $stmt->bind_param('ssss', $code, $email, $token, $timestamp);
         $stmt->execute();
 
@@ -64,7 +66,7 @@ class db_scrcr
     {
         $timestamp = date('Y-m-d H:i:s');
 
-        $stmt = $this->conn->prepare('UPDATE codes SET active=1, email_sent=0, last_update=? WHERE code=?');
+        $stmt = $this->conn->prepare("UPDATE $this->db_table SET active=1, email_sent=0, last_update=? WHERE code=?");
         $stmt->bind_param('ss', $timestamp, $code);
         $stmt->execute();
 
@@ -73,7 +75,7 @@ class db_scrcr
 
     public function isActive($code): int
     {
-        $stmt = $this->conn->prepare('SELECT * FROM codes WHERE code=?');
+        $stmt = $this->conn->prepare("SELECT * FROM $this->db_table WHERE code=?");
         $stmt->bind_param('s', $code);
         $stmt->execute();
         $result = $stmt->get_result();
@@ -84,7 +86,7 @@ class db_scrcr
 
     public function getTimestamp($code): int
     {
-        $stmt = $this->conn->prepare('SELECT * FROM codes WHERE code=?');
+        $stmt = $this->conn->prepare("SELECT * FROM $this->db_table WHERE code=?");
         $stmt->bind_param('s', $code);
         $stmt->execute();
         $result = $stmt->get_result();
@@ -93,20 +95,9 @@ class db_scrcr
         return (int) strtotime($row['last_update']);
     }
 
-    public function mailSent($code): bool
-    {
-        $stmt = $this->conn->prepare('SELECT * FROM codes WHERE code=?');
-        $stmt->bind_param('s', $code);
-        $stmt->execute();
-        $result = $stmt->get_result();
-        $row = $result->fetch_assoc();
-
-        return (bool) $row['email_sent'];
-    }
-
     public function getMail($code)
     {
-        $stmt = $this->conn->prepare('SELECT * FROM codes WHERE code=?');
+        $stmt = $this->conn->prepare("SELECT * FROM $this->db_table WHERE code=?");
         $stmt->bind_param('s', $code);
         $stmt->execute();
         $result = $stmt->get_result();
@@ -117,7 +108,7 @@ class db_scrcr
 
     public function getToken($code)
     {
-        $stmt = $this->conn->prepare('SELECT * FROM codes WHERE code=?');
+        $stmt = $this->conn->prepare("SELECT * FROM $this->db_table WHERE code=?");
         $stmt->bind_param('s', $code);
         $stmt->execute();
         $result = $stmt->get_result();
@@ -128,7 +119,7 @@ class db_scrcr
 
     public function getRandomCode(): string
     {
-        $stmt = $this->conn->prepare('SELECT * FROM codes WHERE active=1 ORDER BY RAND() LIMIT 1');
+        $stmt = $this->conn->prepare("SELECT * FROM $this->db_table WHERE active=1 ORDER BY RAND() LIMIT 1");
         $stmt->execute();
         $result = $stmt->get_result();
         $row = $result->fetch_assoc();
@@ -147,6 +138,25 @@ class db_scrcr
         $random_file = array_rand($file_array);
 
         return $file_array[$random_file];
+    }
+
+    public function getCodeCount(): int
+    {
+        $stmt = $this->conn->prepare("SELECT * FROM $this->db_table WHERE active=1");
+        $stmt->execute();
+
+        return $stmt->get_result()->num_rows;
+    }
+
+    public function mailSent($code): bool
+    {
+        $stmt = $this->conn->prepare("SELECT * FROM $this->db_table WHERE code=?");
+        $stmt->bind_param('s', $code);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $row = $result->fetch_assoc();
+
+        return (bool) $row['email_sent'];
     }
 
     public function generateQRCode($code): void
@@ -208,7 +218,7 @@ class db_scrcr
             $code = $_REQUEST['code'];
             $token = $_REQUEST['token'];
 
-            $stmt = $this->conn->prepare('SELECT * FROM codes WHERE code=?');
+            $stmt = $this->conn->prepare("SELECT * FROM $this->db_table WHERE code=?");
             $stmt->bind_param('s', $code);
             $stmt->execute();
             $result = $stmt->get_result();
@@ -245,7 +255,7 @@ class db_scrcr
 
     public function removeMail($code): void
     {
-        $stmt = $this->conn->prepare('UPDATE codes SET email=null WHERE code=?');
+        $stmt = $this->conn->prepare("UPDATE $this->db_table SET email=null WHERE code=?");
         $stmt->bind_param('s', $code);
         $stmt->execute();
     }
