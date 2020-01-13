@@ -1,22 +1,22 @@
 <!DOCTYPE>
 
-<?php include_once __DIR__ . '/../../assets/php/locale.php'; ?>
-<html lang='<?php echo $locale['LOCALE_CODE'] ?>'>
+<?php include_once __DIR__ . '/../../assets/php/locale.php' ?>
+<html lang='<?= $locale['LOCALE_CODE'] ?>'>
 
 <head>
     <title>Privacy Policy - nebulr</title>
-    <link rel='canonical' href='<?php echo 'https://' . $_SERVER['SERVER_NAME'] . '/privacypolicy/'; ?>'>
+    <link rel='canonical' href='<?= 'https://' . $_SERVER['SERVER_NAME'] . '/privacypolicy/' ?>'>
 
-    <?php include_once __DIR__ . '/../assets/html/head.php'; ?>
+    <?php include_once __DIR__ . '/../assets/html/head.php' ?>
 </head>
 
 <body>
 
 <div class='main-text-small'>
     <a id='back-button' href='/'><div class='border-button no-highlight'>
-            <i class='fas fa-chevron-circle-left'></i> <?php echo $locale['GO_BACK'] ?>
+            <i class='fas fa-chevron-circle-left'></i> <?= $locale['GO_BACK'] ?>
         </div></a>
-    <p class='title color-white weight-bold no-highlight'><?php echo $locale['PRIVACY_POLICY'] ?></p>
+    <p class='title color-white weight-bold no-highlight'><?= $locale['PRIVACY_POLICY'] ?></p>
     <div class='text-light justify'>
         <p>Effective date: November 22, 2019</p>
 
@@ -160,7 +160,7 @@
         </ul>
     </div>
 </div>
-<?php include_once __DIR__ . '/../assets/html/footer.php'; ?>
+<?php include_once __DIR__ . '/../assets/html/footer.php' ?>
 </body>
 
 </html>

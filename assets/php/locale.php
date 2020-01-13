@@ -1,7 +1,7 @@
 <?php
 
 if(!isset($_SESSION)) { session_start(); }
-header('Cache-control: private'); // IE 6 FIX
+header('Cache-control: private');
 
 if (isSet($_GET['hl'])) {
     $locale = $_GET['hl'];
