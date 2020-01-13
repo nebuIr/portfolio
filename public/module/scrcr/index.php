@@ -59,7 +59,7 @@
         <form class='align-center'>
             <label><input id='code-input' class='input-field uppercase align-center margin-medium-bottom' type='text' name='code' placeholder='STAR-XXXX-XXXX' spellcheck='false'></label>
             <label id='email-label' class='no-display'><input id='email-input' class='input-field uppercase align-center margin-semi-medium-top margin-medium-sides' type='email' name='email' placeholder='email' spellcheck='false'></label>
-            <div id='code-submit' class='border-button-transparent margin-large-sides submit-button no-highlight align-center margin-medium-bottom' onclick='submit_code(false)'><?php echo $locale['SUBMIT'] ?></div>
+            <div id='code-submit' class='border-button margin-large-sides submit-button no-highlight align-center margin-medium-bottom' onclick='submit_code(false)'><?php echo $locale['SUBMIT'] ?></div>
             <br><label><input id='email-checkbox' type='checkbox' onclick='emailCheckbox()'><span class='color-grey'><?php echo $locale_scrcr['REFERRAL_EMAIL'] ?></span></label>
         </form>
         <span id='code-check' class='color-white font-size-small text-underline cursor-pointer' onclick='submit_code(true)'><?php echo $locale_scrcr['REFERRAL_CHECK'] ?></span>
