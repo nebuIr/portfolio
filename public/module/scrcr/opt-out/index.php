@@ -4,7 +4,7 @@
 <html lang='<?= $locale['LOCALE_CODE'] ?>'>
 
 <head>
-    <title>Privacy Policy - nebulr</title>
+    <title>Opt-out - nebulr</title>
     <link rel='canonical' href='<?= 'https://' . $_SERVER['SERVER_NAME'] . '/module/scrcr/' ?>'>
 
     <link href='../assets/css/frontend.css' type='text/css' rel='stylesheet'/>
