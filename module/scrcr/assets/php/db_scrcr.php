@@ -73,48 +73,15 @@ class db_scrcr
         $this->generateQRCode($code);
     }
 
-    public function isActive($code): int
+    public function getField($field, $for)
     {
         $stmt = $this->conn->prepare("SELECT * FROM $this->db_table WHERE code=?");
-        $stmt->bind_param('s', $code);
+        $stmt->bind_param('s', $for);
         $stmt->execute();
         $result = $stmt->get_result();
         $row = $result->fetch_assoc();
 
-        return (int) $row['active'];
-    }
-
-    public function getTimestamp($code): int
-    {
-        $stmt = $this->conn->prepare("SELECT * FROM $this->db_table WHERE code=?");
-        $stmt->bind_param('s', $code);
-        $stmt->execute();
-        $result = $stmt->get_result();
-        $row = $result->fetch_assoc();
-
-        return (int) strtotime($row['last_update']);
-    }
-
-    public function getMail($code)
-    {
-        $stmt = $this->conn->prepare("SELECT * FROM $this->db_table WHERE code=?");
-        $stmt->bind_param('s', $code);
-        $stmt->execute();
-        $result = $stmt->get_result();
-        $row = $result->fetch_assoc();
-
-        return $row['email'] ?? false;
-    }
-
-    public function getToken($code)
-    {
-        $stmt = $this->conn->prepare("SELECT * FROM $this->db_table WHERE code=?");
-        $stmt->bind_param('s', $code);
-        $stmt->execute();
-        $result = $stmt->get_result();
-        $row = $result->fetch_assoc();
-
-        return $row['token'];
+        return $row[$field];
     }
 
     public function getRandomCode(): string
@@ -127,6 +94,8 @@ class db_scrcr
         if ($result->num_rows === 0) {
             return 'STAR-XXXX-XXXX';
         }
+
+        $this->incrementField('shown', $row['code']);
 
         return $row['code'];
     }
@@ -148,15 +117,11 @@ class db_scrcr
         return $stmt->get_result()->num_rows;
     }
 
-    public function mailSent($code): bool
+    public function incrementField($field, $code): void
     {
-        $stmt = $this->conn->prepare("SELECT * FROM $this->db_table WHERE code=?");
+        $stmt = $this->conn->prepare("UPDATE $this->db_table SET $field = $field + 1 WHERE code = ?");
         $stmt->bind_param('s', $code);
         $stmt->execute();
-        $result = $stmt->get_result();
-        $row = $result->fetch_assoc();
-
-        return (bool) $row['email_sent'];
     }
 
     public function generateQRCode($code): void
@@ -177,10 +142,10 @@ class db_scrcr
 
     public function sendMail($code, $type): void
     {
-        $to_email = $this->getMail($code);
-        $token = $this->getToken($code);
+        $to_email = $this->getField('email', $code);
+        $token = $this->getField('token', $code);
 
-        if ($to_email === null) {
+        if (!$to_email) {
             return;
         }
 
@@ -212,7 +177,7 @@ class db_scrcr
         $badge_classes_red = '<div class=\'' . 'code-form code-message badge badge-outline-red font-poppins-regular align-center-force margin-semi-medium-top overflow-hidden' . '\'>';
         $error = $badge_classes_red . 'An error occurred!</div>';
         $invalidToken = $badge_classes_red . 'Provided token is invalid!</div>';
-        $alreadyOptOut = $badge_classes_yellow . 'Your email was already deleted!</div>';
+        $alreadyOptOut = $badge_classes_yellow . 'No email was linked or the corresponding email was already deleted!</div>';
 
         if (isset($_REQUEST['code'], $_REQUEST['token'])) {
             $code = $_REQUEST['code'];
@@ -233,14 +198,14 @@ class db_scrcr
             }
 
             if ($token === $row['token']) {
-                if ($email === null) {
+                if ($email === null || $email === '') {
                     echo $alreadyOptOut;
 
                     return;
                 }
 
                 $this->removeMail($code);
-                echo $badge_classes_green . 'Your email "' . $email . '" was successfully deleted!</div>';
+                echo $badge_classes_green . "Your email \"$email\" linked to the referral code \"$code\" has been successfully deleted!</div>";
 
                 return;
             }

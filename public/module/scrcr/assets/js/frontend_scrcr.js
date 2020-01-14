@@ -9,14 +9,16 @@ function submit_code(check)
     let messageCodeInvalid = 'The referral code "' + code + '" is not valid, please check your formatting.';
     let messageCodeNotExist = 'The referral code "' + code + '" was not added to the database.';
     let messageCodeInactive = 'The referral code "' + code + '" is inactive.<br>Resubmit to activate the referral code again.';
-    let messageCodeShare = '<br>You can copy <a class=\'text-underline\' href=\'https://nebulr.me/module/scrcr/?referral=' + code + '\' target=\'_blank\' rel=\'nofollow\'>this link</a> or the QR-Code below to share this referral code.';
-    let messageClassesGreen = 'code-message badge badge-outline-green font-poppins-regular align-center-force margin-semi-medium-top overflow-hidden';
-    let messageClassesYellow = 'code-message badge badge-outline-yellow font-poppins-regular align-center-force margin-semi-medium-top overflow-hidden';
-    let messageClassesRed = 'code-message badge badge-outline-red font-poppins-regular align-center-force margin-semi-medium-top overflow-hidden';
+    let messageCodeShare = '<br><br>You can copy <a class=\'text-underline\' href=\'https://nebulr.me/module/scrcr/?referral=' + code + '\' target=\'_blank\' rel=\'nofollow\'>this link</a> or the QR-Code below to share this referral code.';
     let messageQRCode = '<img class=\'qr-code\' src=\'cache/qr/' + code + '.jpg\' alt=\'qr-code\'>';
 
+    let messageClasses = 'code-message font-poppins-regular align-center-force margin-semi-medium-top overflow-hidden badge badge-outline-green';
+    let green = ' badge-outline-green';
+    let yellow = ' badge-outline-yellow';
+    let red = ' badge-outline-red';
+
     if (code.length === 0) {
-        renderMessage(messageCodeEnter, messageClassesYellow);
+        renderMessage(messageCodeEnter, messageClasses + yellow);
 
         return;
     } else {
@@ -29,33 +31,34 @@ function submit_code(check)
         let xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
             if (this.readyState === 4 && this.status === 200) {
-                let response = parseInt(this.responseText);
+                let response = JSON.parse(this.response);
 
-                let messageCodeTimeLeft = 'The referral code "' + code + '" is active until ' + getDate(response * 1000) + ' ' + getTime(response * 1000) + '.';
+                let messageCodeTimeLeft = 'The referral code "' + code + '" is active until ' + getDate(response.timestamp * 1000) + ' ' + getTime(response.timestamp * 1000) + '.';
+                let messageCodeInfo = '<br>It was shown <b>' + response.shown + '</b> times, from which it was clicked <b>' + response.clicked + '</b> times.';
 
-                switch (response) {
+                switch (parseInt(response.code)) {
                     case 0:
-                        renderMessage(messageCodeAdded + messageCodeShare, messageClassesGreen);
+                        renderMessage(messageCodeAdded + messageCodeShare, messageClasses + green);
                         renderQR(messageQRCode);
                         break;
                     case 1:
-                        renderMessage(messageCodeUpdated + messageCodeShare, messageClassesGreen);
+                        renderMessage(messageCodeUpdated + messageCodeShare, messageClasses + green);
                         renderQR(messageQRCode);
                         break;
                     case 2:
-                        renderMessage(messageCodeInvalid, messageClassesRed);
+                        renderMessage(messageCodeInvalid, messageClasses + red);
                         break;
                     case 3:
-                        renderMessage(messageCodeEnter, messageClassesYellow);
+                        renderMessage(messageCodeEnter, messageClasses + yellow);
                         break;
                     case 4:
-                        renderMessage(messageCodeNotExist, messageClassesRed);
+                        renderMessage(messageCodeNotExist, messageClasses + red);
                         break;
                     case 5:
-                        renderMessage(messageCodeInactive, messageClassesRed);
+                        renderMessage(messageCodeInactive, messageClasses + red);
                         break;
-                    default:
-                        renderMessage(messageCodeTimeLeft + messageCodeShare, messageClassesGreen);
+                    case 6:
+                        renderMessage(messageCodeTimeLeft + messageCodeInfo + messageCodeShare, messageClasses + green);
                         renderQR(messageQRCode);
                         break;
                 }
@@ -98,15 +101,16 @@ function emailCheckbox() {
     let emailInput = document.getElementById('email-input');
     let submitButton = document.getElementById('code-submit');
     let container = document.getElementById('code-form-container');
+    let submitButtonClasses = 'border-button margin-large-sides submit-button no-highlight margin-medium-bottom';
 
     if (checkbox.checked === true){
         emailLabel.className = '';
-        submitButton.className = 'border-button margin-large-sides submit-button no-highlight align-center-force margin-medium-bottom';
+        submitButton.className = submitButtonClasses + ' align-center-force';
         container.className = 'align-center-force code-form-large';
         addElement('email-label', 'br', 'form-br', '');
     } else {
         emailLabel.className = 'no-display';
-        submitButton.className = 'border-button margin-large-sides submit-button no-highlight align-center margin-medium-bottom';
+        submitButton.className = submitButtonClasses + ' align-center';
         container.className = 'align-center-force code-form';
         emailInput.value = '';
         removeElement('form-br');
@@ -125,6 +129,14 @@ function addElement(parentId, elementTag, elementId, html) {
 function removeElement(elementId) {
     let element = document.getElementById(elementId);
     element.parentNode.removeChild(element);
+}
+
+function trackCodeOnClick(code) {
+    let url = 'assets/php/frontend_scrcr.php?trackcode=' + code;
+    let xmlhttp = new XMLHttpRequest();
+
+    xmlhttp.open('GET', url, true);
+    xmlhttp.send();
 }
 
 function copyToClipboard() {
@@ -151,6 +163,7 @@ $(document).ready(function() {
         if(event.keyCode === 13) {
             event.preventDefault();
             submit_code(false);
+
             return false;
         }
     });
@@ -160,8 +173,9 @@ $(document).ready(function() {
         let xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
             if (this.readyState === 4 && this.status === 200) {
-                let response = this.responseText;
-                $('#code-count').html(response);
+                let response = JSON.parse(this.response);
+
+                $('#code-count').html(response.count);
             }
         };
 

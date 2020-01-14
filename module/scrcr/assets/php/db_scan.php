@@ -44,7 +44,7 @@ class db_scan
                 if ($row['active'] && (strtotime($row['last_update']) + $six_months - $seven_days <= $current_timestamp)) {
                     $referral = new db_scrcr();
 
-                    if (!$referral->getMail($row['code']) || $referral->mailSent($row['code'])){
+                    if (!$referral->getField('email', $row['code']) || (bool)$referral->getField('email_sent', $row['code'])){
                         return;
                     }
 

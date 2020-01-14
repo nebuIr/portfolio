@@ -39,7 +39,7 @@
     </h1>
 
     <div class='align-center margin-semi-large-bottom'>
-        <a class='a-no-style' href='https://robertsspaceindustries.com/enlist?referral=<?= $code[0] ?>' target='_blank' rel='nofollow'>
+        <a class='a-no-style' href='https://robertsspaceindustries.com/enlist?referral=<?= $code[0] ?>' target='_blank' rel='nofollow' onclick='trackCodeOnClick("<?= $code[0] ?>")'>
             <div class='title color-white weight-bold random-code margin-top-reset'>
                 <span><?= $code[0] ?></span>&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i>
                 <img class='random-code-background no-highlight' src='assets/img/<?= getRandomBackground() ?>' alt='background' draggable='false'>

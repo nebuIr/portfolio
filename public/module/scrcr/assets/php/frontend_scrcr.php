@@ -15,40 +15,47 @@ if (isset($_REQUEST['code'])) {
             if ($referralIsValid) {
                 if ($referralExists) {
                     $six_months = 15552000;
-                    $timestamp = $referral->getTimestamp($code);
+                    $timestamp = strtotime($referral->getField('last_update', $code));
                     $validUntilTimestamp = $timestamp + $six_months;
-                    $active = $referral->isActive($code);
+                    $active = $referral->getField('active', $code);
                     if ($active) {
-                        $response = $validUntilTimestamp;
+                        $response = ['code' => 6, 'timestamp' => $validUntilTimestamp, 'shown' => $referral->getField('shown', $code), 'clicked' => $referral->getField('clicked', $code)];
                     } else {
-                        $response = 5;
+                        $response = ['code' => 5];
                     }
                 } else {
-                    $response = 4;
+                    $response = ['code' => 4];
                 }
             } else {
-                $response = 2;
+                $response = ['code' => 2];
             }
         } else if ($referralIsValid) {
             if ($referralExists) {
                 $referral->updateCode($code);
                 $referral->sendMail($code, 1);
-                $response = 1;
+                $response = ['code' => 1];
             } else {
                 $referral->addCode($code, $email);
                 $referral->sendMail($code, 0);
-                $response = 0;
+                $response = ['code' => 0];
             }
         } else {
-            $response = 2;
+            $response = ['code' => 2];
         }
     }
 
-    echo $response;
+    echo json_encode($response);
 }
 
 if (isset($_REQUEST['getcodecount'])) {
-    echo getCodeCount();
+    echo json_encode(['count' => getCodeCount()]);
+}
+
+if (isset($_REQUEST['trackcode'])) {
+    $code = $_REQUEST['trackcode'];
+
+    $referral = new db_scrcr();
+    $referral->incrementField('clicked', $code);
 }
 
 function getCodeCount() {
@@ -74,7 +81,7 @@ function checkCode($code) {
 
     $valid = $referral->isValid($code);
     $exists = $referral->exists($code);
-    $active = $referral->isActive($code);
+    $active = $referral->getField('active', $code);
 
     if ($valid) {
         if ($exists) {
