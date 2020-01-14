@@ -151,12 +151,12 @@ class db_scrcr
 
         switch ($type) {
             case 0:
-                $subject = 'Your Star Citizen referral code was successfully added | SCRCR';
-                $message = 'This email was sent to confirm that your referral code "' . $code . '" was successfully added to the Star Citizen Referral Code Randomizer.';
+                $subject = 'Your Star Citizen referral code has been successfully added | SCRCR';
+                $message = 'This email was sent to confirm that your referral code "' . $code . '" has been successfully added to the Star Citizen Referral Code Randomizer.';
                 break;
             case 1:
-                $subject = 'Your Star Citizen referral code was successfully updated | SCRCR';
-                $message = 'This email was sent to inform you that your referral code "' . $code . '" was successfully updated.';
+                $subject = 'Your Star Citizen referral code has been successfully updated | SCRCR';
+                $message = 'This email was sent to inform you that your referral code "' . $code . '" has been successfully updated.';
                 break;
             case 2:
                 $subject = 'Notification about your Star Citizen referral code | SCRCR';
@@ -165,7 +165,7 @@ class db_scrcr
         }
         $headers = 'From: "SCRCR" <' . $this->from_email . '>';
         $opt_out_url = 'https://nebulr.me/module/scrcr/opt-out/?code=' . $code . '&token=' . $token;
-        $opt_out_message = "\n\n\n" . 'To unsubscribe and delete your email address, please visit this link: ' . $opt_out_url . "\n" . 'IMPORTANT: Once you click on the link, your email address will be removed. This cannot be undone! Your referral code will remain active.';
+        $opt_out_message = "\n\n\n" . 'To unsubscribe and delete your email address, please visit this link: ' . $opt_out_url . "\n" . 'IMPORTANT: Once you click the link, your email address will be removed. This cannot be undone! Your referral code will remain active.';
 
         mail($to_email, $subject, $message . $opt_out_message, $headers);
     }
