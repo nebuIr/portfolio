@@ -62,7 +62,7 @@
             <div id='code-submit' class='border-button margin-large-sides submit-button no-highlight align-center margin-medium-bottom' onclick='submit_code(false)'><?= $locale['SUBMIT'] ?></div>
             <br><label><input id='email-checkbox' type='checkbox' onclick='emailCheckbox()'><span class='color-grey'><?= $locale_scrcr['REFERRAL_EMAIL'] ?></span></label>
         </form>
-        <span id='code-check' class='color-white font-size-small text-underline cursor-pointer' onclick='submit_code(true)'><?= $locale_scrcr['REFERRAL_CHECK'] ?></span>
+        <span id='code-check' class='color-white font-size-small text-underline cursor-pointer no-highlight' onclick='submit_code(true)'><?= $locale_scrcr['REFERRAL_CHECK'] ?></span>
 
         <div id='code-message-container' class='hide'>
             <div id='code-message'></div>
