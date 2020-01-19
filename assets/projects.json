@@ -3,7 +3,7 @@
     "id": 0,
     "name": "scrcr",
     "title": "Star Citizen Referral Code Randomizer",
-    "description": "Get a randomized referral code for Star Citizen and submit your own referral code.",
+    "description": "Get a randomized referral code for Star Citizen, submit your own referral code and share it.",
     "cover": "/assets/img/projects/scrcr-cover.webp",
     "urls": {
       "url_1": "/module/scrcr",
@@ -21,7 +21,7 @@
     "id": 1,
     "name": "atlas",
     "title": "Atlas - Guide for No Man's Sky",
-    "description": "Atlas is a guide app about No Man's Sky for your Android Phone. Find everything about NMS.",
+    "description": "Atlas is a guide app about No Man's Sky for your Android Phone. Stay up to date and find everything about No Man's Sky on the go.",
     "cover": "/assets/img/projects/atlas-cover.webp",
     "urls": {
       "url_1": "https://atlas.nebulr.me",
@@ -39,7 +39,7 @@
     "id": 2,
     "name": "scs",
     "title": "Star Citizen Skin for Steam",
-    "description": "A Star Citizen themed skin for Steam.",
+    "description": "A Star Citizen themed skin for the gaming platform Steam.",
     "cover": "/assets/img/projects/scs-cover.webp",
     "urls": {
       "url_1": "https://github.com/xnebulr/SCS-for-Steam",
@@ -57,7 +57,7 @@
     "id": 3,
     "name": "st",
     "title": "SmoothTex Minecraft Texture Pack",
-    "description": "A Texture Pack for Minecraft. Available in 16x and 32x textures.",
+    "description": "A simple Texture Pack for Minecraft. Available in 16x and 32x textures.",
     "cover": "/assets/img/projects/st-cover.webp",
     "urls": {
       "url_1": "https://github.com/xnebulr/SmoothTex-16x",
@@ -75,7 +75,7 @@
     "id": 4,
     "name": "owva",
     "title": "Overwatch VoiceAttack Profile",
-    "description": "A VoiceAttack profile for Overwatch, which allows you to control many actions using your voice.",
+    "description": "A VoiceAttack profile for Overwatch, which allows you to control many actions in-game using only your voice.",
     "cover": "/assets/img/projects/owva-cover.webp",
     "urls": {
       "url_1": "https://github.com/xnebulr/Overwatch_VA",
@@ -93,7 +93,7 @@
     "id": 5,
     "name": "imastarcitizen",
     "title": "I'm A Star Citizen Website",
-    "description": "A website for the 'I'm A Star Citizen' trading cards.",
+    "description": "A website for the 'I'm A Star Citizen' trading cards from the game Star Citizen.",
     "cover": "/assets/img/projects/imastarcitizen-cover.webp",
     "urls": {
       "url_1": "https://imastarcitizen.nebulr.org/",
