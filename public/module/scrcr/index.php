@@ -22,7 +22,7 @@
 <body>
 
 <div class='main-text-medium'>
-    <a id='back-button' href='/'><div class='border-button no-highlight'>
+    <a id='back-button' href='<?= $asset_url ?>'><div class='border-button no-highlight'>
             <i class='fas fa-chevron-circle-left'></i> <?= $locale['GO_BACK'] ?>
         </div></a>
     <a href='privacypolicy'><div class='border-button no-highlight float-right'>
