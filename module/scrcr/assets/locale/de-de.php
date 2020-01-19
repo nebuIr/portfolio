@@ -9,7 +9,7 @@ Language: German
 $locale_scrcr = [];
 
 $locale_scrcr['RANDOMIZER_TITLE'] = 'Star Citizen Referral Code Randomizer';
-$locale_scrcr['RANDOMIZER_DESCRIPTION'] = 'Get a randomized referral code for Star Citizen and submit your own referral code!';
+$locale_scrcr['RANDOMIZER_DESCRIPTION'] = 'Get a randomized referral code for Star Citizen and submit your own!';
 $locale_scrcr['RANDOMIZER_GET_1'] = 'Aus ';
 $locale_scrcr['RANDOMIZER_GET_2'] = ' Codes, lautet dein zufälliger Empfehlungscode für Star Citizen:';
 $locale_scrcr['RANDOMIZER_SET'] = 'Sobald du einen eigenen Empfehlungscode hast, trage ihn hier ein:';
@@ -18,7 +18,7 @@ $locale_scrcr['THE_REFERRAL_CODE'] = 'Der Empfehlungscode';
 $locale_scrcr['REFERRAL_CODE_UPDATED'] = 'wurde aktualisiert!';
 $locale_scrcr['REFERRAL_CODE_ADDED'] = 'wurde hinzugefügt!';
 $locale_scrcr['REFERRAL_CODE_INVALID'] = 'ist nicht gültig. Bitte überprüfe, ob die Formatierung korrekt ist.';
-$locale_scrcr['ENTER_REFERRAL_CODE'] = 'Bitte gib einen Empfehlungscode ein.';
+$locale_scrcr['ENTER_REFERRAL_CODE'] = 'Bitte gib zunächst einen Empfehlungscode ein.';
 $locale_scrcr['REFERRAL_CODE_ACTIVE'] = 'Einmal eingegeben, bleibt der Code für 6 Monate aktiv.<br>Die erneute Eingabe des Codes setzt dessen Timer zurück.<br>Falls du eine E-Mail Adresse angegeben hast, erhältst du 7 Tage vor Ablauf der Gültigkeitsdauer eine Benachrichtigung.';
 $locale_scrcr['REFERRAL_CODE_REWARD'] = 'Durch die Verwendung eines Empfehlungscodes erhältst du 5.000UEC In-Game-Währung gratis!<br>Das entspricht einem Wert von 5USD.<br>Erfahre mehr über das Referral-Programm';
 $locale_scrcr['HERE'] = 'hier';

@@ -29,14 +29,16 @@
             <i class='fas fa-user-shield'></i> <?= $locale['PRIVACY_POLICY'] ?>
         </div></a>
 
-    <h1 class='color-white align-center font-size-medium weight-black margin-semi-large-top'>
+    <h1 class='no-display'><?= $locale_scrcr['RANDOMIZER_TITLE'] ?></h1>
+
+    <h2 class='color-white align-center font-size-medium weight-black margin-semi-large-top'>
         <?php
         if ($code[1] === 0) {
             echo $locale_scrcr['SHARED_REFERRAL'];
         } else {
             echo $locale_scrcr['RANDOMIZER_GET_1'] . '<span id=\'code-count\'>' . getCodeCount() . '</span>' . $locale_scrcr['RANDOMIZER_GET_2'];
         } ?>
-    </h1>
+    </h2>
 
     <div class='align-center margin-semi-large-bottom'>
         <a class='a-no-style' href='https://robertsspaceindustries.com/enlist?referral=<?= $code[0] ?>' target='_blank' rel='nofollow' onclick='trackCodeOnClick("<?= $code[0] ?>")'>
