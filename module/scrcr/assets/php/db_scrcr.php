@@ -102,7 +102,7 @@ class db_scrcr
 
     public function getRandomBackground(): string
     {
-        $path = __DIR__ . '/../../../../public/module/scrcr/assets/img';
+        $path = __DIR__ . '/../../../../public/module/scrcr/assets/img/star-citizen/';
         $file_array = preg_grep('/^([^.])/', scandir($path));
         $random_file = array_rand($file_array);
 
