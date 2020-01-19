@@ -16,6 +16,7 @@ $locale['LOCALE_SWITCH'] = '?hl=de';
 $locale['LOCALE_SWITCH_CLASS'] = 'flag-de';
 
 $locale['TITLE'] = 'nebulr';
+$locale['TITLE_LONG'] = 'Web and Coding Projects';
 $locale['DESCRIPTION'] = 'Web and Coding Projects made by nebulr';
 $locale['TITLE_PRIVACY_POLICY'] = 'Privacy Policy - nebulr';
 
