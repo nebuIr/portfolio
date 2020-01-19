@@ -2,3 +2,5 @@ RewriteEngine On
 RewriteBase /
 Options -Indexes
 DirectoryIndex index.php index.html
+
+RedirectMatch 301 /module/scrcr/(.*) https://referral.nebulr.me/$1

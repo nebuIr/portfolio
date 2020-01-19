@@ -5,7 +5,7 @@
 
 <head>
     <title>Privacy Policy - nebulr</title>
-    <link rel='canonical' href='<?= 'https://' . $_SERVER['SERVER_NAME'] . '/module/scrcr/' ?>'>
+    <link rel='canonical' href='<?= 'https://' . $_SERVER['SERVER_NAME'] ?>'>
 
     <?php include_once __DIR__ . '/../../../assets/html/head.php' ?>
 </head>
@@ -40,7 +40,7 @@
             </li>
             <li><strong>Affiliate</strong> means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.</li>
             <li><strong>Account</strong> means a unique account created for You to access our Service or parts of our Service.</li>
-            <li><strong>Website</strong> refers to Star Citizen Referral Code Randomizer, accessible from https://nebulr.me/module/scrcr/</li>        <li><strong>Service</strong> refers to the Website.</li>
+            <li><strong>Website</strong> refers to Star Citizen Referral Code Randomizer, accessible from https://referral.nebulr.me/</li>        <li><strong>Service</strong> refers to the Website.</li>
             <li><strong>Country</strong> refers to: Baden-Württemberg, Germany</li>
             <li>
                 <p><strong>Service Provider</strong> means any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service or to assist the Company in analyzing how the Service is used.</p>

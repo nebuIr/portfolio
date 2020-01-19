@@ -9,7 +9,7 @@ function submit_code(check)
     let messageCodeInvalid = 'The referral code "' + code + '" is not valid, please check your formatting.';
     let messageCodeNotExist = 'The referral code "' + code + '" was not added to the database.';
     let messageCodeInactive = 'The referral code "' + code + '" is inactive.<br>Resubmit to activate the referral code again.';
-    let messageCodeShare = '<br><br>You can copy <a class=\'text-underline\' href=\'https://nebulr.me/module/scrcr/?referral=' + code + '\' target=\'_blank\' rel=\'nofollow\'>this link</a> or the QR-Code below to share this referral code.';
+    let messageCodeShare = '<br><br>You can copy <a class=\'text-underline\' href=\'https://referral.nebulr.me/?referral=' + code + '\' target=\'_blank\' rel=\'nofollow\'>this link</a> or the QR-Code below to share this referral code.';
     let messageQRCode = '<img class=\'qr-code\' src=\'cache/qr/' + code + '.jpg\' alt=\'qr-code\'>';
 
     let messageClasses = 'code-message font-poppins-regular align-center-force margin-semi-medium-top overflow-hidden badge badge-outline-green';

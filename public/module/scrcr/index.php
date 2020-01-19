@@ -9,7 +9,7 @@
     <meta name='description' content='<?= $locale_scrcr['RANDOMIZER_DESCRIPTION'] ?>'>
     <meta name='og:title' property='og:title' content='<?= $locale_scrcr['RANDOMIZER_TITLE'] ?> - nebulr'>
     <meta name='og:description' property='og:description' content='<?= $locale_scrcr['RANDOMIZER_DESCRIPTION'] ?>'>
-    <link rel='canonical' href='<?= 'https://' . $_SERVER['SERVER_NAME'] . '/module/scrcr/' ?>'>
+    <link rel='canonical' href='<?= 'https://' . $_SERVER['SERVER_NAME'] ?>'>
 
     <link href='assets/css/frontend.css' type='text/css' rel='stylesheet'/>
     <script src='assets/js/jquery-3.4.1.min.js'></script>
