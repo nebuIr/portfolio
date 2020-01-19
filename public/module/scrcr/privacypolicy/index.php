@@ -13,7 +13,7 @@
 <body>
 
 <div class='main-text-small'>
-    <a id='back-button' href='<?= $asset_url ?>'><div class='border-button no-highlight'>
+    <a id='back-button' href='../'><div class='border-button no-highlight'>
             <i class='fas fa-chevron-circle-left'></i> <?= $locale['GO_BACK'] ?>
         </div></a>
     <p class='title color-white weight-bold no-highlight'><?= $locale['PRIVACY_POLICY'] ?></p>
