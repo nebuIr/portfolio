@@ -18,7 +18,7 @@
 <body>
 
 <div class='main-text-medium'>
-    <p class='title color-white weight-bold no-highlight margin-medium-bottom'><img class='title-icon-src center-mobile' src='assets/img/logo/logo.png' alt='logo'>nebulr</p>
+    <h1 class='title color-white weight-bold no-highlight margin-medium-bottom'><img class='title-icon-src center-mobile' src='assets/img/logo/logo.png' alt='logo'>nebulr</h1>
 
     <div class='align-center margin-xl-bottom-mobile'>
         <a href='mailto:<?= $locale['CONTACT_EMAIL'] ?>'><div class='border-button no-highlight margin-medium-sides'>
