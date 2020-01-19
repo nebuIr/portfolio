@@ -4,9 +4,9 @@
 <html lang='<?= $locale['LOCALE_CODE'] ?>'>
 
 <head>
-    <title>nebulr</title>
+    <title><?= $locale['DESCRIPTION'] ?> - <?= $locale['TITLE'] ?></title>
     <meta name='description' content='<?= $locale['DESCRIPTION'] ?>'>
-    <meta name='og:title' property='og:title' content='<?= $locale['TITLE'] ?>'>
+    <meta name='og:title' property='og:title' content='<?= $locale['DESCRIPTION'] ?> - <?= $locale['TITLE'] ?>'>
     <meta name='og:description' property='og:description' content='<?= $locale['DESCRIPTION'] ?>'>
     <link rel='canonical' href='<?= 'https://' . $_SERVER['SERVER_NAME'] ?>'>
 
