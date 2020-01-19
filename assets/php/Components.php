@@ -28,8 +28,8 @@ class Components
                 <div class='card radius-large'>
                     <img class='card-img' src='{$project['cover']}' alt='cover'>
                     <div class='card-txt'>
-                        <h1>{$project['title']}</h1>
-                        <div class='badge-wrapper'><h2><span class='badge $badge'>{$project['status']}</span></h2></div>
+                        <h2>{$project['title']}</h2>
+                        <div class='badge-wrapper'><h3><span class='badge $badge'>{$project['status']}</span></h3></div>
                         <p>{$project['description']}</p>
                     </div>
                 <div class='card-links'>";

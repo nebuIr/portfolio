@@ -699,13 +699,15 @@ a:visited {
     transition: .4s;
 }
 
-.card h1 {
+.card h2 {
     font-family: 'Poppins Bold', sans-serif;
+    font-size: 2em;
     color: #FFF;
     text-align: left;
 }
 
-.card h2 {
+.card h3 {
+    font-size: 1.5em;
     color: #FFF;
     text-align: left;
 }
