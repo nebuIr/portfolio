@@ -29,7 +29,7 @@ class Components
                     <img class='card-img' src='{$project['cover']}' alt='cover'>
                     <div class='card-txt'>
                         <h2>{$project['title']}</h2>
-                        <div class='badge-wrapper'><h3><span class='badge $badge'>{$project['status']}</span></h3></div>
+                        <div class='badge-wrapper'><div class='card-status'><span class='badge $badge'>{$project['status']}</span></div></div>
                         <p>{$project['description']}</p>
                     </div>
                 <div class='card-links'>";
