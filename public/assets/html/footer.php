@@ -1,7 +1,5 @@
-<?php $url = 'https://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'] ?>
-
 <footer class='radius-medium'>
-    <p class='text-light'><?= $locale['CREDITS'] ?> <img class="text-icon" src='/../assets/img/logo/logo.svg' alt='logo' height='24px' width='24px'>
+    <p class='text-light'><?= $locale['CREDITS'] ?> <img class="text-icon" src='/assets/img/logo/logo.svg' alt='logo' height='24px' width='24px'>
         <br><?= $locale['CONTACT_PREFIX'] ?> <a class='text-underline' href='mailto:<?= $locale['CONTACT_EMAIL'] ?>'><?= $locale['EMAIL'] ?></a> <?= $locale['CONTACT_SUFFIX'] ?></p>
     <p class='footer-title color-white weight-bold'><?= $locale['SOCIAL_LINKS'] ?></p>
     <a href='https://github.com/xnebulr' target='_blank' rel='nofollow'><div class='border-button no-highlight'>
@@ -17,7 +15,7 @@
     <a href='<?= $locale['LOCALE_SWITCH'] ?>' rel='nofollow'><div class='border-button no-highlight float-right flag <?= $locale['LOCALE_SWITCH_CLASS'] ?>'>
             <i class='fas fa-language fa-lg hide show-on-hover'></i>
         </div></a>
-    <a href='/../privacypolicy'><div class='border-button no-highlight'>
+    <a href='/privacypolicy'><div class='border-button no-highlight'>
             <i class='fas fa-user-shield'></i> <?= $locale['PRIVACY_POLICY'] ?>
         </div></a>
 </footer>

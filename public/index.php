@@ -1,6 +1,9 @@
 <!DOCTYPE>
 
 <?php include_once __DIR__ . '/../assets/php/locale.php' ?>
+<?php include_once __DIR__ . '/../assets/php/Components.php' ?>
+<?php $components = new Components() ?>
+
 <html lang='<?= $locale['LOCALE_CODE'] ?>'>
 
 <head>
@@ -8,11 +11,9 @@
     <meta name='description' content='<?= $locale['DESCRIPTION'] ?>'>
     <meta name='og:title' property='og:title' content='<?= $locale['TITLE_LONG'] . ' - ' . $locale['TITLE']?>'>
     <meta name='og:description' property='og:description' content='<?= $locale['DESCRIPTION'] ?>'>
-    <link rel='canonical' href='<?= 'https://' . $_SERVER['SERVER_NAME'] ?>'>
-
     <?php include_once __DIR__ . '/assets/html/head.php' ?>
-    <?php include_once __DIR__ . '/../assets/php/Components.php' ?>
-    <?php $components = new Components() ?>
+
+    <link rel='canonical' href='<?= $url ?>'>
 </head>
 
 <body>
