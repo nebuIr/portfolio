@@ -1,4 +1,12 @@
 RewriteEngine On
 RewriteBase /
 Options -Indexes
-DirectoryIndex index.php index.html
+DirectoryIndex index.php
+
+ErrorDocument 400 /errors/index.php
+ErrorDocument 401 /errors/index.php
+ErrorDocument 403 /errors/index.php
+ErrorDocument 404 /errors/index.php
+ErrorDocument 500 /errors/index.php
+ErrorDocument 502 /errors/index.php
+ErrorDocument 504 /errors/index.php
