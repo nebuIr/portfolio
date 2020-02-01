@@ -1,13 +1,13 @@
 [
   {
     "id": 0,
-    "name": "scrcr",
+    "name": "scr",
     "title": "Star Citizen Referral Code Randomizer",
     "description": "Get a randomized referral code for Star Citizen, submit your own referral code and share it.",
-    "cover": "/assets/img/projects/scrcr-cover.webp",
+    "cover": "/assets/img/projects/scr-cover.webp",
     "urls": {
       "url_1": "https://screferral.space",
-      "url_2": "https://github.com/xnebulr/nebulr.me/tree/master/public/module/scrcr"
+      "url_2": "https://github.com/xnebulr/screferral"
     },
     "btn_text": {
       "btn_text_1": "Website",
@@ -15,7 +15,7 @@
     },
     "status": "Under development",
     "status_code": 0,
-    "last_updated": "11/01/2020"
+    "last_updated": "01/02/2020"
   },
   {
     "id": 1,
