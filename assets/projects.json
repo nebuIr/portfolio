@@ -15,7 +15,7 @@
     },
     "status": "Under development",
     "status_code": 0,
-    "last_updated": "01/02/2020"
+    "last_updated": "23/05/2020"
   },
   {
     "id": 1,
@@ -24,7 +24,7 @@
     "description": "Atlas is a guide app about No Man's Sky for your Android Phone. Stay up to date and find everything about No Man's Sky on the go.",
     "cover": "/assets/img/projects/atlas-cover.webp",
     "urls": {
-      "url_1": "https://atlas.nebulr.me",
+      "url_1": "https://atlasapp.info",
       "url_2": "https://play.google.com/store/apps/details?id=me.nebulr.atlas"
     },
     "btn_text": {
@@ -33,10 +33,28 @@
     },
     "status": "Under development",
     "status_code": 0,
-    "last_updated": "15/11/2019"
+    "last_updated": "24/04/2020"
   },
   {
     "id": 2,
+    "name": "atlas-api",
+    "title": "Atlas API",
+    "description": "Atlas-API is an API for No Man's Sky news, releases and game version.",
+    "cover": "/assets/img/projects/atlas-cover.webp",
+    "urls": {
+      "url_1": "https://api.atlasapp.info/docs/v1",
+      "url_2": "https://github.com/xnebulr/Atlas-API"
+    },
+    "btn_text": {
+      "btn_text_1": "API docs",
+      "btn_text_2": "GitHub"
+    },
+    "status": "Under development",
+    "status_code": 0,
+    "last_updated": "25/05/2020"
+  },
+  {
+    "id": 3,
     "name": "scs",
     "title": "Star Citizen Skin for Steam",
     "description": "A Star Citizen themed skin for the gaming platform Steam.",
@@ -54,7 +72,7 @@
     "last_updated": "02/11/2016"
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "st",
     "title": "SmoothTex Minecraft Texture Pack",
     "description": "A simple Texture Pack for Minecraft. Available in 16x and 32x textures.",
@@ -72,7 +90,7 @@
     "last_updated": "19/06/2014"
   },
   {
-    "id": 4,
+    "id": 5,
     "name": "owva",
     "title": "Overwatch VoiceAttack Profile",
     "description": "A VoiceAttack profile for Overwatch, which allows you to control many actions in-game using only your voice.",
@@ -90,7 +108,7 @@
     "last_updated": "01/05/2018"
   },
   {
-    "id": 5,
+    "id": 6,
     "name": "imastarcitizen",
     "title": "I'm A Star Citizen Website",
     "description": "A website for the 'I'm A Star Citizen' trading cards from the game Star Citizen.",
@@ -108,7 +126,7 @@
     "last_updated": "23/11/2016"
   },
   {
-    "id": 6,
+    "id": 7,
     "name": "plex",
     "title": "Better Plex - Stylish CSS Theme",
     "description": "The Better Plex experience. The 'Stylish' Browser addon is needed to use this theme.",
@@ -126,7 +144,7 @@
     "last_updated": "21/04/2019"
   },
   {
-    "id": 7,
+    "id": 8,
     "name": "mydealz",
     "title": "mydealz Dark Theme - Stylish CSS Theme",
     "description": "A Dark Theme for mydealz.de. The 'Stylish' Browser addon is needed to use this theme.",
