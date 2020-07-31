@@ -1,8 +1,18 @@
 <!DOCTYPE>
 
-<?php include_once __DIR__ . '/../assets/php/locale.php' ?>
-<?php include_once __DIR__ . '/../assets/php/Components.php' ?>
-<?php $components = new Components() ?>
+<?php
+
+use nebulr\Locales;
+use nebulr\Components;
+
+include_once __DIR__ . '/../src/classes/Locales.php';
+include_once __DIR__ . '/../src/classes/Components.php';
+$components = new Components();
+$neb_locale = new Locales();
+
+$locale = $neb_locale->getLocale();
+
+?>
 
 <html lang='<?= $locale['LOCALE_CODE'] ?>'>
 
@@ -34,7 +44,10 @@
     </div>
 
     <div class='grid'>
-        <?php $components->renderProjects('all') ?>
+        <?php try {
+            $components->renderProjects('all');
+        } catch (JsonException $e) {
+        } ?>
     </div>
 </div>
 

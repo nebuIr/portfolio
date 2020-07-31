@@ -1,12 +1,14 @@
 <?php
 
+namespace nebulr;
 
 class Components
 {
     public function renderProjects($filter): void
     {
-        include __DIR__ . '/locale.php';
-        $projects_file = file_get_contents(__DIR__ . '/../projects.json');
+        $neb_locales = new Locales;
+        $locale = $neb_locales->getLocale();
+        $projects_file = file_get_contents(__DIR__ . '/../../public/assets/projects.json');
         $projects = json_decode($projects_file, true, 512, JSON_THROW_ON_ERROR);
         $badge = '';
 

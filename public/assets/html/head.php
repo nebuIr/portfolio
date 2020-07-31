@@ -4,14 +4,20 @@
 <meta charset='UTF-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no'>
 <link href='/assets/css/poppins.css' type='text/css' rel='stylesheet'/>
-<link href='/assets/css/frontend.css' type='text/css' rel='stylesheet'/>
+<link href='/assets/css/style.css' type='text/css' rel='stylesheet'/>
 
 <!-- External -->
 <script async src='/assets/js/fontawesome.js' crossorigin='anonymous'></script>
 
 <!-- Google Analytics -->
 <script async src='https://www.googletagmanager.com/gtag/js?id=UA-68526906-5'></script>
-<script async src='/assets/js/gtag.js'></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-68526906-5');
+</script>
 
 <!-- Favicon -->
 <link rel='apple-touch-icon' sizes='180x180' href='/assets/img/favicon/apple-touch-icon.png'>

@@ -1,6 +1,16 @@
 <!DOCTYPE>
 
-<?php include_once __DIR__ . '/../../assets/php/locale.php' ?>
+<?php
+
+use nebulr\Locales;
+
+include_once __DIR__ . '/../../src/classes/Locales.php';
+$neb_locale = new Locales();
+
+$locale = $neb_locale->getLocale();
+
+?>
+
 <html lang='<?= $locale['LOCALE_CODE'] ?>'>
 
 <head>
