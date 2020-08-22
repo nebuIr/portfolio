@@ -2,3 +2,4 @@
 /.env
 /vendor/
 /public/.htaccess
+/public/robots.txt
