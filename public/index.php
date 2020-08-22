@@ -1,58 +1,34 @@
-<!DOCTYPE>
+<!DOCTYPE html>
+<?php include_once __DIR__ . '/../src/routes.php' ?>
 
 <?php
 
-use nebulr\Locales;
-use nebulr\Components;
-
+include_once __DIR__ . '/../src/classes/Main.php';
 include_once __DIR__ . '/../src/classes/Locales.php';
-include_once __DIR__ . '/../src/classes/Components.php';
-$components = new Components();
-$neb_locale = new Locales();
+include_once __DIR__ . '/../src/classes/Env.php';
 
-$locale = $neb_locale->getLocale();
+use nebulr\Main;
+use nebulr\Locales;
+use nebulr\Env;
 
+$main = new Main();
+$locales = new Locales();
+$env = new Env();
+
+$locale = $locales->getLocale();
 ?>
 
+<?php $directory = $main->getDirectory() ?>
 <html lang='<?= $locale['LOCALE_CODE'] ?>'>
 
-<head>
-    <title><?= $locale['TITLE_LONG'] . ' - ' . $locale['TITLE']?></title>
-    <meta name='description' content='<?= $locale['DESCRIPTION'] ?>'>
-    <meta name='og:title' property='og:title' content='<?= $locale['TITLE_LONG'] . ' - ' . $locale['TITLE']?>'>
-    <meta name='og:description' property='og:description' content='<?= $locale['DESCRIPTION'] ?>'>
-    <?php include_once __DIR__ . '/assets/html/head.php' ?>
-
-    <link rel='canonical' href='<?= $url ?>'>
-</head>
+<?php include_once __DIR__ . '/../src/templates/components/head.php' ?>
 
 <body>
 
-<div class='main-text-medium'>
-    <h1 class='title color-white weight-bold no-highlight margin-medium-bottom'><img class='title-icon-src center-mobile' src='assets/img/logo/logo.png' alt='logo'>nebulr</h1>
-
-    <div class='align-center margin-xl-bottom-mobile'>
-        <a href='mailto:<?= $locale['CONTACT_EMAIL'] ?>'><div class='border-button no-highlight margin-medium-sides'>
-                <i class='fas fa-paper-plane'></i> <?= $locale['EMAIL'] ?>
-            </div></a>
-        <a href='https://github.com/xnebulr' target='_blank'><div class='border-button no-highlight margin-medium-sides'>
-                <i class='fab fa-github'></i> Github
-            </div></a>
-        <a href='https://twitter.com/xnebulr' target='_blank'><div class='border-button no-highlight margin-medium-sides'>
-                <i class='fab fa-twitter'></i> Twitter
-            </div></a>
-    </div>
-
-    <div class='grid'>
-        <?php try {
-            $components->renderProjects('all');
-        } catch (JsonException $e) {
-        } ?>
-    </div>
-</div>
-
-<?php include_once __DIR__ . '/assets/html/footer.php' ?>
+<?php getPageContent($directory) ?>
 
 </body>
+
+<?php include_once __DIR__ . '/../src/templates/components/footer.php' ?>
 
 </html>

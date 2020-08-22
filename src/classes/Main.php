@@ -2,15 +2,67 @@
 
 namespace nebulr;
 
-class Components
+use JsonException;
+
+class Main
 {
+    private $assetHashRes;
+
+    public function __construct()
+    {
+        $env = new Env();
+
+        $this->assetHashRes = $env->getAssetHashRes();
+    }
+
+    public function getDirectory(): string
+    {
+        $params = explode('/', $_SERVER['REQUEST_URI']);
+
+        if (array_key_exists(1, $params)) {
+            return $params[1];
+        }
+
+        return '';
+    }
+
+    public function getProtocol(): string
+    {
+        if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') {
+            return 'https://';
+        }
+
+        return 'http://';
+    }
+
+    public function getURL(): string
+    {
+        return $this->getProtocol() . $_SERVER['SERVER_NAME'];
+    }
+
+    public function getPageTitle($page, $locale): string
+    {
+        switch ($page) {
+            default:
+            case '':
+                return $locale['TITLE_LONG'] . ' - ' . $locale['TITLE'];
+
+            case 'privacypolicy':
+                return $locale['TITLE_PRIVACY_POLICY'];
+        }
+    }
+
     public function renderProjects($filter): void
     {
+        $badge = '';
+        $projects = '';
         $neb_locales = new Locales;
         $locale = $neb_locales->getLocale();
-        $projects_file = file_get_contents(__DIR__ . '/../../public/assets/projects.json');
-        $projects = json_decode($projects_file, true, 512, JSON_THROW_ON_ERROR);
-        $badge = '';
+        $projects_file = file_get_contents(__DIR__ . '/../assets/projects.json');
+        try {
+            $projects = json_decode($projects_file, true, 512, JSON_THROW_ON_ERROR);
+        } catch (JsonException $e) {
+        }
 
         foreach ($projects as $project) {
             if ($filter === $project['status_code'] || $filter === 'all') {
@@ -28,7 +80,7 @@ class Components
 
                 echo "
                 <div class='card radius-large'>
-                    <img class='card-img' src='{$project['cover']}' alt='cover'>
+                    <img class='card-img' src='{$project['cover']}$this->assetHashRes' alt='cover'>
                     <div class='card-txt'>
                         <h2>{$project['title']}</h2>
                         <div class='badge-wrapper'><div class='card-status'><span class='badge $badge'>{$project['status']}</span></div></div>

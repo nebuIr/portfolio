@@ -3,11 +3,11 @@
 <?php
 
 use nebulr\Locales;
-use nebulr\Components;
+use nebulr\Main;
 
 include_once __DIR__ . '/../../src/classes/Locales.php';
-include_once __DIR__ . '/../../src/classes/Components.php';
-$components = new Components();
+include_once __DIR__ . '/../../src/classes/Main.php';
+$components = new Main();
 $neb_locale = new Locales();
 $error = $components->errorCode();
 

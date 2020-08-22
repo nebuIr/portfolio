@@ -1,26 +1,12 @@
-<!DOCTYPE>
-
 <?php
 
 use nebulr\Locales;
 
-include_once __DIR__ . '/../../src/classes/Locales.php';
-$neb_locale = new Locales();
+$locales = new Locales();
 
-$locale = $neb_locale->getLocale();
+$locale = $locales->getLocale();
 
 ?>
-
-<html lang='<?= $locale['LOCALE_CODE'] ?>'>
-
-<head>
-    <title>Privacy Policy - nebulr</title>
-    <link rel='canonical' href='<?= 'https://' . $_SERVER['SERVER_NAME'] . '/privacypolicy/' ?>'>
-
-    <?php include_once __DIR__ . '/../assets/html/head.php' ?>
-</head>
-
-<body>
 
 <div class='main-text-small'>
     <a id='back-button' href='/'><div class='border-button no-highlight'>
@@ -170,7 +156,3 @@ $locale = $neb_locale->getLocale();
         </ul>
     </div>
 </div>
-<?php include_once __DIR__ . '/../assets/html/footer.php' ?>
-</body>
-
-</html>
