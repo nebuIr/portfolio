@@ -1,5 +1,3 @@
-/.idea/
+/.idea
 /.env
-/vendor/
-/public/.htaccess
-/public/robots.txt
+/vendor
