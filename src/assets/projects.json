@@ -7,7 +7,7 @@
     "cover": "/assets/img/projects/scr-cover.webp",
     "urls": {
       "url_1": "https://screferral.space",
-      "url_2": "https://github.com/xnebulr/screferral"
+      "url_2": "https://github.com/nebuIr/screferral"
     },
     "btn_text": {
       "btn_text_1": "Website",
@@ -15,7 +15,7 @@
     },
     "status": "Under development",
     "status_code": 0,
-    "last_updated": "21/12/2020"
+    "last_updated": "24/08/2022"
   },
   {
     "id": 1,
@@ -31,8 +31,8 @@
       "btn_text_1": "More Info",
       "btn_text_2": "Play Store"
     },
-    "status": "Under development",
-    "status_code": 0,
+    "status": "Discontinued",
+    "status_code": 2,
     "last_updated": "24/08/2020"
   },
   {
@@ -43,7 +43,7 @@
     "cover": "/assets/img/projects/atlas-cover.webp",
     "urls": {
       "url_1": "https://api.atlasapp.info/docs/v1",
-      "url_2": "https://github.com/xnebulr/Atlas-API"
+      "url_2": "https://github.com/nebuIr/Atlas-API"
     },
     "btn_text": {
       "btn_text_1": "API docs",
@@ -51,7 +51,7 @@
     },
     "status": "Under development",
     "status_code": 0,
-    "last_updated": "20/12/2020"
+    "last_updated": "12/08/2022"
   },
   {
     "id": 3,
@@ -60,15 +60,15 @@
     "description": "A Star Citizen themed skin for the gaming platform Steam.",
     "cover": "/assets/img/projects/scs-cover.webp",
     "urls": {
-      "url_1": "https://github.com/xnebulr/SCS-for-Steam",
-      "url_2": "https://github.com/xnebulr/SCS-for-Steam/releases"
+      "url_1": "https://github.com/nebuIr/SCS-for-Steam",
+      "url_2": "https://github.com/nebuIr/SCS-for-Steam/releases"
     },
     "btn_text": {
       "btn_text_1": "GitHub",
       "btn_text_2": "Download"
     },
-    "status": "Outdated",
-    "status_code": 1,
+    "status": "Discontinued",
+    "status_code": 2,
     "last_updated": "02/11/2016"
   },
   {
@@ -78,8 +78,8 @@
     "description": "A simple Texture Pack for Minecraft. Available in 16x and 32x textures.",
     "cover": "/assets/img/projects/st-cover.webp",
     "urls": {
-      "url_1": "https://github.com/xnebulr/SmoothTex-16x",
-      "url_2": "https://github.com/xnebulr/SmoothTex-16x/releases"
+      "url_1": "https://github.com/nebuIr/SmoothTex-16x",
+      "url_2": "https://github.com/nebuIr/SmoothTex-16x/releases"
     },
     "btn_text": {
       "btn_text_1": "GitHub",
@@ -96,15 +96,15 @@
     "description": "A VoiceAttack profile for Overwatch, which allows you to control many actions in-game using only your voice.",
     "cover": "/assets/img/projects/owva-cover.webp",
     "urls": {
-      "url_1": "https://github.com/xnebulr/Overwatch_VA",
-      "url_2": "https://github.com/xnebulr/Overwatch_VA/releases"
+      "url_1": "https://github.com/nebuIr/Overwatch_VA",
+      "url_2": "https://github.com/nebuIr/Overwatch_VA/releases"
     },
     "btn_text": {
       "btn_text_1": "GitHub",
       "btn_text_2": "Download"
     },
-    "status": "Outdated",
-    "status_code": 1,
+    "status": "Discontinued",
+    "status_code": 2,
     "last_updated": "01/05/2018"
   },
   {
@@ -115,7 +115,7 @@
     "cover": "/assets/img/projects/imastarcitizen-cover.webp",
     "urls": {
       "url_1": "https://imastarcitizen.nebulr.org/",
-      "url_2": "https://github.com/xnebulr/imastarcitizen.net"
+      "url_2": "https://github.com/nebuIr/imastarcitizen.net"
     },
     "btn_text": {
       "btn_text_1": "Website",
@@ -139,8 +139,8 @@
       "btn_text_1": "Stylish",
       "btn_text_2": "Download"
     },
-    "status": "Outdated",
-    "status_code": 1,
+    "status": "Discontinued",
+    "status_code": 2,
     "last_updated": "21/04/2019"
   },
   {
@@ -157,8 +157,8 @@
       "btn_text_1": "Stylish",
       "btn_text_2": "Download"
     },
-    "status": "Under development",
-    "status_code": 0,
+    "status": "Discontinued",
+    "status_code": 2,
     "last_updated": "21/02/2020"
   }
 ]
