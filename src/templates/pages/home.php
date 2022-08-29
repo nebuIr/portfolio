@@ -23,10 +23,10 @@ $hashRes = $env->getAssetHashRes();
         <a href='mailto:<?= $locale['CONTACT_EMAIL'] ?>'><div class='border-button no-highlight margin-medium-sides'>
                 <i class='fas fa-paper-plane'></i> <?= $locale['EMAIL'] ?>
             </div></a>
-        <a href='https://github.com/xnebulr' target='_blank'><div class='border-button no-highlight margin-medium-sides'>
+        <a href='https://github.com/nebuIr' target='_blank'><div class='border-button no-highlight margin-medium-sides'>
                 <i class='fab fa-github'></i> Github
             </div></a>
-        <a href='https://twitter.com/xnebulr' target='_blank'><div class='border-button no-highlight margin-medium-sides'>
+        <a href='https://twitter.com/nebulrs' target='_blank'><div class='border-button no-highlight margin-medium-sides'>
                 <i class='fab fa-twitter'></i> Twitter
             </div></a>
     </div>

@@ -38,7 +38,7 @@ class EN_US
 
         $locale['CONTACT_PREFIX'] = 'Contact me via';
         $locale['CONTACT_SUFFIX'] = 'for any commissions or questions';
-        $locale['CONTACT_EMAIL'] = 'contact@nebulr.me';
+        $locale['CONTACT_EMAIL'] = 'hello@nblr.dev';
         $locale['EMAIL'] = 'E-Mail';
 
         $locale['LAST_UPDATED'] = 'Last updated';

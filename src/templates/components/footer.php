@@ -2,10 +2,10 @@
     <p class='text-light'><?= $locale['CREDITS'] ?> <img class="text-icon" src='/assets/img/logo/logo.svg<?= $hashRes ?>' alt='logo' height='24px' width='24px'>
         <br><?= $locale['CONTACT_PREFIX'] ?> <a class='text-underline' href='mailto:<?= $locale['CONTACT_EMAIL'] ?>'><?= $locale['EMAIL'] ?></a> <?= $locale['CONTACT_SUFFIX'] ?></p>
     <p class='footer-title color-white weight-bold'><?= $locale['SOCIAL_LINKS'] ?></p>
-    <a href='https://github.com/xnebulr' target='_blank' rel='nofollow'><div class='border-button no-highlight'>
+    <a href='https://github.com/nebuIr' target='_blank' rel='nofollow'><div class='border-button no-highlight'>
             <i class='fab fa-github'></i> Github
         </div></a>
-    <a href='https://twitter.com/xnebulr' target='_blank' rel='nofollow'><div class='border-button no-highlight'>
+    <a href='https://twitter.com/nebulrs' target='_blank' rel='nofollow'><div class='border-button no-highlight'>
             <i class='fab fa-twitter'></i> Twitter
         </div></a>
     <a href='https://youtube.com/nebulr' target='_blank' rel='nofollow'><div class='border-button no-highlight'>
