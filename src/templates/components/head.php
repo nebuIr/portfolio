@@ -21,15 +21,11 @@ $hashRes = $env->getAssetHashRes();
 <!-- Fontawesome -->
 <script src="https://kit.fontawesome.com/8119fd0658.js" crossorigin="anonymous"></script>
 
-<!-- Google Analytics -->
-<script async src='https://www.googletagmanager.com/gtag/js?id=UA-68526906-5'></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'UA-68526906-5');
-</script>
+<!-- Analytics -->
+<noscript>
+<img src="https://sn.nblr.cc/ingress/92bb565b-ec53-4b55-80a6-14bc28ca7bc9/pixel.gif">
+</noscript>
+<script defer src="https://sn.nblr.cc/ingress/92bb565b-ec53-4b55-80a6-14bc28ca7bc9/script.js"></script>
 
 <!-- Favicon -->
 <link rel='apple-touch-icon' sizes='180x180' href='/assets/img/favicon/apple-touch-icon.png<?= $hashRes ?>'>
