@@ -22,10 +22,7 @@ $hashRes = $env->getAssetHashRes();
 <script src="https://kit.fontawesome.com/8119fd0658.js" crossorigin="anonymous"></script>
 
 <!-- Analytics -->
-<noscript>
-<img src="https://sn.nblr.cc/ingress/92bb565b-ec53-4b55-80a6-14bc28ca7bc9/pixel.gif">
-</noscript>
-<script defer src="https://sn.nblr.cc/ingress/92bb565b-ec53-4b55-80a6-14bc28ca7bc9/script.js"></script>
+<script async defer data-website-id="a1dfae06-d013-46a2-a498-7b8204beaf3c" src="https://um.nblr.cc/script.js"></script>
 
 <!-- Favicon -->
 <link rel='apple-touch-icon' sizes='180x180' href='/assets/img/favicon/apple-touch-icon.png<?= $hashRes ?>'>
