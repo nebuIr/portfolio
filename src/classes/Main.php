@@ -6,13 +6,9 @@ use JsonException;
 
 class Main
 {
-    private $assetHashRes;
-
     public function __construct()
     {
-        $env = new Env();
 
-        $this->assetHashRes = $env->getAssetHashRes();
     }
 
     public function getDirectory(): string
@@ -80,7 +76,7 @@ class Main
 
                 echo "
                 <div class='card radius-large'>
-                    <img class='card-img' src='{$project['cover']}$this->assetHashRes' alt='cover'>
+                    <img class='card-img' src='{$project['cover']}?" . substr(md5_file(__DIR__ . '/../../public/assets' . $project['cover']), 0, 8) . "' alt='cover'>
                     <div class='card-txt'>
                         <h2>{$project['title']}</h2>
                         <div class='badge-wrapper'><div class='card-status'><span class='badge $badge'>{$project['status']}</span></div></div>

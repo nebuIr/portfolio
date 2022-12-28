@@ -2,22 +2,16 @@
 
 use nebulr\Main;
 use nebulr\Locales;
-use nebulr\Env;
 
 $main = new Main();
 $locales = new Locales();
-$env = new Env();
 
 $locale = $locales->getLocale();
-
-$hashCss = $env->getAssetHashCss();
-$hashJs = $env->getAssetHashJs();
-$hashRes = $env->getAssetHashRes();
 
 ?>
 
 <div class='main-text-medium'>
-    <h1 class='title color-white weight-bold no-highlight margin-medium-bottom'><img class='title-icon-src center-mobile' src='assets/img/logo/logo.png<?= $hashRes ?>' alt='logo'>nebulr</h1>
+    <h1 class='title color-white weight-bold no-highlight margin-medium-bottom'><img class='title-icon-src center-mobile' src='assets/img/logo/logo.png?<?= substr(md5_file(__DIR__ . '/../../../public/assets/img/logo/logo.png'), 0, 8) ?>' alt='logo'>nebulr</h1>
 
     <div class='align-center margin-xl-bottom-mobile'>
         <a href='mailto:<?= $locale['CONTACT_EMAIL'] ?>'><div class='border-button no-highlight margin-medium-sides'>

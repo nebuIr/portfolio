@@ -1,5 +1,5 @@
 <footer class='radius-medium'>
-    <p class='text-light'><?= $locale['CREDITS'] ?> <img class="text-icon" src='/assets/img/logo/logo.svg<?= $hashRes ?>' alt='logo' height='24px' width='24px'>
+    <p class='text-light'><?= $locale['CREDITS'] ?> <img class="text-icon" src='/assets/img/logo/logo.svg?<?= substr(md5_file(__DIR__ . '/../../../public/assets/img/logo/logo.svg'), 0, 8) ?>' alt='logo' height='24px' width='24px'>
         <br><?= $locale['CONTACT_PREFIX'] ?> <a class='text-underline' href='mailto:<?= $locale['CONTACT_EMAIL'] ?>'><?= $locale['EMAIL'] ?></a> <?= $locale['CONTACT_SUFFIX'] ?></p>
     <p class='footer-title color-white weight-bold'><?= $locale['SOCIAL_LINKS'] ?></p>
     <a href='https://github.com/nebuIr' target='_blank' rel='nofollow'><div class='border-button no-highlight'>

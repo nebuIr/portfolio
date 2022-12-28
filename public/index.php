@@ -5,15 +5,12 @@
 
 include_once __DIR__ . '/../src/classes/Main.php';
 include_once __DIR__ . '/../src/classes/Locales.php';
-include_once __DIR__ . '/../src/classes/Env.php';
 
 use nebulr\Main;
 use nebulr\Locales;
-use nebulr\Env;
 
 $main = new Main();
 $locales = new Locales();
-$env = new Env();
 
 $locale = $locales->getLocale();
 ?>
